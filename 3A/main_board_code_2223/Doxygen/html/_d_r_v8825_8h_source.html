@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Phobos Mainboard Firmware:  Fichier source de Core/Prod/Inc/DRV8825.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Phobos Mainboard Firmware<span id="projectnumber">&#160;v0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_542ed4cc54dd0f66b276e41c84137820.html">Prod</a></li><li class="navelem"><a class="el" href="dir_5d189f72b21093759a55927cf148c63a.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">DRV8825.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_d_r_v8825_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;tim.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define M_TO_S 60</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define E3 1000</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define DRV8825_FORWARD 1</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define DRV8825_BACKWARD 0</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define DRV8825_ENABLE 0</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define DRV8825_DISABLE 1</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define RAYON 51.45/2</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define PAS 200</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_moteur.html">   23</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    uint16_t dirPin;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    GPIO_TypeDef * dirGPIO;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    uint16_t stepPin;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    uint16_t enablePin;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    GPIO_TypeDef * enableGPIO;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    TIM_HandleTypeDef* timer;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    uint8_t chanel;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}<a class="code hl_struct" href="struct_moteur.html">Moteur</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_r_v8825_8h.html#a1814c31fdd28c31e716fd122d1de28ca">DRV8825_init</a>(<a class="code hl_struct" href="struct_moteur.html">Moteur</a>* drv8825,uint16_t PIN_EN, GPIO_TypeDef * GPIO_EN, uint16_t PIN_DIR,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        GPIO_TypeDef * GPIO_DIR, TIM_HandleTypeDef* timer, uint8_t chanel);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_r_v8825_8h.html#a454f69d72c75d29c5dfb55fffcebe36b">DRV8825_setDir</a>(<a class="code hl_struct" href="struct_moteur.html">Moteur</a>* drv8825,uint8_t dir);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_r_v8825_8h.html#a2da377642725e024a8e416b1a5890b76">DRV8825_enable</a>(<a class="code hl_struct" href="struct_moteur.html">Moteur</a>* drv8825);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span> DRV8825_disable(<a class="code hl_struct" href="struct_moteur.html">Moteur</a>* drv8825);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_r_v8825_8h.html#abf8a04e0d653d8bce78b669876914f59">DRV8825_moveMotorRPM</a>(<a class="code hl_struct" href="struct_moteur.html">Moteur</a>* drv8825,<span class="keywordtype">float</span> rpm);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_r_v8825_8h.html#af46f22a588f2a296e2a8c39cc1157279">DRV8825_moveMotorLineSpeed</a>(<a class="code hl_struct" href="struct_moteur.html">Moteur</a>* drv8825,<span class="keywordtype">float</span> vitesse);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">void</span> <a class="code hl_function" href="_d_r_v8825_8h.html#aca01e5dab2952d8ef4538f7c429dc467">DRV8825_setFrequency</a>(<a class="code hl_struct" href="struct_moteur.html">Moteur</a>* drv8825, uint16_t freq);</div>
+<div class="ttc" id="a_d_r_v8825_8h_html_a1814c31fdd28c31e716fd122d1de28ca"><div class="ttname"><a href="_d_r_v8825_8h.html#a1814c31fdd28c31e716fd122d1de28ca">DRV8825_init</a></div><div class="ttdeci">void DRV8825_init(Moteur *drv8825, uint16_t PIN_EN, GPIO_TypeDef *GPIO_EN, uint16_t PIN_DIR, GPIO_TypeDef *GPIO_DIR, TIM_HandleTypeDef *timer, uint8_t chanel)</div><div class="ttdoc">initDRV8825</div><div class="ttdef"><b>Definition:</b> DRV8825.c:3</div></div>
+<div class="ttc" id="a_d_r_v8825_8h_html_a2da377642725e024a8e416b1a5890b76"><div class="ttname"><a href="_d_r_v8825_8h.html#a2da377642725e024a8e416b1a5890b76">DRV8825_enable</a></div><div class="ttdeci">void DRV8825_enable(Moteur *drv8825)</div><div class="ttdoc">permet de bloquer le moteur</div><div class="ttdef"><b>Definition:</b> DRV8825.c:34</div></div>
+<div class="ttc" id="a_d_r_v8825_8h_html_a454f69d72c75d29c5dfb55fffcebe36b"><div class="ttname"><a href="_d_r_v8825_8h.html#a454f69d72c75d29c5dfb55fffcebe36b">DRV8825_setDir</a></div><div class="ttdeci">void DRV8825_setDir(Moteur *drv8825, uint8_t dir)</div><div class="ttdoc">permet d'initialiser la direction du moteur</div><div class="ttdef"><b>Definition:</b> DRV8825.c:30</div></div>
+<div class="ttc" id="a_d_r_v8825_8h_html_abf8a04e0d653d8bce78b669876914f59"><div class="ttname"><a href="_d_r_v8825_8h.html#abf8a04e0d653d8bce78b669876914f59">DRV8825_moveMotorRPM</a></div><div class="ttdeci">void DRV8825_moveMotorRPM(Moteur *drv8825, float rpm)</div><div class="ttdoc">Permet de définir une vitesse au moteur (RPM)</div><div class="ttdef"><b>Definition:</b> DRV8825.c:42</div></div>
+<div class="ttc" id="a_d_r_v8825_8h_html_aca01e5dab2952d8ef4538f7c429dc467"><div class="ttname"><a href="_d_r_v8825_8h.html#aca01e5dab2952d8ef4538f7c429dc467">DRV8825_setFrequency</a></div><div class="ttdeci">void DRV8825_setFrequency(Moteur *drv8825, uint16_t freq)</div><div class="ttdoc">permet de modifier la fréquence de notre signal PWM</div><div class="ttdef"><b>Definition:</b> DRV8825.c:53</div></div>
+<div class="ttc" id="a_d_r_v8825_8h_html_af46f22a588f2a296e2a8c39cc1157279"><div class="ttname"><a href="_d_r_v8825_8h.html#af46f22a588f2a296e2a8c39cc1157279">DRV8825_moveMotorLineSpeed</a></div><div class="ttdeci">void DRV8825_moveMotorLineSpeed(Moteur *drv8825, float vitesse)</div><div class="ttdoc">Permet de définir une vitesse linéaire (m/s)</div><div class="ttdef"><b>Definition:</b> DRV8825.c:47</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
+<div class="ttc" id="astruct_moteur_html"><div class="ttname"><a href="struct_moteur.html">Moteur</a></div><div class="ttdef"><b>Definition:</b> DRV8825.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>
