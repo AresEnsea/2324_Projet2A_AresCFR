@@ -1,0 +1,19 @@
+La première étape : 
+git pull  (Met à jour les dossiers en fonction de ceux sur le serveur)
+
+Pour ajouter des changements : 
+git add * 
+git commit -m "Commentaire sur la modification apportée"
+git push
+
+Pour supprimer des fichiers (par exemple un txt) :
+git rm "Nom du fichier.txt"
+git commit -m "Commentaire sur la modification apportée"
+git push
+
+Pour avoir plus d'informations sur comment utiliser GitHub :		
+https://www.hostinger.fr/tutoriels/commandes-git#Git_config
+https://www.youtube.com/watch?v=gp_k0UVOYMw
+
+
+
