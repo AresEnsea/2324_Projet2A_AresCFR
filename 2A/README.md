@@ -1,1 +1,2 @@
-# 2324_Projet2A_AresCFR
+# 2A
+Ce dossier regroupe les fichiers réalisés par les deuxièmes années de l'association
