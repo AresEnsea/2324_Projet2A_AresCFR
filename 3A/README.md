@@ -1,3 +1,2 @@
-# 2324_Projet2A_AresCFR
-        projet blank en version STM32 CubeIDE 1.13.1
-        projet 2223 en version STM32 CubeIDE version plus
+# 3A
+Ce dossier regroupe les fichiers réalisés par les étudiants en troisième année de l'association
