@@ -1,0 +1,2 @@
+../hal_stm_lvgl/touchpad/touchpad.c:67:13:touchpad_read	2
+../hal_stm_lvgl/touchpad/touchpad.c:44:6:touchpad_init	1

@@ -1,0 +1,7 @@
+../Utilities/STM32746G-Discovery/stm32746g_discovery_eeprom.c:158:10:BSP_EEPROM_Init	2
+../Utilities/STM32746G-Discovery/stm32746g_discovery_eeprom.c:181:9:BSP_EEPROM_DeInit	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_eeprom.c:457:13:BSP_EEPROM_TIMEOUT_UserCallback	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_eeprom.c:202:10:BSP_EEPROM_ReadBuffer	2
+../Utilities/STM32746G-Discovery/stm32746g_discovery_eeprom.c:441:10:BSP_EEPROM_WaitEepromStandbyState	2
+../Utilities/STM32746G-Discovery/stm32746g_discovery_eeprom.c:249:10:BSP_EEPROM_WritePage	3
+../Utilities/STM32746G-Discovery/stm32746g_discovery_eeprom.c:284:10:BSP_EEPROM_WriteBuffer	32
