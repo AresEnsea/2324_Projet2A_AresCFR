@@ -1,0 +1,10 @@
+../Utilities/Components/exc7200/exc7200.c:128:6:exc7200_Reset	1
+../Utilities/Components/exc7200/exc7200.c:138:10:exc7200_ReadID	1
+../Utilities/Components/exc7200/exc7200.c:211:9:exc7200_TS_ITStatus	1
+../Utilities/Components/exc7200/exc7200.c:116:6:exc7200_Init	1
+../Utilities/Components/exc7200/exc7200.c:157:9:exc7200_TS_DetectTouch	1
+../Utilities/Components/exc7200/exc7200.c:178:6:exc7200_TS_GetXY	1
+../Utilities/Components/exc7200/exc7200.c:202:6:exc7200_TS_DisableIT	1
+../Utilities/Components/exc7200/exc7200.c:221:6:exc7200_TS_ClearIT	1
+../Utilities/Components/exc7200/exc7200.c:148:6:exc7200_TS_Start	1
+../Utilities/Components/exc7200/exc7200.c:193:6:exc7200_TS_EnableIT	1

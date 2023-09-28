@@ -1,0 +1,11 @@
+../lvgl/src/core/lv_refr.c:975:13:draw_buf_flush	48
+../lvgl/src/core/lv_refr.c:671:19:lv_refr_get_top_obj.part.0	7
+../lvgl/src/core/lv_refr.c:100:6:_lv_refr_init	1
+../lvgl/src/core/lv_refr.c:127:6:lv_refr_obj	7
+../lvgl/src/core/lv_refr.c:711:13:lv_refr_obj_and_children	8
+../lvgl/src/core/lv_refr.c:589:13:lv_refr_area_part	23
+../lvgl/src/core/lv_refr.c:200:6:_lv_inv_area	13
+../lvgl/src/core/lv_refr.c:255:13:_lv_refr_get_disp_refreshing	1
+../lvgl/src/core/lv_refr.c:266:6:_lv_refr_set_disp_refreshing	1
+../lvgl/src/core/lv_refr.c:275:6:_lv_disp_refr_timer	34
+../lvgl/src/core/lv_refr.c:110:6:lv_refr_now	7
