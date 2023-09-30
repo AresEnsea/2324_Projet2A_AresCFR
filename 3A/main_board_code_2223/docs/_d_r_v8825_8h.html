@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Phobos Mainboard Firmware: Référence du fichier Core/Prod/Inc/DRV8825.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Phobos Mainboard Firmware<span id="projectnumber">&#160;v0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_542ed4cc54dd0f66b276e41c84137820.html">Prod</a></li><li class="navelem"><a class="el" href="dir_5d189f72b21093759a55927cf148c63a.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier DRV8825.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;tim.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+</div>
+<p><a href="_d_r_v8825_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_moteur.html">Moteur</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0d0dda2009082c594ade95b5d2822f9c"><td class="memItemLeft" align="right" valign="top"><a id="a0d0dda2009082c594ade95b5d2822f9c" name="a0d0dda2009082c594ade95b5d2822f9c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>M_TO_S</b>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:a0d0dda2009082c594ade95b5d2822f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31cbade3f8edb728b06a18b804010544"><td class="memItemLeft" align="right" valign="top"><a id="a31cbade3f8edb728b06a18b804010544" name="a31cbade3f8edb728b06a18b804010544"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>E3</b>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a31cbade3f8edb728b06a18b804010544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28dbb6f7204761817aeff15827fd85ca"><td class="memItemLeft" align="right" valign="top"><a id="a28dbb6f7204761817aeff15827fd85ca" name="a28dbb6f7204761817aeff15827fd85ca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DRV8825_FORWARD</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a28dbb6f7204761817aeff15827fd85ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5be18922e54c715d313475492c20ff"><td class="memItemLeft" align="right" valign="top"><a id="a8c5be18922e54c715d313475492c20ff" name="a8c5be18922e54c715d313475492c20ff"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DRV8825_BACKWARD</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a8c5be18922e54c715d313475492c20ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94f00011cae9ee002036588d1a6c9bb"><td class="memItemLeft" align="right" valign="top"><a id="ae94f00011cae9ee002036588d1a6c9bb" name="ae94f00011cae9ee002036588d1a6c9bb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DRV8825_ENABLE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ae94f00011cae9ee002036588d1a6c9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae042d7a02d99cb4e5fdf39499f5354fe"><td class="memItemLeft" align="right" valign="top"><a id="ae042d7a02d99cb4e5fdf39499f5354fe" name="ae042d7a02d99cb4e5fdf39499f5354fe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DRV8825_DISABLE</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ae042d7a02d99cb4e5fdf39499f5354fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3304c99f43f534878204486fc7b9673d"><td class="memItemLeft" align="right" valign="top"><a id="a3304c99f43f534878204486fc7b9673d" name="a3304c99f43f534878204486fc7b9673d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RAYON</b>&#160;&#160;&#160;51.45/2</td></tr>
+<tr class="separator:a3304c99f43f534878204486fc7b9673d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b043226b51a6ed4eff992382778534f"><td class="memItemLeft" align="right" valign="top"><a id="a9b043226b51a6ed4eff992382778534f" name="a9b043226b51a6ed4eff992382778534f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PAS</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a9b043226b51a6ed4eff992382778534f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a1814c31fdd28c31e716fd122d1de28ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_r_v8825_8h.html#a1814c31fdd28c31e716fd122d1de28ca">DRV8825_init</a> (<a class="el" href="struct_moteur.html">Moteur</a> *drv8825, uint16_t PIN_EN, GPIO_TypeDef *GPIO_EN, uint16_t PIN_DIR, GPIO_TypeDef *GPIO_DIR, TIM_HandleTypeDef *timer, uint8_t chanel)</td></tr>
+<tr class="memdesc:a1814c31fdd28c31e716fd122d1de28ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">initDRV8825  <a href="_d_r_v8825_8h.html#a1814c31fdd28c31e716fd122d1de28ca">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1814c31fdd28c31e716fd122d1de28ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454f69d72c75d29c5dfb55fffcebe36b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_r_v8825_8h.html#a454f69d72c75d29c5dfb55fffcebe36b">DRV8825_setDir</a> (<a class="el" href="struct_moteur.html">Moteur</a> *drv8825, uint8_t dir)</td></tr>
+<tr class="memdesc:a454f69d72c75d29c5dfb55fffcebe36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet d'initialiser la direction du moteur  <a href="_d_r_v8825_8h.html#a454f69d72c75d29c5dfb55fffcebe36b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a454f69d72c75d29c5dfb55fffcebe36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da377642725e024a8e416b1a5890b76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_r_v8825_8h.html#a2da377642725e024a8e416b1a5890b76">DRV8825_enable</a> (<a class="el" href="struct_moteur.html">Moteur</a> *drv8825)</td></tr>
+<tr class="memdesc:a2da377642725e024a8e416b1a5890b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de bloquer le moteur  <a href="_d_r_v8825_8h.html#a2da377642725e024a8e416b1a5890b76">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2da377642725e024a8e416b1a5890b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd987d70fbb84ce3625d16d95a1faa35"><td class="memItemLeft" align="right" valign="top"><a id="afd987d70fbb84ce3625d16d95a1faa35" name="afd987d70fbb84ce3625d16d95a1faa35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DRV8825_disable</b> (<a class="el" href="struct_moteur.html">Moteur</a> *drv8825)</td></tr>
+<tr class="separator:afd987d70fbb84ce3625d16d95a1faa35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8a04e0d653d8bce78b669876914f59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_r_v8825_8h.html#abf8a04e0d653d8bce78b669876914f59">DRV8825_moveMotorRPM</a> (<a class="el" href="struct_moteur.html">Moteur</a> *drv8825, float rpm)</td></tr>
+<tr class="memdesc:abf8a04e0d653d8bce78b669876914f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de définir une vitesse au moteur (RPM)  <a href="_d_r_v8825_8h.html#abf8a04e0d653d8bce78b669876914f59">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abf8a04e0d653d8bce78b669876914f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46f22a588f2a296e2a8c39cc1157279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_r_v8825_8h.html#af46f22a588f2a296e2a8c39cc1157279">DRV8825_moveMotorLineSpeed</a> (<a class="el" href="struct_moteur.html">Moteur</a> *drv8825, float vitesse)</td></tr>
+<tr class="memdesc:af46f22a588f2a296e2a8c39cc1157279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de définir une vitesse linéaire (m/s)  <a href="_d_r_v8825_8h.html#af46f22a588f2a296e2a8c39cc1157279">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af46f22a588f2a296e2a8c39cc1157279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca01e5dab2952d8ef4538f7c429dc467"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_r_v8825_8h.html#aca01e5dab2952d8ef4538f7c429dc467">DRV8825_setFrequency</a> (<a class="el" href="struct_moteur.html">Moteur</a> *drv8825, uint16_t freq)</td></tr>
+<tr class="memdesc:aca01e5dab2952d8ef4538f7c429dc467"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de modifier la fréquence de notre signal PWM  <a href="_d_r_v8825_8h.html#aca01e5dab2952d8ef4538f7c429dc467">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aca01e5dab2952d8ef4538f7c429dc467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a2da377642725e024a8e416b1a5890b76" name="a2da377642725e024a8e416b1a5890b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da377642725e024a8e416b1a5890b76">&#9670;&nbsp;</a></span>DRV8825_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DRV8825_enable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_moteur.html">Moteur</a> *&#160;</td>
+          <td class="paramname"><em>drv8825</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>permet de bloquer le moteur </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">la</td><td>structure qui contien les PIN du module </td></tr>
+    <tr><td class="paramname">START</td><td>= le moteur tourne | STOP = le moteur est bloqué </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1814c31fdd28c31e716fd122d1de28ca" name="a1814c31fdd28c31e716fd122d1de28ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1814c31fdd28c31e716fd122d1de28ca">&#9670;&nbsp;</a></span>DRV8825_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DRV8825_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_moteur.html">Moteur</a> *&#160;</td>
+          <td class="paramname"><em>drv8825</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>PIN_EN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>GPIO_EN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>PIN_DIR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>GPIO_DIR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TIM_HandleTypeDef *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>chanel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initDRV8825 </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numéro</td><td>de pin de enable </td></tr>
+    <tr><td class="paramname">GPIO</td><td>de la pin enable </td></tr>
+    <tr><td class="paramname">numéro</td><td>de pin de DIR </td></tr>
+    <tr><td class="paramname">GPIO</td><td>de la pin DIR </td></tr>
+    <tr><td class="paramname">Timer</td><td>liée au moteur </td></tr>
+    <tr><td class="paramname">Chanel</td><td>du timer (TIM_CHANNEL_x) avec x le numéro de chanel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="af46f22a588f2a296e2a8c39cc1157279" name="af46f22a588f2a296e2a8c39cc1157279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af46f22a588f2a296e2a8c39cc1157279">&#9670;&nbsp;</a></span>DRV8825_moveMotorLineSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DRV8825_moveMotorLineSpeed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_moteur.html">Moteur</a> *&#160;</td>
+          <td class="paramname"><em>drv8825</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vitesse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de définir une vitesse linéaire (m/s) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">la</td><td>structure qui contien les pin du module </td></tr>
+    <tr><td class="paramname">vitesse</td><td>linéaire de la roue (m/s) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf8a04e0d653d8bce78b669876914f59" name="abf8a04e0d653d8bce78b669876914f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8a04e0d653d8bce78b669876914f59">&#9670;&nbsp;</a></span>DRV8825_moveMotorRPM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DRV8825_moveMotorRPM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_moteur.html">Moteur</a> *&#160;</td>
+          <td class="paramname"><em>drv8825</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rpm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de définir une vitesse au moteur (RPM) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">la</td><td>structure qui contien les pin du module </td></tr>
+    <tr><td class="paramname">vitesse</td><td>de rotation du moteur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a454f69d72c75d29c5dfb55fffcebe36b" name="a454f69d72c75d29c5dfb55fffcebe36b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a454f69d72c75d29c5dfb55fffcebe36b">&#9670;&nbsp;</a></span>DRV8825_setDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DRV8825_setDir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_moteur.html">Moteur</a> *&#160;</td>
+          <td class="paramname"><em>drv8825</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>permet d'initialiser la direction du moteur </p>
+<p >la structure qui contien les PIN du module </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FORWARD</td><td>= le robot avance | BACKWARD = le robot recule </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca01e5dab2952d8ef4538f7c429dc467" name="aca01e5dab2952d8ef4538f7c429dc467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca01e5dab2952d8ef4538f7c429dc467">&#9670;&nbsp;</a></span>DRV8825_setFrequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DRV8825_setFrequency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_moteur.html">Moteur</a> *&#160;</td>
+          <td class="paramname"><em>drv8825</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>freq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>permet de modifier la fréquence de notre signal PWM </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>timer de notre moteur </td></tr>
+    <tr><td class="paramname">la</td><td>structure qui contien les pin du module </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

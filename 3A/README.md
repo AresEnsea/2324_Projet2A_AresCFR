@@ -1,1 +1,2 @@
-# 2324_Projet2A_AresCFR
+# 3A
+Ce dossier regroupe les fichiers réalisés par les étudiants en troisième année de l'association

@@ -1,0 +1,96 @@
+Configuration	PhobosMainBoard
+STM32CubeMX 	6.3.0
+Date	12/07/2021
+MCU	STM32F446RETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Encoder Mode	TIM1_CH1	PA8
+TIM1	Encoder Mode	TIM1_CH2	PA9
+TIM2	Internal Clock	TIM2_VS_ClockSourceINT	VP_TIM2_VS_ClockSourceINT
+TIM3	Encoder Mode	TIM3_CH1	PA6
+TIM3	Encoder Mode	TIM3_CH2	PA7
+TIM4	Internal Clock	TIM4_VS_ClockSourceINT	VP_TIM4_VS_ClockSourceINT
+TIM8	Internal Clock	TIM8_VS_ClockSourceINT	VP_TIM8_VS_ClockSourceINT
+TIM8	PWM Generation CH4	TIM8_CH4	PC9
+TIM11	Enable_Timer	TIM11_VS_ClockSourceINT	VP_TIM11_VS_ClockSourceINT
+TIM11	PWM Generation CH1	TIM11_CH1	PB9
+USART2	Asynchronous	USART2_RX	PA3
+USART2	Asynchronous	USART2_TX	PA2
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+8	PC0	GPIO_Output	L_MOTOR_EN
+9	PC1	GPIO_Output	R_MOTOR_EN
+10	PC2	GPIO_Output	L_MOTOR_DIR
+16	PA2	USART2_TX	
+17	PA3	USART2_RX	
+21	PA5	GPIO_Output	LD2 [Green Led]
+22	PA6	TIM3_CH1	
+23	PA7	TIM3_CH2	
+40	PC9	TIM8_CH4	
+41	PA8	TIM1_CH1	
+42	PA9	TIM1_CH2	
+52	PC11	GPIO_Output	R_MOTOR_DIR
+62	PB9	TIM11_CH1	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Encoder Mode	TIM1_CH1	PA8
+TIM1	Encoder Mode	TIM1_CH2	PA9
+TIM2	Internal Clock	TIM2_VS_ClockSourceINT	VP_TIM2_VS_ClockSourceINT
+TIM3	Encoder Mode	TIM3_CH1	PA6
+TIM3	Encoder Mode	TIM3_CH2	PA7
+TIM4	Internal Clock	TIM4_VS_ClockSourceINT	VP_TIM4_VS_ClockSourceINT
+TIM8	Internal Clock	TIM8_VS_ClockSourceINT	VP_TIM8_VS_ClockSourceINT
+TIM8	PWM Generation CH4	TIM8_CH4	PC9
+TIM11	Enable_Timer	TIM11_VS_ClockSourceINT	VP_TIM11_VS_ClockSourceINT
+TIM11	PWM Generation CH1	TIM11_CH1	PB9
+USART2	Asynchronous	USART2_RX	PA3
+USART2	Asynchronous	USART2_TX	PA2
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+8	PC0	GPIO_Output	L_MOTOR_EN
+9	PC1	GPIO_Output	R_MOTOR_EN
+10	PC2	GPIO_Output	L_MOTOR_DIR
+16	PA2	USART2_TX	
+17	PA3	USART2_RX	
+21	PA5	GPIO_Output	LD2 [Green Led]
+22	PA6	TIM3_CH1	
+23	PA7	TIM3_CH2	
+40	PC9	TIM8_CH4	
+41	PA8	TIM1_CH1	
+42	PA9	TIM1_CH2	
+52	PC11	GPIO_Output	R_MOTOR_DIR
+62	PB9	TIM11_CH1	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : PhobosMainBoard
+Project Folder : /Users/pharox/STM32CubeIDE/workspace_1.7.0/PhobosMainBoard
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_F4 V1.26.2
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+

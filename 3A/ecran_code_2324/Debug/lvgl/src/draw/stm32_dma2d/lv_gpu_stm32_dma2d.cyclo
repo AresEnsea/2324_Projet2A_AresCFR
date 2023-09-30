@@ -1,0 +1,5 @@
+../lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c:225:6:lv_gpu_stm32_dma2d_wait_cb	6
+../lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c:116:6:lv_draw_stm32_dma2d_blend	16
+../lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c:73:6:lv_draw_stm32_dma2d_init	1
+../lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c:96:6:lv_draw_stm32_dma2d_ctx_init	1
+../lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c:109:6:lv_draw_stm32_dma2d_ctx_deinit	1
