@@ -1,2 +1,2 @@
-# 1A
-Ce dossier regroupe les fichiers réalisés par les étudiants en première année de l'association
+# Activités
+Ce dossier regroupe deux livrés conçus par Ousmane THIONGANE. L'un permet de découvrir la programmation avec Mbded, et l'autre le routage avec KiCad. Il peuvent être réutilisés au fil des années pour réaliser des activités de rentrée, ou simplement pour s'exercer à l'électronique et l'informatique.
