@@ -1,3 +1,6 @@
+Lire le fichier "Tutoriel GitHub.pdf" pour savoir comment utiliser ces commandes.
+/!\ Si vous n'êtes pas contribueur principal, ces actions sont à réaliser sur votre fork /!\
+
 La première étape : 
 git pull  (Met à jour les dossiers en fonction de ceux sur le serveur)
 
