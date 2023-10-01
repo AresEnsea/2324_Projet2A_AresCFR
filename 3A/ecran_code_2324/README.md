@@ -1,3 +1,22 @@
+# Présentation du projet
+Globalement tout ce joue dans strategie.c, score.c et le dossier image.
+
+Dans strategie.c il y a la création des boutons et leurs attribution de couleur, il y a plusieur couleur comme le jaune -> LV_PALETTE_YELLOW ou encore le bleu -> LV_PALETTE_BLUE
+toute les couleur disponible sont dans un enum que vous pourrez trouver dans la librairie lv_style.h
+Il est important de noter que la couleur noir dans lv_style.h est LV_PALETTE_NONE
+une fois un bouton sélectionné et que vous appuyé sur "confirmer" un envoie série est réalisé vers la carte principale sous la forme de "%d \r\n".
+le %d envoyer sera la valeur du bouton sélectionné
+
+Pour changer l'image de fond il faut changer le code c de TableRedi.c, en gros vous prenez une image .png qui tiens sur l'écran de 480x272 et vous allez sur ce site :
+https://lvgl.io/tools/imageconverter
+Sur le site vous uplodé votre image préalablement nommé TableRedi.png, ce sera plus simple car en gardant le nom du .c vous pourrez simplement récupérer
+le txt générer par le site et copier puis écraser le précédent code dans TableRedi.c . Le process est le même pour changer les chiffres du score et tout est
+dans le dossier Image.
+
+score.c justement, en fait il fonctionne avec une interruption sur le RX qui utilise un callback. Donc dés qu'il reçois un char correspondant à un chiffre il l'affichera.
+Je me souviens plus trop mais il me semble que ça affiche ce que vous envoyé genre vous envoyé "10" en série ça affichera 10 sur le score
+
+
 # LVGL ported to STM32F746 Discovery
 
 This is LVGL ported to [STM32F746G-DISCO](https://www.st.com/en/evaluation-tools/32f746gdiscovery.html) using 
