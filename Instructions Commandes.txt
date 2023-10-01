@@ -14,6 +14,8 @@ git rm "Nom du fichier.txt"
 git commit -m "Commentaire sur la modification apportée"
 git push
 
+Pensez à faire des "pull request"
+
 Pour avoir plus d'informations sur comment utiliser GitHub :		
 https://www.hostinger.fr/tutoriels/commandes-git#Git_config
 https://www.youtube.com/watch?v=gp_k0UVOYMw
