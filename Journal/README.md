@@ -16,7 +16,9 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Rédaction du tutoriel d'utilisation de GitHub pour les premières années (voir "Tutoriel GitHub.pdf" à la racine du repo)
 
 ### 3 octobre (J-218)
--
+- Poursuite de l'apprentissage de ROS2, assimilation des différentes notions (Nodes, topics, services, actions)
+- Étude du fonctionnement de l'écran STM32F746 Discovery
+- Rédaction du cahier des charges de la statégie d'évitement : Méthode des Points de Sûreté
 
 ### 10 octobre (J-211)
 -
