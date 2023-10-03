@@ -39,6 +39,8 @@ Figure 3. Cpateur TOP-Fonctionnement
 
 III. Idées pour résoudre le problème mécanique
 
+![385482582_334418605664017_5041229388081065512_n](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/134090919/f7f782a8-2ec6-46b5-a05d-8550937ce52d)
+
 1) La base du robot : en forme d'entonnoir pour forcer les pots de pleurs et les fleurs à aller à l'endroit où on souhaite
 2) Un ascensceur à pots : à l'endroit où l'entonnoir a le plus petit diamètre, une pince  se charge de monter les pots sur la table.
 3) Un espace de stockage au-dessus du robot : un disque comporte plusieurs trous afin d'accueillir les pots.
