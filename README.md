@@ -41,12 +41,20 @@ III. Idées pour résoudre le problème mécanique :
 ![385482582_334418605664017_5041229388081065512_n](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/134090919/ff0db04e-0340-4904-bc05-9bb8c706db25)
 
  Figure 4. Schéma explicatif de la solution mécanique 
+
+
+ ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fc00809c-a7c1-440f-b016-88b6b85ecbc1)
+Figure 5. Modélisation 3D des pots à soulever [présence d'une bordure]
+
+
+![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/547c06f8-0fec-4816-8df1-8cad406a94d9)
+Figure 5. Modélisation 3D des plantes à soulever [ne présente pas de bordure]
  
-1) La base du robot : en forme d'entonnoir pour forcer les pots de pleurs et les fleurs à aller à l'endroit où on souhaite
-2) Un ascensceur à pots : à l'endroit où l'entonnoir a le plus petit diamètre, une première pince  se charge de monter les pots sur la table.
-3) Un espace de stockage au-dessus du robot : un disque comporte plusieurs trous afin d'accueillir les pots.
+1) La base du robot : en forme d'entonnoir pour forcer les pots de plantes et les plantes à aller à l'endroit où se situe la première pince.
+2) Un ascensceur à pots : à l'endroit où l'entonnoir a le plus petit diamètre, une première pince  se charge de monter les pots dans l'esapace de stockage.
+3) Un espace de stockage au-dessus du robot : une plateforme comporte plusieurs trous afin d'accueillir les pots.
 4) Différenciation entre les pots et les plantes : utilisation de détecteurs de tag RFID. Seuls les pots de fleurs contiennent des tag RFID. Nous voudrions donc utiliser un capteur RFID (RFID-RC522) en haut de l'ascenseur pour savoir si c'est un pot ou une plante qui est montée par la pince. Il faut donc récupérer en premier des pots pour les stocker puis récupérer des plantes afin de les poser directement dans les pots.
-5) Descente des pots contenant des plantes : une deuxième pince est située à l'arrière du robot, elle est composée de deux plaques qui se serrent autour du pot.
+5) Descente des pots contenant des plantes : une deuxième pince est située à l'arrière du robot, elle est composée de deux plaques qui se serrent autour du pot afin de les descendre de l'espace de stockage et de les poser sur la table. 
 
 
 IV. Servomoteur ou moteur :
