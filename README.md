@@ -12,4 +12,5 @@ Ce deuxième site permet d'étudier la mécanique de celui-ci grâce à un conco
 Les méthodes utilisées par le robot Trooper sont:
     * Attraper les pots et les cache pots grâce à des “mains plates”. 
     * Stocker des pots grâce à un arc de cercle.
-![My Remote Image](https://cdn.sick.com/media/content/hba/h73/13160302116894.jpg)
+
+![My Remote Image](https://cdn.sick.com/media/content/hf0/h55/13160303034398.jpg)
