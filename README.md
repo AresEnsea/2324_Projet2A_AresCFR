@@ -3,7 +3,7 @@
 Ce repository GitHub regroupe l'ensemble des projets & documents réalisés par l'association Ares pour la Coupe de France de Robotique 2024.
 
 26/09/2023: Idées pour résoudre le problème mécanique 
-I. Partie mécanique: 
+I. Partie mécanique : 
 
 Des recherches sur internet nous on fait découvrir le Robot Trooper. 
 Le site suivant permet de connaître ce robot : https://www.sick.com/fr/fr/sick-sensor-blog/trooper-le-robot-de-manutention-autonome-pour-le-distancage-en-horticulture-/w/blog-instar-robotics-success-story/
@@ -19,7 +19,7 @@ Les méthodes utilisées par le robot Trooper sont:
 
 
 03/10/2023: 
-I. Utilisation de capteurs de fin de course:
+I. Utilisation de capteurs de fin de course :
 
 Idée: Positionner un capteur sur chaque côté du robot. Par dessus, positionner une pièce imprimée en 3D pour couvrir la surface totale de chaque côté à l'instar des robots aspirateurs.  
 
@@ -27,7 +27,7 @@ Idée: Positionner un capteur sur chaque côté du robot. Par dessus, positionne
                    
 Figure 2. Robot Asprirateur
                    
-II. Utilisation de capteurs TOF [Time Of Flight]
+II. Utilisation de capteurs TOF [Time Of Flight] :
 
 La différence entre un capteur classique et un capteur TOF est l'état actif et passif. L capteur classique est passif, il se comporte "comme la rétine d'un oeil".Un capteur ToF est un composant actif car il mesure un "genre d'écho" de la lumière qu'il émet (il ne mesure donc pas la lumière ambiante)
 Le principe de fonctionnement de ce capteur est : la mesure du temps que met la lumière à revenir au capteur. Cela permet de déterminer sa distance aux objets. 
@@ -37,10 +37,11 @@ Le principe de fonctionnement de ce capteur est : la mesure du temps que met la 
 
 Figure 3. Cpateur TOP-Fonctionnement 
 
-III. Idées pour résoudre le problème mécanique
+III. Idées pour résoudre le problème mécanique :
 ![385482582_334418605664017_5041229388081065512_n](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/134090919/ff0db04e-0340-4904-bc05-9bb8c706db25)
 
-
+ Figure 4. Schéma explicatif de la solution mécanique 
+ 
 1) La base du robot : en forme d'entonnoir pour forcer les pots de pleurs et les fleurs à aller à l'endroit où on souhaite
 2) Un ascensceur à pots : à l'endroit où l'entonnoir a le plus petit diamètre, une première pince  se charge de monter les pots sur la table.
 3) Un espace de stockage au-dessus du robot : un disque comporte plusieurs trous afin d'accueillir les pots.
@@ -48,5 +49,8 @@ III. Idées pour résoudre le problème mécanique
 5) Descente des pots contenant des plantes : une deuxième pince est située à l'arrière du robot, elle est composée de deux plaques qui se serrent autour du pot.
 
 
+IV. Servomoteur ou moteur :
 
+Les servomoteurs respectent avec précision la position angulaire. Ils ont une rotation souvent limitée à 180° et ne tournent pas en permanence. Ils seront donc très utiles pour le déplacement d'un bras robotisé.
+A l'inverse, les moteurs ont un mouvement continu. 
 
