@@ -7,6 +7,7 @@ Ce repository GitHub regroupe l'ensemble des projets & documents réalisés par 
 
 Des recherches sur internet nous on fait découvrir le Robot Trooper. 
 Le site suivant permet de connaître ce robot : https://www.sick.com/fr/fr/sick-sensor-blog/trooper-le-robot-de-manutention-autonome-pour-le-distancage-en-horticulture-/w/blog-instar-robotics-success-story/
+
 Ce deuxième site permet d'étudier la mécanique de celui-ci grâce à un concours CPGE : https://www.upsti.fr/espace-etudiants/annales-de-concours/topics/s2i-robot-trooper
 
 Les méthodes utilisées par le robot Trooper sont:
