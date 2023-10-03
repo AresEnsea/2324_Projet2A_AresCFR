@@ -44,11 +44,15 @@ III. Idées pour résoudre le problème mécanique :
 
 
  ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fc00809c-a7c1-440f-b016-88b6b85ecbc1)
+
+
 Figure 5. Modélisation 3D des pots à soulever [présence d'une bordure]
 
 
 ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/547c06f8-0fec-4816-8df1-8cad406a94d9)
-Figure 5. Modélisation 3D des plantes à soulever [ne présente pas de bordure]
+
+
+Figure 6. Modélisation 3D des plantes à soulever [ne présente pas de bordure]
  
 1) La base du robot : en forme d'entonnoir pour forcer les pots de plantes et les plantes à aller à l'endroit où se situe la première pince.
 2) Un ascensceur à pots : à l'endroit où l'entonnoir a le plus petit diamètre, une première pince  se charge de monter les pots dans l'esapace de stockage.
