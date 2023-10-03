@@ -17,10 +17,25 @@ Les méthodes utilisées par le robot Trooper sont:
 
 
 03/10/2023: 
-I. Utilisations des capteurs de fin de course:
+I. Utilisation de capteurs de fin de course:
 
 Idée: Positionner un capteur sur chaque côté du robot. Par dessus, positionner une pièce imprimée en 3D pour couvrir la surface totale de chaque côté à l'instar des robots aspirateurs.  
 
 ![aspirateur_robotique](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/2c2d610f-272f-42f1-89ed-1eb1d0f69897)
+
+
+II. Utilisation de capteurs TOF
+
+La différence entre un capteur classique et un capteur TOF est l'état actif et passif. L capteur classique est passif, il se comporte "comme la rétine d'un oeil".Un capteur ToF est un composant actif car il mesure un "genre d'écho" de la lumière qu'il émet (il ne mesure donc pas la lumière ambiante)
+Le principe de fonctionnement de ce capteur est : la mesure du temps que met la lumière à revenir au capteur. Cela permet de déterminer sa distance aux objets. 
+
+
+
+
+
+
+
+
+
 
 
