@@ -25,7 +25,7 @@ Idée: Positionner un capteur sur chaque côté du robot. Par dessus, positionne
 
 ![aspirateur_robotique](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/2c2d610f-272f-42f1-89ed-1eb1d0f69897)
                    
-                            Figure 2. Robot Asprirateur
+Figure 2. Robot Asprirateur
                    
 II. Utilisation de capteurs TOF [Time Of Flight]
 
@@ -35,7 +35,7 @@ Le principe de fonctionnement de ce capteur est : la mesure du temps que met la 
 
 ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/e778d1c0-ab90-4faa-b162-23a43392d48a)
 
-                Figure 3. Cpateur TOP-Fonctionnement 
+Figure 3. Cpateur TOP-Fonctionnement 
 
 
 
