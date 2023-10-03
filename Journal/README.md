@@ -7,6 +7,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### 19 Septembre (J-232)
 - Disscussions et réflexions autour du projet
 - Répartition des tâches
+- Elaboration de la présentation du projet
 
 ### 26 Septembre (J-225)
 - Présentation du projet, des solutions envisagées et de la stratégie. Réflexion sur le diagramme d'architecture
