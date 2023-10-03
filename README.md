@@ -30,6 +30,7 @@ La différence entre un capteur classique et un capteur TOF est l'état actif et
 Le principe de fonctionnement de ce capteur est : la mesure du temps que met la lumière à revenir au capteur. Cela permet de déterminer sa distance aux objets. 
 
 
+![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/e778d1c0-ab90-4faa-b162-23a43392d48a)
 
 
 
