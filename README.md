@@ -37,9 +37,13 @@ Le principe de fonctionnement de ce capteur est : la mesure du temps que met la 
 
 Figure 3. Cpateur TOP-Fonctionnement 
 
+III. Idées pour résoudre le problème mécanique
 
-
-
+1) La base du robot : en forme d'entonnoir pour forcer les pots de pleurs et les fleurs à aller à l'endroit où on souhaite
+2) Un ascensceur à pots : à l'endroit où l'entonnoir a le plus petit diamètre, une pince  se charge de monter les pots sur la table.
+3) Un espace de stockage au-dessus du robot : un disque comporte plusieurs trous afin d'accueillir les pots.
+4) Différenciation entre les pots et les plantes : utilisation de détecteurs de tag RFID. Seuls les pots de fleurs contiennent des tag RFID. Nous voudrions donc utiliser un capteur RFID (RFID-RC522) pour savoir si c'est un pot ou une plante qui est montée par la pince. Il faut donc récupérer en premier des pots pour les stocker puis récupérer des plantes afin de les poser directement dans les pots.
+5) Descente des pots contenant des plantes : une 
 
 
 
