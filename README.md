@@ -38,8 +38,8 @@ Le principe de fonctionnement de ce capteur est : la mesure du temps que met la 
 Figure 3. Cpateur TOP-Fonctionnement 
 
 III. Idées pour résoudre le problème mécanique
+![385482582_334418605664017_5041229388081065512_n](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/134090919/ff0db04e-0340-4904-bc05-9bb8c706db25)
 
-![385482582_334418605664017_5041229388081065512_n](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/134090919/9884692e-69b4-44f8-ae58-f4c1bc62c0ef)
 
 1) La base du robot : en forme d'entonnoir pour forcer les pots de pleurs et les fleurs à aller à l'endroit où on souhaite
 2) Un ascensceur à pots : à l'endroit où l'entonnoir a le plus petit diamètre, une première pince  se charge de monter les pots sur la table.
