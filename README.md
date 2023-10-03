@@ -15,6 +15,8 @@ Les méthodes utilisées par le robot Trooper sont:
 
 ![My Remote Image](https://cdn.sick.com/media/content/hf0/h55/13160303034398.jpg)
 
+Figure 1. Robot Trooper en fonctionnement
+
 
 03/10/2023: 
 I. Utilisation de capteurs de fin de course:
