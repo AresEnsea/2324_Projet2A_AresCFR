@@ -14,12 +14,15 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Installation de ROS2 et réalisation du tutoriel
 - Inscription d'Ares à la Coupe de France de Robotique
 - Rédaction de la démarche sur le wiki : https://wiki.ares.asso-ensea.fr/index.php/Introduction_%C3%A0_ROS_2
-- Rédaction du tutoriel d'utilisation de GitHub pour les premières années (voir "Tutoriel GitHub.pdf" à la racine du repo)
+- Rédaction du tutoriel d'utilisation de GitHub pour les premières années (voir "Tutoriel GitHub.pdf" à la racine du repositary)
 
 ### 3 octobre (J-218)
 - Poursuite de l'apprentissage de ROS2, assimilation des différentes notions (Nodes, topics, services, actions)
 - Étude du fonctionnement de l'écran STM32F746 Discovery
 - Rédaction du cahier des charges de la statégie d'évitement : Méthode des Points de Sûreté
+- Création de l'architecture du système : fichier conçu sur l'outil drawio (fichier architecture.drawio). Réflexion concernant les composants à utiliser, comparaison entre différents paramètres.
+- Résolution du problème mécanique. Description de la solution dans le readme principal (2 pinces, un ascenseur, un espace de stockageà.
+
 
 ### 10 octobre (J-211)
 -
