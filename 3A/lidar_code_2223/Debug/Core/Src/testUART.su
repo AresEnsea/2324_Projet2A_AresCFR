@@ -1,0 +1,4 @@
+../Core/Src/testUART.c:11:6:tests	8	static
+../Core/Src/testUART.c:17:6:test1	424	static
+../Core/Src/testUART.c:28:6:test2	424	static
+../Core/Src/testUART.c:38:6:test3	424	static

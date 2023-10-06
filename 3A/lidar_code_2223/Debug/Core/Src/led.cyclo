@@ -1,0 +1,7 @@
+../Core/Src/led.c:15:6:LEDs_init	1
+../Core/Src/led.c:42:9:LEDtoggle	20
+../Core/Src/led.c:102:6:toggleActiveCaptors	3
+../Core/Src/led.c:111:6:toggleInactiveCaptors	3
+../Core/Src/led.c:120:9:LEDset	23
+../Core/Src/led.c:194:6:setActiveCaptors	3
+../Core/Src/led.c:203:6:setInactiveCaptors	3
