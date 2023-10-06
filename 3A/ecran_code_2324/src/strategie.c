@@ -24,7 +24,7 @@ void strategie()
 {
 	Style_btn_confirm();
 	lv_style_init(&btn_strat_orginal);
-	lv_style_set_bg_color(&btn_strat_orginal, lv_palette_main(LV_PALETTE_YELLOW));
+	lv_style_set_bg_color(&btn_strat_orginal, lv_palette_main(LV_PALETTE_AMBER));
 	lv_style_set_radius(&btn_strat_orginal, 80);
 	lv_style_set_width(&btn_strat_orginal, BTN_WIDTH);
 	lv_style_set_height(&btn_strat_orginal, BTN_HEIGHT);
@@ -46,8 +46,8 @@ void strategie()
     	lv_obj_t * btn = lv_btn_create(table);
 	   	lv_obj_add_flag(btn, LV_OBJ_FLAG_EVENT_BUBBLE);
 	   	// valeur de i défini aussi le changement de couleur après un appuie
-	   	// i paire la couleur après un appuie sera verte alors que i impaire la
-	   	// la couleur sera beu
+	   	// i paire la couleur après un appui sera jaune alors que i impaire la
+	   	// la couleur sera bleue
 	   	switch(i)
 	   	{
 	   	case 0:
@@ -105,20 +105,20 @@ void Style_btn_confirm()
 	lv_style_set_radius(&style, 3);
 
 	lv_style_set_bg_opa(&style, LV_OPA_100);
-	lv_style_set_bg_color(&style, lv_color_black());
-	lv_style_set_bg_grad_color(&style, lv_palette_darken(LV_PALETTE_GREY, 2));
+	lv_style_set_bg_color(&style, lv_palette_main(LV_PALETTE_DEEP_PURPLE));
+	lv_style_set_bg_grad_color(&style, lv_palette_main(LV_PALETTE_PURPLE));
 	lv_style_set_bg_grad_dir(&style, LV_GRAD_DIR_VER);
 
 	lv_style_set_border_opa(&style, LV_OPA_40);
 	lv_style_set_border_width(&style, 2);
-	lv_style_set_border_color(&style, lv_palette_main(LV_PALETTE_GREY));
+	lv_style_set_border_color(&style, lv_palette_main(LV_PALETTE_PINK));
 
 	lv_style_set_shadow_width(&style, 8);
 	lv_style_set_shadow_color(&style, lv_palette_main(LV_PALETTE_GREY));
 	lv_style_set_shadow_ofs_y(&style, 8);
 
 	lv_style_set_outline_opa(&style, LV_OPA_COVER);
-	lv_style_set_outline_color(&style, lv_color_black());
+	lv_style_set_outline_color(&style, lv_palette_main(LV_PALETTE_YELLOW));
 
 	lv_style_set_text_color(&style, lv_color_white());
 	lv_style_set_pad_all(&style, 10);
@@ -131,8 +131,8 @@ void Style_btn_confirm()
 
 	lv_style_set_translate_y(&style_pr, 5);
 	lv_style_set_shadow_ofs_y(&style_pr, 3);
-	lv_style_set_bg_color(&style_pr, lv_palette_darken(LV_PALETTE_GREY, 2));
-	lv_style_set_bg_grad_color(&style_pr, lv_palette_darken(LV_PALETTE_GREY, 4));
+	lv_style_set_bg_color(&style_pr, lv_palette_main(LV_PALETTE_ORANGE));
+	lv_style_set_bg_grad_color(&style_pr, lv_palette_main(LV_PALETTE_AMBER));
 
 
 	lv_style_transition_dsc_init(&trans, props, lv_anim_path_linear, 300, 0, NULL);
@@ -175,7 +175,7 @@ static void event_btn(lv_event_t * e)
 
     		if(i%2 == 0)
     		{
-    			lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_YELLOW), 0);
+    			lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_AMBER), 0);
     		}
     		else
     		{
@@ -197,7 +197,7 @@ static void event_btn(lv_event_t * e)
     	    {
     	    	if(i%2 == 0)
     	    	{
-    	    		lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_YELLOW), 0);
+    	    		lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_AMBER), 0);
     	    	}
     	    	else
     	    	{
@@ -206,7 +206,7 @@ static void event_btn(lv_event_t * e)
     	    }
     	    else
     	    {
-    	    	lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_NONE), 0);
+    	    	lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_PINK), 0);
     	    }
     	}
     }
