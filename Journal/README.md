@@ -20,9 +20,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Poursuite de l'apprentissage de ROS2, assimilation des différentes notions (Nodes, topics, services, actions)
 - Étude du fonctionnement de l'écran STM32F746 Discovery
 - Rédaction du cahier des charges de la statégie d'évitement : Méthode des Points de Sûreté
-- Création de l'architecture du système : fichier conçu sur l'outil drawio (fichier architecture.drawio). Réflexion concernant les composants à utiliser, comparaison entre différents paramètres.
-- Résolution du problème mécanique. Description de la solution dans le readme principal (2 pinces, un ascenseur, un espace de stockageà.
-
+- Création de l'architecture du système : fichier conçu sur l'outil drawio (fichier architecture.drawio). Réflexion concernant les composants à utiliser, comparaison entre différents paramètres
+- Résolution du problème mécanique. Description de la solution dans le readme principal (2 pinces, un ascenseur, un espace de stockage
 
 ### 10 octobre (J-211)
 -
