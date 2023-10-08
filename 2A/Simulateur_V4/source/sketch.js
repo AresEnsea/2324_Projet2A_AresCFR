@@ -214,10 +214,10 @@ function drawCursorCoordinates() {
 
 let op = 100;
 
-function drawTable() {
-    let x = 146, y = 264 - 18;
+function drawTable() {  //Correction de la superposition image/grille
+    let x = 0, y = 0;
     if (userSettings.displayBackground)
-        image(backgroundImage, -x, -y, 3000 + x*2, 1830 + 25 + y*2)
+        image(backgroundImage, -x, -y, 3000 + x*2, 1975 + 25 + y*2)
     //let thickness = 22
     // noFill()
     // stroke(0, 100)
@@ -231,13 +231,17 @@ function drawTable() {
     noStroke()
     fill(0, 100)
     rect(0, 0, 3000, 2000)
-    drawGrid()
+    
 
     if (userSettings.displayBackground) {
-        image(backgroundImage, -x, -y, 3000 + x*2, 1830 + 25 + y*2)
+        image(backgroundImage, -x, -y, 3000 + x*2, 1975 + 25 + y*2)
         //image(backgroundImageOver, -x, -y, 3000 + x*2, 1830 + 25 + y*2)
 
     }
+    
+    drawGrid()
+
+    
 
     // push()
     // noStroke()
