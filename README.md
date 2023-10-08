@@ -35,7 +35,7 @@ Le principe de fonctionnement de ce capteur est : la mesure du temps que met la 
 
 ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/e778d1c0-ab90-4faa-b162-23a43392d48a)
 
-Figure 3. Cpateur TOP-Fonctionnement 
+Figure 3. Cpateur TOF-Fonctionnement 
 
 ### III. Idées pour résoudre le problème mécanique :
 ![385482582_334418605664017_5041229388081065512_n](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/134090919/ff0db04e-0340-4904-bc05-9bb8c706db25)
