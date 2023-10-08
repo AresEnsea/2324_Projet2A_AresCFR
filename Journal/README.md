@@ -7,7 +7,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### 19 Septembre (J-232)
 - Disscussions et réflexions autour du projet
 - Répartition des tâches
-- Elaboration de la présentation du projet
+- Élaboration de la présentation du projet
 
 ### 26 Septembre (J-225)
 - Présentation du projet, des solutions envisagées et de la stratégie. Réflexion sur le diagramme d'architecture
@@ -26,7 +26,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### 10 octobre (J-211)
 - Élaboration de la machine à états de la MPDS
 - Observations sur le fonctionnement du lidar
-- Étude du code pour le simulateur
+- Étude du code pour le simulateur : Correction de la superposition entre la grille et l'image de la table de jeu, dont le décalage rendait les coordonnées fausses
 
 ### 17 octobre (J-204)
 - Anniversaire d'Ousmane :)
