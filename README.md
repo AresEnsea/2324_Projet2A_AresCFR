@@ -29,7 +29,7 @@ Figure 2. Robot Asprirateur
                    
 ### II. Utilisation de capteurs TOF [Time Of Flight] :
 
-La différence entre un capteur classique et un capteur TOF est l'état actif et passif. Le capteur classique est passif, il se comporte "comme la rétine d'un oeil". Un capteur ToF est un composant actif car il mesure un "genre d'écho" de la lumière qu'il émet (il ne mesure donc pas la lumière ambiante)
+La différence entre un capteur classique et un capteur TOF est l'état actif et passif. Le capteur classique est passif, il se comporte "comme la rétine d'un oeil". Cependant, un capteur TOF est un composant actif car il mesure un "genre d'écho" de la lumière qu'il émet (il ne mesure donc pas la lumière ambiante).
 Le principe de fonctionnement de ce capteur est : la mesure du temps que met la lumière à revenir au capteur. Cela permet de déterminer sa distance aux objets. 
 
 ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/e778d1c0-ab90-4faa-b162-23a43392d48a)
@@ -62,6 +62,5 @@ Figure 6. Modélisation 3D des plantes à soulever [ne présente pas de bordure]
 
 ### IV. Servomoteur ou moteur :
 
-Les servomoteurs respectent avec précision la position angulaire. Ils ont une rotation souvent limitée à 180° et ne tournent pas en permanence. Ils seront donc très utiles pour le déplacement d'un bras robotisé.
-À l'inverse, les moteurs ont un mouvement continu. 
+Les servomoteurs respectent avec précision la position angulaire. Ils ont une rotation souvent limitée à 180° et ne tournent pas en permanence alors qu'à l'inverse, les moteurs ont un mouvement continu. Ils seront donc très utiles pour le déplacement d'un bras robotisé.
 
