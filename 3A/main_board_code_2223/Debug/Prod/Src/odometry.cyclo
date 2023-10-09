@@ -1,0 +1,6 @@
+../Prod/Src/odometry.c:4:9:getRightEncoderCount	1
+../Prod/Src/odometry.c:11:9:getLeftEncoderCount	1
+../Prod/Src/odometry.c:28:6:odometry_updatePosition	3
+../Prod/Src/odometry.c:92:6:odometry_setPosition	1
+../Prod/Src/odometry.c:98:6:odometry_setAngle	1
+../Prod/Src/odometry.c:102:6:odometry_startKalman	1

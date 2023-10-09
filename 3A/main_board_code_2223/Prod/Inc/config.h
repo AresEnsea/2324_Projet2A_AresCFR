@@ -69,8 +69,8 @@ typedef int bool;
 
 /*********************************** Lidar ***********************************/
 
-#define LIDAR_THRESHOLD 40
-#define LIDAR_MAX_DISTANCE 60
+#define LIDAR_THRESHOLD 500
+#define LIDAR_MAX_DISTANCE 700
 #define LIDAR_TIMEOUT 1000
 
 /******************************** Timer names ********************************/
