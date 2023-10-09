@@ -1,0 +1,13 @@
+../Drivers/UltraLiteDriver/Src/platform_specific.c:26:6:I2C_Init	8	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:60:6:_I2cFailRecover	16	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:118:6:UART_Init	16	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:172:6:UART_Reboot	24	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:181:6:UART_Print	16	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:186:6:UART_CheckError	16	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:256:6:Peek	80	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:266:6:Peek16	80	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:282:6:GPIO_Expander_Init	16	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:306:5:_ExpandersSetAllIO	16	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:326:5:_ExpanderRd	48	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:352:5:_ExpanderWR	64	static
+../Drivers/UltraLiteDriver/Src/platform_specific.c:365:9:Sensor_Reset	24	static

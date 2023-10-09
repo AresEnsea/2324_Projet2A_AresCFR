@@ -1,0 +1,11 @@
+../Prod/Src/propulsion.c:15:6:propulsion_initialize	1
+../Prod/Src/propulsion.c:34:6:propulsion_enableMotors	1
+../Prod/Src/propulsion.c:40:6:propulsion_disableMotors	1
+../Prod/Src/propulsion.c:46:6:propulsion_setSpeeds	4
+../Prod/Src/propulsion.c:89:6:propulsion_updatePosition	3
+../Prod/Src/propulsion.c:107:7:getAngleError	3
+../Prod/Src/propulsion.c:125:7:getRobotSpeed	7
+../Prod/Src/propulsion.c:149:6:calculateMotorSpeeds	1
+../Prod/Src/propulsion.c:159:6:addCorrection	2
+../Prod/Src/propulsion.c:182:7:propulsion_followBezier	3
+../Prod/Src/propulsion.c:220:7:standardAngle	1

@@ -131,6 +131,7 @@ int main(void)
   HAL_TIM_Base_Start(&htim3);
   HAL_TIM_Base_Start_IT(&htim5);
 
+  HAL_UART_Receive_IT(&huart6, pData, 1);
   printf("Initializing propulsion system...");
   propulsion_initialize();
   propulsion_disableMotors();
@@ -139,8 +140,8 @@ int main(void)
   printf(" Done.\r\n");
 
   //HAL_GPIO_TogglePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
-  printf("Initializing strategy...");
-  Strategy* strategy = strategy_initialize();
+  //printf("Initializing strategy...");
+  Strategy* strategy;
   int curveIndex = 0;
   int onSiteActionIndex = 0;
   int onMoveActionIndex = 0;
@@ -162,12 +163,54 @@ int main(void)
   bool waitingForMatchStart = true;
 
   printf("Waiting for start...\r\n");
-  while (waitingForMatchStart) {
-	  waitingForMatchStart = HAL_GPIO_ReadPin(START_GPIO_Port, START_Pin);
-
-	  HAL_GPIO_WritePin(TEAM_LED_GPIO_Port, TEAM_LED_Pin, robot.team == PURPLE);
-
-	  HAL_Delay(50);
+  pData[0] = 'o';
+  int a = 0;
+  while ((waitingForMatchStart == true)) {
+  	  waitingForMatchStart = HAL_GPIO_ReadPin(START_GPIO_Port, START_Pin);
+  	  if(wifiDataRX==0x84){
+  		  waitingForMatchStart=0;
+  		  strategy = strategy_initialize(7);
+  		  //WifiUartTXActivation();
+  	  }
+  	  else if((pData[0] >= '0' && pData[0] <= '9')  && a == 0)
+  	  {
+  		  a = 1;
+  	  	  switch(pData[0])
+  	      	{
+  	  	  	case '0':
+  	  	  		printf("Initializing strategy...0");
+  	  	  		strategy = strategy_initialize(0);
+  	       	    break;
+  	      	case '1':
+  	      		printf("Initializing strategy...1");
+  	      		strategy = strategy_initialize(1);
+  	            break;
+  	      	case '2':
+  	      		printf("Initializing strategy...2");
+  	      		strategy = strategy_initialize(2);
+  	      		break;
+  	        case '3':
+  	        	printf("Initializing strategy...3");
+  	        	strategy = strategy_initialize(3);
+  	        	break;
+  	        case '4':
+  	        	printf("Initializing strategy...4");
+  	        	strategy = strategy_initialize(4);
+  	        	break;
+  	        case '5':
+  	        	printf("Initializing strategy...5");
+  	        	strategy = strategy_initialize(5);
+  	        	switchTeam(strategy);
+  	            break;
+  	        case '6':
+  	        	printf("Initializing strategy...6");
+  	        	strategy = strategy_initialize(6);
+  	        	switchTeam(strategy);
+  	        	break;
+  	        default:
+  	            break;
+  	      	}
+  	  }
   }
   propulsion_enableMotors();
 
