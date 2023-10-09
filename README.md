@@ -62,5 +62,5 @@ Figure 6. Modélisation 3D des plantes à soulever [ne présente pas de bordure]
 
 ### IV. Servomoteur ou moteur :
 
-Les servomoteurs respectent avec précision la position angulaire. Ils ont une rotation souvent limitée à 180° et ne tournent pas en permanence alors qu'à l'inverse, les moteurs ont un mouvement continu. Ils seront donc très utiles pour le déplacement d'un bras robotisé.
+Les servomoteurs respectent avec précision la position angulaire. Ils ont une rotation souvent limitée à 180° et ne tournent pas en permanence alors qu'à l'inverse, les moteurs ont un mouvement continu. Les servomoteurs seront donc très utiles pour le déplacement d'un bras robotisé.
 
