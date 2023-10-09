@@ -184,6 +184,7 @@ int main(void)
   	      	case '1':
   	      		printf("Initializing strategy...1");
   	      		strategy = strategy_initialize(1);
+  	      		switchTeam(strategy);
   	            break;
   	      	case '2':
   	      		printf("Initializing strategy...2");
@@ -192,21 +193,17 @@ int main(void)
   	        case '3':
   	        	printf("Initializing strategy...3");
   	        	strategy = strategy_initialize(3);
+  	        	switchTeam(strategy);
   	        	break;
   	        case '4':
   	        	printf("Initializing strategy...4");
   	        	strategy = strategy_initialize(4);
+  	        	switchTeam(strategy);
   	        	break;
   	        case '5':
   	        	printf("Initializing strategy...5");
   	        	strategy = strategy_initialize(5);
-  	        	switchTeam(strategy);
   	            break;
-  	        case '6':
-  	        	printf("Initializing strategy...6");
-  	        	strategy = strategy_initialize(6);
-  	        	switchTeam(strategy);
-  	        	break;
   	        default:
   	            break;
   	      	}
