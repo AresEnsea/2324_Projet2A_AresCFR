@@ -15,6 +15,6 @@ typedef struct {
 	int* onMoveActionsLengths;
 } Strategy;
 
-Strategy* strategy_initialize();
+Strategy* strategy_initialize(int num);
 
 #endif
