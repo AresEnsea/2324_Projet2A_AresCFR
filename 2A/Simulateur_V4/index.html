@@ -26,7 +26,7 @@
 
     <div class="spacer"></div>
 
-    <div class="rulers button" data-tip="Afficher les règles"></div>
+    <!-- <div class="rulers button" data-tip="Afficher les règles"></div> -->
     <!-- <div class="flip button" data-tip="Changer de côté"></div> -->
     <div class="export button" data-tip="Télécharger strategie.c"></div>
     <div class="add button" data-tip="Nouvelle stratégie"></div>
@@ -189,21 +189,21 @@
         <p class="noselect">Le crayon sert à étendre la trajectoire. Chaque point créé est inséré directement après le point sélectionné et l'état des actionneurs au point précédent est copié vers le nouveau point. Cliquer sur un point existant le sélectionne sans créer
             de nouveau point.</p>
 
-        <div class="section noselect">Simulation en temps réelle</div>
+        <!-- <div class="section noselect">Simulation en temps réelle</div>
         <div class="simulation fake-button float-left"></div>
         <p class="noselect">Cet outil permet de réaliser une simulation en temps réelle de la stratégie élaborée. Si un point est sélectionné, il sert de point de départ. Le panneau latéral propose quelques réglages. </p>
         <p>Si tout se passe bien, l'affichage s'actualise à une fréquence de 60 fps. Si ce n'est pas la cas, utiliser une grille moins précise, baisser la qualité d'affichage et/ou diminuer le nombre d'étapes de calculs par image (la simulation sera
             alors moins fiable). Pour information, le paramètre “vitesse” n'a pas d'impact sur la qualité de la simulation mais il augmente la quantité de calculs par image et peu nuire à la fluidité. De plus, il ne s'agit pas de la vitesse du robot
-            mais de la vitesse d'écoulement du temps.</p>
+            mais de la vitesse d'écoulement du temps.</p> -->
 
-        <div class="section noselect">Simulation différée</div>
+        <!-- <div class="section noselect">Simulation différée</div>
         <div class="presimulation fake-button float-left"></div>
-        <p class="noselect">Cet outil permet de réaliser une simulation calculée à l'avance, puis de la visualiser. N'étant pas contraint par le temps ou les calculs liés à l'affichage, la qualité de la simulation peut être plus élevée.</p>
+        <p class="noselect">Cet outil permet de réaliser une simulation calculée à l'avance, puis de la visualiser. N'étant pas contraint par le temps ou les calculs liés à l'affichage, la qualité de la simulation peut être plus élevée.</p> -->
 
-        <div class="section noselect">Changement de côté</div>
+        <!-- <div class="section noselect">Changement de côté</div>
         <div class="flip fake-button float-left"></div>
         <p class="noselect">Normalement, si une stratégie fonctionne d'un côté, elle fonctionne aussi de l'autre. On peut quand même changer de côté si on le souhaite grâce au bouton de symétrie verticale.</p>
-        <p>Le côté de la stratégie (bleu ou jaune) est déterminé par la position du point de départ.</p>
+        <p>Le côté de la stratégie (bleu ou jaune) est déterminé par la position du point de départ.</p> -->
 
         <div class="section noselect">Exportation</div>
         <div class="export fake-button float-left"></div>
@@ -211,14 +211,14 @@
 
         <div class="section noselect">Aides et astuces</div>
         <div class="help fake-button float-left"></div>
-        <p class="noselect">À votre plus grande surprise, ce bouton mène ici.</p><br>
+        <p class="noselect">À votre plus grande surprise, ce bouton mène ici !</p><br>
 
         <div class="section noselect">Raccourcis</div>
         <p>Les touches fléchées du clavier permettent de déplacer au millimètre un point sélectionné. Lorsque <span class="key">SHIFT</span> est enfoncé, les déplacements se font par saut de 5 cm.</p>
-        <p>La touche <span class="key">R</span> modifie le sens de parcours du robot vers le point sélectionné (marche avant ou arrière). Cette donnée est visible dans le tableau du panneau latéral, colonne “Sens”.</p>
-        <p>La touche <span class="key">S</span> active la simulation lorsque l'outil sélection est actif et inversement.</p>
-        <p>La touche <span class="key">ESPACE</span> sert à mettre en pause ou continuer la simulation lorsque l'outil est actif, sinon elle active la simulation.</p>
-        <p>La touche <span class="key">ENTRER</span> réinitialise la simulation au point sélectionné et lorsque <span class="key">SHIFT</span> est enfoncé, la simulation est réinitialisée au point initial.</p>
+        <p>La touche <span class="key">R</span> modifie le sens de parcours du robot vers le point sélectionné (marche avant ou arrière). Cette donnée est visible dans le tableau du panneau latéral, colonne “Direction”.</p>
+        <!-- <p>La touche <span class="key">S</span> active la simulation lorsque l'outil sélection est actif et inversement.</p> -->
+        <!-- <p>La touche <span class="key">ESPACE</span> sert à mettre en pause ou continuer la simulation lorsque l'outil est actif, sinon elle active la simulation.</p>
+        <p>La touche <span class="key">ENTRER</span> réinitialise la simulation au point sélectionné et lorsque <span class="key">SHIFT</span> est enfoncé, la simulation est réinitialisée au point initial.</p> -->
     </div>
 </div>
 

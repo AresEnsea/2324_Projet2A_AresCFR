@@ -1,8 +1,5 @@
 function generateStrategyCode() {
     let out = `
-#include "strategy.h"
-
-Strategy* strategy_initialize() {
     Strategy* strategy = (Strategy*) malloc(sizeof(Strategy));
     strategy->length = ${path.length};
     strategy->path = (Bezier**) malloc(sizeof(Bezier*) * strategy->length);
@@ -59,8 +56,7 @@ Strategy* strategy_initialize() {
     }
 
     out += `
-    return strategy;
-}`
+    return strategy;`
 
     return out.trim();
 }
