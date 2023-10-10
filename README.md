@@ -67,10 +67,15 @@ Les servomoteurs respectent avec précision la position angulaire. Ils ont une r
 10/10/2023
 
 I. Décisions liées à la partie mécanique:
+
  - Dans les 6 zones de stockage deux caches-pots sont empilés. Puisque nous ne savons pas si le cache-pot sera en métal ou en impression 3D, nous choisisons de palier ce problème en adoptant la méthode suivante : pose d'une plante dans les deux caches-pots empilés et placement dans les jardinières (comptera pour 1 point).
+   
  - Première idée de stratégie pour ramasser les pots : Notre but est de récupérer des caches-pots et d'en avoir toujours en stock. Nous voulons mettre les plantes dans les caches-pots déjà stockés. Par ailleurs, si nous n'avons plus la possibilité de récupérer des caches-pots alors quelques emplacements auront un diamètre adapté à ceux des plantes fragiles. Lorsqu'il n'y aura plus de caches-pots à récupérer, nous utiliserons un capteur de couleur pour détecter si le robot prend une plante fragile ou une plante résitsante. Si la plantes est résistante alors la base du robot la poussera jusqu'à la zone de dépose des plantes. Si la plante est fragile alors elle sera stocké dans les emplacements adaptés situés dans le stockage avant de les déposer dans les jardinières.
- - Idée finale de stratégie pour ramasser les pots:
+   
+ - Idée finale de stratégie pour ramasser les pots: Chaque caches-pots et chaque plante, de n'importe quel type, sera ramassé par la pince liée à l'ascenseur. Le système vérifiera quel type d'objet est encerclé par la pince. Pour chaque montée d'objet, un capteur détermine si c'est un cache-pot ou une plante (rigide ou fragile). Si c'est un cache-pot alors il est dircetement déposé dans l'espace de stockage s'il reste un emplacement vide. Si c'est une plante fragile alors elle est déposée dans un emplacement qui contient déjà un pot. Si c'est uen plante rigide alors elle est déposée dans un emplacement vide si c'est possible, sinon elle est déposée dans un emplacement qui contient un pot.
+   
  - Résolution de l'éclairement des panneaux solaires: positionnement de deux crémaillères sur le côté du robot afin d'appuyer sur le côté du panneau solaire afin de le faire tourner d'un quart de tour.
- -  Dépot des plantes avec leurs caches-pots dans les jardinières:
+   
+ -  Dépot des plantes avec leurs caches-pots dans les jardinières: Une pince, située à l'arrière du robot, monte et descend pour récupérer les pots avec les plantes dans l'espace de stockage. Elle tourne de 180° et descend pour poser le pot dans la jardinière. 
 
 
