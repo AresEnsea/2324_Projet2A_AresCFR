@@ -27,6 +27,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Élaboration de la machine à états de la MPDS
 - Observations sur le fonctionnement du lidar TOF
 - Étude du code pour le simulateur : Correction de la superposition entre la grille et l'image de la table de jeu, dont le décalage rendait les coordonnées fausses
+- Elaboration plus précise de la stratégie mécanique
+- Amélioration de l'architecture du système : création de la partie asservissement
 
 ### 17 octobre (J-204)
 - Anniversaire d'Ousmane :)
