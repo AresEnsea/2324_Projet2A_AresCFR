@@ -29,7 +29,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Étude du code pour le simulateur : Correction de la superposition entre la grille et l'image de la table de jeu, dont le décalage rendait les coordonnées fausses
 - Elaboration plus précise de la stratégie mécanique
 - Amélioration de l'architecture du système : création de la partie asservissement
-
+https://www.mermaidchart.com/raw/1a382247-4077-4792-a1e2-eea8b304dafd?version=v0.1&theme=light&format=svg
 ### 17 octobre (J-204)
 - Anniversaire d'Ousmane :)
 - Présentation de projet n°2 : Avancée sur ROS, Diagramme d'architecture du robot
