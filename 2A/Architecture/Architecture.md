@@ -1,4 +1,4 @@
-# Architecture de l'asservissement Mermaid:
+# Architecture de l'asservissement :
 
 ```mermaid
 flowchart TD;
