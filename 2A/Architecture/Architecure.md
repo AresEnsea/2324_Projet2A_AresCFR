@@ -50,3 +50,4 @@ de stockage"}
 Arrivee-->|non| MontéPince
 Arrivee-->|oui| Ouverture["ouverture de la pince pour l'acher l'objet"]-->
 Fin(["`Fin stockage`"])
+```
