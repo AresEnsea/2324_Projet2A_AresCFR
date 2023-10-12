@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart TD;
-  Debut[/"`Ramassage des objets`"\] -->Detect[/"`Detection d'un objet`"/]-->Objet{Objet ?};
+  DebutT[/"`Ramassage des objets`"\] -->Detect[/"`Detection d'un objet`"/]-->Objet{Objet ?};
   Objet-->|non| Debut[/"`Detection d'un objet`"/];
   Objet-->|oui| Plante{Plante ?};
 
