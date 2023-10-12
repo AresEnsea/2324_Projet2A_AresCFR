@@ -3,7 +3,7 @@
 ```mermaid
 flowchart TD;
   DebutT[/"`Ramassage des objets`"\] -->Detect[/"`Detection d'un objet`"/]-->Objet{Objet ?};
-  Objet-->|non| Debut[/"`Detection d'un objet`"/];
+  Objet-->|non| Detect[/"`Detection d'un objet`"/];
   Objet-->|oui| Plante{Plante ?};
 
   Plante -->|oui| ObjetPlante["objet = plante"]-->rigide[/"`Detection du type de plante`"/];
