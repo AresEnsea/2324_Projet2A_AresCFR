@@ -74,7 +74,7 @@ I. Décisions liées à la partie mécanique:
    
  - Idée finale de stratégie pour ramasser les pots: Chaque caches-pots et chaque plante, de n'importe quel type, sera ramassé par la pince liée à l'ascenseur. Le système vérifiera quel type d'objet est encerclé par la pince. Pour chaque montée d'objet, un capteur détermine si c'est un cache-pot ou une plante (rigide ou fragile). Si c'est un cache-pot alors il est dircetement déposé dans l'espace de stockage s'il reste un emplacement vide. Si c'est une plante fragile alors elle est déposée dans un emplacement qui contient déjà un pot. Si c'est uen plante rigide alors elle est déposée dans un emplacement vide si c'est possible, sinon elle est déposée dans un emplacement qui contient un pot.
    
- - Résolution de l'éclairement des panneaux solaires: positionnement de deux crémaillères sur le côté du robot afin d'appuyer sur le côté du panneau solaire afin de le faire tourner d'un quart de tour.
+ - Résolution de l'éclairement des panneaux solaires: positionnement de deux crémaillères sur le côté du robot afin d'appuyer sur le côté du panneau solaire pour le faire tourner d'un quart de tour.
    
  -  Dépot des plantes avec leurs caches-pots dans les jardinières: Une pince, située à l'arrière du robot, monte et descend pour récupérer les pots avec les plantes dans l'espace de stockage. Elle tourne de 180° et descend pour poser le pot dans la jardinière. 
 
