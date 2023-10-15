@@ -1,0 +1,5 @@
+../Prod/Src/serial.c:14:6:parser32	1
+../Prod/Src/serial.c:44:5:serial_send	7
+../Prod/Src/serial.c:77:6:WifiUartTXActivation	1
+../Prod/Src/serial.c:83:6:WifiUartTXDeactivation	1
+../Prod/Src/serial.c:89:6:HAL_UART_RxCpltCallback	13

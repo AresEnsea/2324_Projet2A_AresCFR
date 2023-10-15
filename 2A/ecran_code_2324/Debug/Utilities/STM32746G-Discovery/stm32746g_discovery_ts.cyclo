@@ -1,0 +1,8 @@
+../Utilities/STM32746G-Discovery/stm32746g_discovery_ts.c:146:9:BSP_TS_Init	2
+../Utilities/STM32746G-Discovery/stm32746g_discovery_ts.c:176:9:BSP_TS_DeInit	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_ts.c:186:9:BSP_TS_ITConfig	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_ts.c:211:9:BSP_TS_ITGetStatus	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_ts.c:222:9:BSP_TS_GetState	23
+../Utilities/STM32746G-Discovery/stm32746g_discovery_ts.c:342:9:BSP_TS_Get_GestureId	9
+../Utilities/STM32746G-Discovery/stm32746g_discovery_ts.c:386:6:BSP_TS_ITClear	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_ts.c:404:9:BSP_TS_ResetTouchData	2

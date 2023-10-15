@@ -1,0 +1,11 @@
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:194:9:BSP_QSPI_Read	3
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:240:9:BSP_QSPI_Write	8
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:314:9:BSP_QSPI_Erase_Block	4
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:356:9:BSP_QSPI_Erase_Chip	4
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:396:9:BSP_QSPI_GetStatus	5
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:449:9:BSP_QSPI_GetInfo	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:465:9:BSP_QSPI_EnableMemoryMappedMode	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:510:13:BSP_QSPI_MspInit	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:124:9:BSP_QSPI_Init	12
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:576:13:BSP_QSPI_MspDeInit	1
+../Utilities/STM32746G-Discovery/stm32746g_discovery_qspi.c:171:9:BSP_QSPI_DeInit	2

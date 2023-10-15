@@ -1,0 +1,2 @@
+../lvgl/src/draw/sw/lv_draw_sw_arc.c:493:13:get_rounded_area	3
+../lvgl/src/draw/sw/lv_draw_sw_arc.c:60:6:lv_draw_sw_arc	103

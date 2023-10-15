@@ -1,0 +1,7 @@
+../Prod/Src/lidar.c:9:6:lidar_initialize	2
+../Prod/Src/lidar.c:16:6:lidar_updateDistance	1
+../Prod/Src/lidar.c:23:5:lidar_getDistance	3
+../Prod/Src/lidar.c:76:6:lidar_pathIsClear	1
+../Prod/Src/lidar.c:84:6:lidar_frontIsClear	3
+../Prod/Src/lidar.c:103:6:lidar_backIsClear	4
+../Prod/Src/lidar.c:127:6:lidar_incrementTime	3

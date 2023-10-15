@@ -1,0 +1,7 @@
+../HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c:122:19:HAL_RCCEx_PeriphCLKConfig	58
+../HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c:682:6:HAL_RCCEx_GetPeriphCLKConfig	1
+../HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c:1400:10:HAL_RCCEx_GetPeriphCLKFreq	13
+../HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c:1603:19:HAL_RCCEx_EnablePLLI2S	5
+../HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c:1664:19:HAL_RCCEx_DisablePLLI2S	3
+../HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c:1691:19:HAL_RCCEx_EnablePLLSAI	5
+../HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c:1753:19:HAL_RCCEx_DisablePLLSAI	3

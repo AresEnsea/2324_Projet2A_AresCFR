@@ -1,0 +1,5 @@
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:244:6:lv_gradient_free_cache	1
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:251:6:lv_gradient_set_cache_size	2
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:305:39:lv_gradient_calculate	4
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:260:13:lv_gradient_get	29
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:348:6:lv_gradient_cleanup	2
