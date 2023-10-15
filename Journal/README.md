@@ -33,8 +33,9 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 
 ### 17 octobre (J-204)
-- Anniversaire d'Ousmane :)
-- Présentation de projet n°2 : Avancée sur ROS, Diagramme d'architecture du robot
+- Intégration du simulateur au site web de l'association afin de le rendre accessible à tous + correction mineure de l'exportation du code C
+- Présentation de projet n°2 : Logigramme d'asservissement et diagrammes d'architecture du Robot, ROS 2 et logicielle
+- Début de création de l'IHM pour la MPDS : UI réalisée avec PyQt3
 
 ### 24 octobre (J-197)
 - 
