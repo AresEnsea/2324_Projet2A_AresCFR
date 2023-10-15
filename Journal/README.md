@@ -28,7 +28,10 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Observations sur le fonctionnement du lidar TOF
 - Étude du code pour le simulateur : Correction de la superposition entre la grille et l'image de la table de jeu, dont le décalage rendait les coordonnées fausses
 - Elaboration plus précise de la stratégie mécanique
-- Amélioration de l'architecture du système : création de la partie asservissement
+- Amélioration de l'architecture du système : création de la partie asservissement (ramassage et lâchage des objets)
+- Création des conceptions 3D des pièces mécaniuques (les 2 pinces ainsi que l'ascenseur et la base du robot)
+
+
 ### 17 octobre (J-204)
 - Anniversaire d'Ousmane :)
 - Présentation de projet n°2 : Avancée sur ROS, Diagramme d'architecture du robot
