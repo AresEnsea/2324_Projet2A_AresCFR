@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TLA2518")(type "KiCad")(uri "${KIPRJMOD}/TLA2518.pretty")(options "")(descr ""))
+)
