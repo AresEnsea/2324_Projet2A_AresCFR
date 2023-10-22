@@ -38,6 +38,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Début de création de l'IHM pour la MPDS : UI réalisée avec PyQt3
 - Finalisation des choix de dimensions pour les pièces mécaniques
 - Recherche au sujet des capteurs de couleurs
+- Ajout sur le wiki du tutoriel pour calibrer l'odométrie du robot
 
 ### 24 octobre (J-197)
 - 
