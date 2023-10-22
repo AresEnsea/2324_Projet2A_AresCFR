@@ -78,4 +78,46 @@ I. Décisions liées à la partie mécanique:
    
  -  Dépot des plantes avec leurs caches-pots dans les jardinières: Une pince, située à l'arrière du robot, monte et descend pour récupérer les pots avec les plantes dans l'espace de stockage. Elle tourne de 180° et descend pour poser le pot dans la jardinière. 
 
+17/10/2023
+
+I. Informations concernant les actionneurs 
+
+I.a Servomoteur Dynamixel AX-12 :
+
+
+![Dimension_AX12](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fd9a31f6-4919-4906-8de5-4d902d7033c9)
+
+
+Caractéristiques:
+- Tension de fonctionnement: 9 à 12V
+- Couple décrochage (N.m) : 1,52 à 12V et 1,5A
+- Vitesse hors-charge: 59 tours/minute
+- Vitesse: 0,196 s/60° (à 10 Vcc)
+- Température opérationnelle: -5°C à 70°C
+- Vitesse de communication: 7343 bps à 1 Mbps
+- Compatible avec AX-12+ à l'échelle 1:1
+- Rapport de réduction: 254:1
+- Poids : 54,6g
+- Dimensions (mm) : 32 x 50,1 x 40
+
+Détails :
+- Fonctionnement en rotation continue ou de 0 à 300°.
+- Le contrôleur de ce servomoteur permet un retour d'information de la position, de la température, du couple et de la tension d'alimentation.
+- Les moteurs disposent de deux connecteurs 3 broches (cordon inclus) permettant de relier plusieurs moteurs en cascade et de les utiliser ensemble.
+- Vérification de la mise à zéro grâce à deux encoches.
+- Idée de code : CDR2022_23->2A->Project__Ax12->Core->main
+
+I.b MircoServo MG90S :
+
+![MG](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/1fdad03c-f377-424a-b16b-8ded5f14ea7e)
+
+
+Caractéristiques :
+- Tension : 4,8 V - 6,0 V
+- Vitesse : 0,10 s / 60 degrés
+- Couple : 1,8 kg/cm (4,8 V)
+- Température : -30 à +60
+- Bande passante morte : 5usec
+
+
 
