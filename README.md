@@ -107,7 +107,7 @@ Détails :
 - Vérification de la mise à zéro grâce à deux encoches.
 - Idée de code : CDR2022_23->2A->Project__Ax12->Core->main
 
-I.b MircoServo MG90S :
+I.b MircoServomoteur MG90S :
 
 ![MG](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/1fdad03c-f377-424a-b16b-8ded5f14ea7e)
 
@@ -119,5 +119,24 @@ Caractéristiques :
 - Température : -30 à +60
 - Bande passante morte : 5usec
 
+I.b Servomoteur SG90 :
 
+![servomoteursg90](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/10ae2e94-4ac3-4459-a957-0c6edcf10ca0)
+![dimension_sg90](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fc6bb665-7202-4726-9e84-5d290d8fb4c5)
+
+
+
+– Dimensions : 22 x 11.5 x 27 mm
+– Poids : 9 g
+– Tension d’alimentation : 4.8V à 6V
+– Vitesse : 0.12 s / 60° sous 4.8V
+– Couple : 1.2 Kg / cm sous 4.8V
+– Amplitude : de 0° à 180°
+
+Correspondance des fils de la prise de type Graupner à 3 fils :
+marron -> masse
+rouge -> 5V
+orange -> commande
+
+Détails : exemple de code ARDU*** : https://robotix.ah-oui.org/user_docs/dos10/sg90-datasheet.pdf
 
