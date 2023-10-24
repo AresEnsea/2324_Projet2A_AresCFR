@@ -41,4 +41,4 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Ajout sur le wiki du tutoriel pour calibrer l'odométrie du robot
 
 ### 24 octobre (J-197)
-- 
+- Étude du code des années passées
