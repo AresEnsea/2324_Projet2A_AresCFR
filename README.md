@@ -76,7 +76,7 @@ I. Décisions liées à la partie mécanique:
    
  - Résolution de l'éclairement des panneaux solaires: positionnement de deux crémaillères sur le côté du robot afin d'appuyer sur le côté du panneau solaire pour le faire tourner d'un quart de tour.
    
- -  Dépot des plantes avec leurs caches-pots dans les jardinières: Une pince, située à l'arrière du robot, monte et descend pour récupérer les pots avec les plantes dans l'espace de stockage. Elle tourne de 180° et descend pour poser le pot dans la jardinière. 
+ -  Dépot des plantes avec leurs caches-pots dans les jardinières: Une pince est située à l'arrière du robot. A l'endroit où les pots peuvent sortir de l'espace de stockage, nous plaçons une plaque en bois posée sur des rails qui avance et recule selon une direction. La taille de la plaque en bois est : 75mm*75mm*6mm. De plus, nous plaçons une pince à 75 mm de distance de l'espace de stockage. Celle-ci va récupérer les pots grâce à la plaque de bois qui avance.
 
 17/10/2023
 
