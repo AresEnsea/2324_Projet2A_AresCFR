@@ -1,5 +1,0 @@
-../lvgl/src/draw/sw/lv_draw_sw_blend.c:654:26:color_blend_true_color_additive	3
-../lvgl/src/draw/sw/lv_draw_sw_blend.c:707:26:color_blend_true_color_subtractive	3
-../lvgl/src/draw/sw/lv_draw_sw_blend.c:733:26:color_blend_true_color_multiply	3
-../lvgl/src/draw/sw/lv_draw_sw_blend.c:95:6:lv_draw_sw_blend	4
-../lvgl/src/draw/sw/lv_draw_sw_blend.c:108:28:lv_draw_sw_blend_basic	156

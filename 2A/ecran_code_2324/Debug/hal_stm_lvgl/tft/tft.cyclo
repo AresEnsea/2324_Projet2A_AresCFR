@@ -1,6 +1,0 @@
-../hal_stm_lvgl/tft/tft.c:486:13:DMA_TransferError	1
-../hal_stm_lvgl/tft/tft.c:171:13:ex_disp_flush	6
-../hal_stm_lvgl/tft/tft.c:215:13:ex_disp_clean_dcache	3
-../hal_stm_lvgl/tft/tft.c:455:13:DMA_TransferComplete	5
-../hal_stm_lvgl/tft/tft.c:111:6:tft_init	4
-../hal_stm_lvgl/tft/tft.c:496:6:DMA2_Stream0_IRQHandler	1

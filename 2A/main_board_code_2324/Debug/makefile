@@ -61,8 +61,8 @@ all: main-build
 main-build: main_board_code_2324.elf secondary-outputs
 
 # Tool invocations
-main_board_code_2324.elf main_board_code_2324.map: $(OBJS) $(USER_OBJS) /home/mowibox/Documents/WorkspaceU/Git_Folders/2324_Projet2A_AresCFR/2A/main_board_code_2324/STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "main_board_code_2324.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/mowibox/Documents/WorkspaceU/Git_Folders/2324_Projet2A_AresCFR/2A/main_board_code_2324/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="main_board_code_2324.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+main_board_code_2324.elf main_board_code_2324.map: $(OBJS) $(USER_OBJS) C:\Workspace\Git_folders\2324_Projet2A_AresCFR\2A\main_board_code_2324\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "main_board_code_2324.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\2324_Projet2A_AresCFR\2A\main_board_code_2324\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="main_board_code_2324.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

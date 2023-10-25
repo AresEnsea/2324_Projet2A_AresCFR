@@ -5,7 +5,7 @@ Strategy* strategy_initialize(int num) {
 	if(num == 0 || num == 1)
 	{
 		Strategy* strategy = (Strategy*) malloc(sizeof(Strategy));
-		    strategy->length = 2;
+		    strategy->length = 1;
 		    strategy->path = (Bezier**) malloc(sizeof(Bezier*) * strategy->length);
 
 		    strategy->directions = (Direction*) malloc(sizeof(Direction) * strategy->length);
@@ -16,14 +16,11 @@ Strategy* strategy_initialize(int num) {
 		    strategy->onMoveActions = (uint8_t**) malloc(sizeof(uint8_t*) * (strategy->length+1));
 		    strategy->onMoveActionsLengths = (int*) calloc((strategy->length+1), sizeof(int));
 
-		    strategy->path[0] = bezier_new(307.684, 1672.744, 407.684, 1672.744, 502.797, 1510.182, 602.797, 1510.182, 30);
-		    strategy->path[1] = bezier_new(602.797, 1510.182, 702.797, 1510.182, 960.373, 1391.608, 960.373, 1391.608, 30);
+		    strategy->path[0] = bezier_new(2534.680, 1000, 2073.277, 1001.624, 558.713, 1000, 450.014, 1000, 30);
 
 		    strategy->directions[0] = FORWARD;
-		    strategy->directions[1] = FORWARD;
 
 		    strategy->speeds[0] = 1000;
-		    strategy->speeds[1] = 1000;
 
 
 
