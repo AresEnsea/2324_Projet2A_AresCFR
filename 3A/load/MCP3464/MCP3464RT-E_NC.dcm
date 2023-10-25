@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP3464RT-E_NC
+D Analog to Digital Converters - ADC 16-bit delta-sigma ADC w/Vref, Quad channel, 3V
+K
+F https://componentsearchengine.com/Datasheets/2/MCP3464RT-E_NC.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "load")(type "KiCad")(uri "${KIPRJMOD}/load.kicad_sym")(options "")(descr ""))
+  (lib (name "TLA2518IRTER")(type "KiCad")(uri "${KIPRJMOD}/TLA2518/TLA2518IRTER.kicad_sym")(options "")(descr ""))
+)

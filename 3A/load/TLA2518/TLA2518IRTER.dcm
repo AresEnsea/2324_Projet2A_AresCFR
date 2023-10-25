@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLA2518IRTER
+D Analog to Digital Converters - ADC Small 8-channel 12-bit analog-to-digital converter (ADC) with SPI interface and GPIOs 16-WQFN -40 to 85
+K
+F http://www.ti.com/lit/ds/symlink/tla2518.pdf
+$ENDCMP
+#
+#End Doc Library

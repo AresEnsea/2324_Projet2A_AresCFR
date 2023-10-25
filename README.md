@@ -76,6 +76,67 @@ I. Décisions liées à la partie mécanique:
    
  - Résolution de l'éclairement des panneaux solaires: positionnement de deux crémaillères sur le côté du robot afin d'appuyer sur le côté du panneau solaire pour le faire tourner d'un quart de tour.
    
- -  Dépot des plantes avec leurs caches-pots dans les jardinières: Une pince, située à l'arrière du robot, monte et descend pour récupérer les pots avec les plantes dans l'espace de stockage. Elle tourne de 180° et descend pour poser le pot dans la jardinière. 
+ -  Dépot des plantes avec leurs caches-pots dans les jardinières: Une pince est située à l'arrière du robot. A l'endroit où les pots peuvent sortir de l'espace de stockage, nous plaçons une plaque en bois posée sur des rails qui avance et recule selon une direction. La taille de la plaque en bois est : 75mm*75mm*6mm. De plus, nous plaçons une pince à 75 mm de distance de l'espace de stockage. Celle-ci va récupérer les pots grâce à la plaque de bois qui avance.
 
+17/10/2023
+
+I. Informations concernant les actionneurs 
+
+I.a Servomoteur Dynamixel AX-12 :
+
+
+![Dimension_AX12](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fd9a31f6-4919-4906-8de5-4d902d7033c9)
+
+
+Caractéristiques:
+- Tension de fonctionnement: 9 à 12V
+- Couple décrochage (N.m) : 1,52 à 12V et 1,5A
+- Vitesse hors-charge: 59 tours/minute
+- Vitesse: 0,196 s/60° (à 10 Vcc)
+- Température opérationnelle: -5°C à 70°C
+- Vitesse de communication: 7343 bps à 1 Mbps
+- Compatible avec AX-12+ à l'échelle 1:1
+- Rapport de réduction: 254:1
+- Poids : 54,6g
+- Dimensions (mm) : 32 x 50,1 x 40
+
+Détails :
+- Fonctionnement en rotation continue ou de 0 à 300°.
+- Le contrôleur de ce servomoteur permet un retour d'information de la position, de la température, du couple et de la tension d'alimentation.
+- Les moteurs disposent de deux connecteurs 3 broches (cordon inclus) permettant de relier plusieurs moteurs en cascade et de les utiliser ensemble.
+- Vérification de la mise à zéro grâce à deux encoches.
+- Idée de code : CDR2022_23->2A->Project__Ax12->Core->main
+
+I.b MircoServomoteur MG90S :
+
+![MG](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/1fdad03c-f377-424a-b16b-8ded5f14ea7e)
+
+
+Caractéristiques :
+- Tension : 4,8 V - 6,0 V
+- Vitesse : 0,10 s / 60 degrés
+- Couple : 1,8 kg/cm (4,8 V)
+- Température : -30 à +60
+- Bande passante morte : 5usec
+
+I.b Servomoteur SG90 :
+
+![servomoteursg90](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/10ae2e94-4ac3-4459-a957-0c6edcf10ca0)
+![dimension_sg90](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fc6bb665-7202-4726-9e84-5d290d8fb4c5)
+
+
+
+– Dimensions : 22 x 11.5 x 27 mm
+– Poids : 9 g
+– Tension d’alimentation : 4.8V à 6V
+– Vitesse : 0.12 s / 60° sous 4.8V
+– Couple : 1.2 Kg / cm sous 4.8V
+– Amplitude : de 0° à 180°
+
+Correspondance des fils de la prise de type Graupner à 3 fils :
+marron -> masse
+rouge -> 5V
+orange -> commande
+
+Détails : exemple de code ARDU*** : https://robotix.ah-oui.org/user_docs/dos10/sg90-datasheet.pdf
 
