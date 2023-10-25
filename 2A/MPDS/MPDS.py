@@ -15,12 +15,17 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
 
-class Window(QMainWindow):
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QGraphicsView, QGraphicsScene
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtCore import Qt
+
+class GridWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         
-        self.setGeometry(100, 100, 1300, 670)  # Définition de la taille de la fenêtre
-        self.setWindowTitle("Méthode des Points de Sûreté (MPDS)")
+        self.setGeometry(100, 100, 1300, 670)
+        self.setWindowTitle("Méthode des points de sûreté (MPDS)")
         
         self.initUI()
     
@@ -28,48 +33,44 @@ class Window(QMainWindow):
         scene = QGraphicsScene()
         
         # Dimensions de la grille
-
-        grid_width = 1000
+        grid_width = 1000  # Ajustez la largeur de la grille
         grid_height = 667
+        cell_size = 20
 
-        cell_size = 20  # Taille d'une cellule
-
-        #Image d'arrière-plan (de dimension 1000x660)
-        background_image = QGraphicsPixmapItem(QPixmap("table.jpg"))
+        background_image = QGraphicsPixmapItem(QPixmap("img/table.jpg"))
         scene.addItem(background_image)
         
         # Création de la grille
         for x in range(0, grid_width, cell_size):
             for y in range(0, grid_height, cell_size):
-                # Crée un point cliquable à chaque intersection
-                point = QGraphicsEllipseItem(x, y, 5, 5)  # 5x5 pixels
-                point.setBrush(Qt.gray)  
-                point.setFlag(QGraphicsEllipseItem.ItemIsSelectable)  # Rendre le point cliquable
+                point = QGraphicsEllipseItem(x, y, 5, 5)
+                point.setBrush(Qt.gray)
+                point.setFlag(QGraphicsEllipseItem.ItemIsSelectable)
                 scene.addItem(point)
         
-        x_robot = 50  
-        y_robot = 70  
-        theta_robot = 90  
+        # Charger une image pour l'arrière-plan
         
-        # Création d'un triangle (flèche) pour le robot
-        triangle = QPolygonF()
-        triangle.append(QPoint(x_robot - 20, y_robot))
-        triangle.append(QPoint(x_robot + 40, y_robot))
-        triangle.append(QPoint(x_robot + 10, y_robot - 70))
-        triangle_item = scene.addPolygon(triangle, QPen(Qt.darkGreen), QBrush(Qt.green))
         
-        # Rotation du triangle pour l'angle theta_robot
-        triangle_item.setTransformOriginPoint(QPoint(x_robot, y_robot))
-        triangle_item.setRotation(theta_robot)
+        # Coordonnées du robot
+        x_robot = 25  # Ajustez les coordonnées x du robot
+        y_robot = 125  # Ajustez les coordonnées y du robot
+        theta_robot = -90  # Ajustez l'angle du robot en degrés
         
+        # Charger l'image du robot
+        robot_image = QGraphicsPixmapItem(QPixmap("img/robot.png"))
+        # Positionner l'image du robot et le faire tourner
+        robot_image.setPos(x_robot, y_robot)
+        robot_image.setRotation(theta_robot)
+        scene.addItem(robot_image)
+        
+        # Créer une vue personnalisée
         view = QGraphicsView(scene, self)
         view.setAlignment(Qt.AlignLeft)
         self.setCentralWidget(view)
-        
 
 def main():
     app = QApplication(sys.argv)
-    window = Window()
+    window = GridWindow()
     window.show()
     sys.exit(app.exec_())
 
