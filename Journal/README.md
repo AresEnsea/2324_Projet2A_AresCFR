@@ -44,3 +44,24 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Étude du code des années passées
 - Installation de la nouvelle table
 - Ajout de tutoriels et d'informations supplémentaires sur le wiki
+
+### Mardi 7 novembre (J-183)
+- 
+
+### Mardi 14 novembre (J-176)
+- Présentation de projet n°3 :
+
+### Mardi 28 novembre (J-162)
+-
+
+### Mardi 5 décembre (J-155)
+-
+
+### Mardi 12 décembre (J-148)
+- Présentation de projet n°4 :
+
+### Mardi 19 décembre (J-141)
+-
+
+
+
