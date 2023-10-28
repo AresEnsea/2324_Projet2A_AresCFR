@@ -44,6 +44,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Étude du code des années passées
 - Installation de la nouvelle table
 - Ajout de tutoriels et d'informations supplémentaires sur le wiki
+- Démarrage de la rédaction du cahier des charges à donner aux premières années pour les PAMI
 
 ### Mardi 7 novembre (J-183)
 - 
