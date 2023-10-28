@@ -17,7 +17,7 @@ typedef int bool;
 //#define ISDEIMOS
 
 
-/**************************** Config Age of bots *****************************/
+/**************************** Config Farming Mars *****************************/
 #define MATCH_DURATION 100
 
 

@@ -163,7 +163,7 @@ int main(void)
   bool waitingForMatchStart = true;
 
   printf("Waiting for start...\r\n");
-  pData[0] = '0';
+  pData[0] = 'o';
   int a = 0;
   while ((waitingForMatchStart == true)) {
   	  waitingForMatchStart = HAL_GPIO_ReadPin(START_GPIO_Port, START_Pin);
