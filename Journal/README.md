@@ -53,7 +53,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 ### Mardi 7 novembre (J-183)
 - Installation de ROS2 sur Ubuntu sur PC, prise en main de Gazebo, début de courbes avec phidgets desktop version...
-- Kicad de la carte de puissance pour tout brancher à des batteries pour Hugway 
+- Kicad de la carte de puissance pour tout brancher à des batteries pour Hugway
+- Création de la CAO de la pince avant du robot pour attraper les pots et les déposer sur la table ou dans les jardinières
 
 ### Mardi 14 novembre (J-176)
 - Présentation de projet n°3 :
