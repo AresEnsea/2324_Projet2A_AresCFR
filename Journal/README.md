@@ -30,6 +30,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Elaboration plus précise de la stratégie mécanique
 - Amélioration de l'architecture du système : création de la partie asservissement (ramassage et lâchage des objets)
 - Création des conceptions 3D des pièces mécaniuques (les 2 pinces ainsi que l'ascenseur et la base du robot)
+- Création de l'organigramme des packages ROS2, étude du Hardware pour le Robot ROS2 avec des phidgets.
+- Commande des modules phidgets et découverte des librairies associés. 
 
 
 ### 17 octobre (J-204)
@@ -39,15 +41,19 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Finalisation des choix de dimensions pour les pièces mécaniques
 - Recherches au sujet des capteurs de couleurs
 - Ajout sur le wiki du tutoriel pour calibrer l'odométrie du robot
+- Réalisation de la mécanique des roues + odométrie de Hugway. Ajout des modules phidgets, modélisation 3D des supports de codeurs et roue. 
 
 ### 24 octobre (J-197)
 - Étude du code des années passées
 - Installation de la nouvelle table
 - Ajout de tutoriels et d'informations supplémentaires sur le wiki
 - Démarrage de la rédaction du cahier des charges à donner aux premières années pour les PAMI
+- Flash de la raspi avec docker
+- Choix d'utiliser ROS2 humble qui est supporté jusqu'en 2027 et connexion des modules phidgets aux composants de Hugway
 
 ### Mardi 7 novembre (J-183)
-- 
+- Installation de ROS2 sur Ubuntu sur PC, prise en main de Gazebo, début de courbes avec phidgets desktop version...
+- Kicad de la carte de puissance pour tout brancher à des batteries pour Hugway 
 
 ### Mardi 14 novembre (J-176)
 - Présentation de projet n°3 :
