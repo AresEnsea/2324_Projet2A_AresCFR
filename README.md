@@ -140,3 +140,21 @@ orange -> commande
 
 Détails : exemple de code ARDU*** : https://robotix.ah-oui.org/user_docs/dos10/sg90-datasheet.pdf
 
+
+
+Pendant les vacances de Novembre :
+
+Nous nous sommes focalisés sur la mécanique du projet afin d'avoir une vision globale du robot et de ses composants que nous devrons par la suite commander.
+La dernière grosse partie mécanique a concevoir est la pince avant du robot qui servira à attraper les pots et à les déposer sur la table ou dans les jardinières.
+
+Première version de la pince :
+![Pince_v1](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fe7242a5-99d1-424d-b7d5-a93475979640)
+
+
+
+Deuxième version de la pince :
+![Pince_v2](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/6610abc2-c8f3-4e79-8543-cfbe28270fe7)
+
+
+
+
