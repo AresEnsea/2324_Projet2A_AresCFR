@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "STM32")(type "KiCad")(uri "${KIPRJMOD}/STM32.kicad_sym")(options "")(descr ""))
+  (lib (name "Deimos")(type "Legacy")(uri "${KIPRJMOD}/Deimos.lib")(options "")(descr ""))
+  (lib (name "deimos_mat_de_balise-rescue")(type "Legacy")(uri "${KIPRJMOD}/deimos_mat_de_balise-rescue.lib")(options "")(descr ""))
+)
