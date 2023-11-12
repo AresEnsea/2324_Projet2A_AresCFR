@@ -157,4 +157,17 @@ Deuxième version de la pince :
 
 
 
+12/11/2023 :
+
+Première version de la CAO et de l'assemblage de l'ensemble des pièces du robot. [utilisation avec modifications de certaines pièces des années précédentes et modélisation de nouvelles pièces]
+Assemblage du robot : cette première version ne prend pas en compte la pince arrière car nous souhaitons d'abord être certain d'arriver à construire complètement une pince entièrement. Nous la dupliquerons par la suite pour la mettre à l'arrière du robot. 
+
+Changement de l'attache de la pince à l'ascenseur : 
+![Assemblage_Pince_V2 v37](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/890f7cac-70ed-4390-84d6-9c9ce3dcaf6a)
+
+
+Création de pièces et assemblages de celles-ci avec des pièces utilisées les années passées (ex: roues/batteries/équerres) pour concevoir le robot entièrement :
+
+![8](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/0ba9a741-baf9-45e4-96c7-05244d51a081)
+
 
