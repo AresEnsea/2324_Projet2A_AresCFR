@@ -1,27 +1,31 @@
-# Inventaire du lidar
+# Inventaire de la carte maire
 
+## Intelligence
+- Carte Nucleo F446RE
+- LED R971 (2pcs)
+- Resistance (10 pcs)
+  -100 ohms
+  -1k (9pcs)
+- Diode DF3A6 (6pcs)
+  
+## Motorisation
+- transistor PMOS 70327
+- transistor MBT3906DW1
+- resistance 10k (2pcs)
+- Driver drv8825 (2pcs)
+- Condensateur 100uF
+  
+## Odometrie
+- Resistance 4k (4pcs)
+- encoder
 ## Alimentation
-- Ampli buck 3v3 "datasheet à rajouter"
-- PMOS		       "datasheet à rajouter"
-- Diode transil	SM6T6V8A
-- Diode zener	CD0603
-- polyfuse	     "datasheet à rajouter"
-- resistance 	10k
-- condensateur  22u/10u
-
-## Capteur
-- TOF  VL53L1      (16 pcs)
-- resistance   10k (32 pcs)
-- condensateur 1uF (16 pcs)
-
-## MCU
-- STM32G070
-- quarz 16MHz "datasheet à rajouter"
-- Condensateur 20p (2pcs)
-- Condensateur 100n (2pcs)
-- Condensateur 4.7uF
-- NUP2105L
-- resistance 2.2k (2pcs)
-## LED
-- Led (16pcs)
-- resistance 3k (16pcs)
+- Fusible
+  - 10A
+  - 15A
+- Resistance (2pcs)
+  - 680ohm
+  - 10k
+- LED LG_R971
+- Convertisseur DC/DC TSR124540
+- PMOS S4985
+- SM6T24A
