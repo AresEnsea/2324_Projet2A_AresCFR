@@ -16,11 +16,12 @@
 
 ## MCU
 - STM32G070
-- quarz 32MHz "datasheet à rajouter"
+- quarz 16MHz "datasheet à rajouter"
 - Condensateur 20p (2pcs)
 - Condensateur 100n (2pcs)
 - Condensateur 4.7uF
-
+- NUP2105L
+- resistance 2.2k (2pcs)
 ## LED
 - Led (16pcs)
 - resistance 3k (16pcs)
