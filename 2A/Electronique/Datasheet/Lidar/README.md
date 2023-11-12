@@ -1,4 +1,4 @@
-# Inventaire du lidar
+# Inventaire de lidar
 
 ## Alimentation
 - Ampli buck 3v3 "datasheet à rajouter"
