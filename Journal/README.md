@@ -58,7 +58,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Création de la CAO de la pince avant du robot pour attraper les pots et les déposer sur la table ou dans les jardinières
 
 ### Mardi 14 novembre (J-176)
-- Présentation de projet n°3 :
+- Présentation de projet n°3 : CAO du Robot, refonte de la statégie d'évitement pour STM32, Avancement Robot Ugway (ROS2), Analyse des cartes électroniques 
 
 ### Mardi 28 novembre (J-162)
 -
