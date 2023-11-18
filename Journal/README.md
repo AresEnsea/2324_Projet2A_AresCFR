@@ -1,4 +1,4 @@
-# Journal de Bord d'Ares
+# Journal de Bord d'Ares 
 Ce dossier constitue le journal de bord d'Ares, retraçant les réalisations hebdomadaires de l'association.
 ## Tutoriels
 Tous les tutoriels et les méthodes de réalisations concernant la Coupe de France de Robotique 2024 sont regroupés sur le wiki de l'association : https://wiki.ares.asso-ensea.fr/index.php/Coupe_de_France_de_Robotique
