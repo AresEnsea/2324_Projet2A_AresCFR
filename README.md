@@ -171,3 +171,6 @@ Création de pièces et assemblages de celles-ci avec des pièces utilisées les
 ![8](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/0ba9a741-baf9-45e4-96c7-05244d51a081)
 
 
+27/11/2023
+
+-Finition de la première version de toutes les pièces du robot
