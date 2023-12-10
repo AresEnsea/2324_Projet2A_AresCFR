@@ -64,6 +64,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### Mardi 28 novembre (J-162)
 - Création d'un package ROS2 pour les capteurs TOF VL53L1X
 - Tentative de contact des ingénieurs d'Instar Robotics
+- Essai de fonctionnement du moteur avec ROS2
 
 ### Mardi 5 décembre (J-155)
 - Test de fonctionnement de la pince pour attraper les plantes
