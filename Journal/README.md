@@ -66,7 +66,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Tentative de contact des ingénieurs d'Instar Robotics
 
 ### Mardi 5 décembre (J-155)
--
+- Test de fonctionnement de la pince pour attraper les plantes
+- Alimentaiton du wiki d'Ares : Comment faire fonctionner un signal PWM sur STM32
 
 ### Mardi 12 décembre (J-148)
 - Présentation de projet n°4 :
