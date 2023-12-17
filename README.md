@@ -171,6 +171,17 @@ Création de pièces et assemblages de celles-ci avec des pièces utilisées les
 ![8](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/0ba9a741-baf9-45e4-96c7-05244d51a081)
 
 
-27/11/2023
+27/11/2023:
 
 -Finition de la première version de toutes les pièces du robot
+-Impression de toutes les pièces afin de les tester 
+
+Décembre 2023:
+
+-Modification du bord de soutien des pots. Utilisation d'une imprimante avec un plus grand plateau afin que la pièce soit imprimée en une fois pour ne pas avoir besoin de la découper en plusieurs parties. Nous avons également augmenter la hauteur de ce bord afin que la plaque en bois soit bien contrainte à rester au milieu de la pièce. Conception de pillones de soutien. 
+-Les tests de ce bord de soutien nous ont incité à agrandir son ouverture afin de laisser plus de place aux pots lors de leur sortie. 
+-Création de la pièce utilisée pour faire sortie les pots de l'espace de stockage. La modification à apporter et de modifier la form de celle-ci afin qu'elle soit identique à la forme des pots pour qu'elle soit correctement ajustée. 
+-Nous avons également ajouté les inserts et les vis dans chaque conception afin de monter le robot entièrement. 
+
+
+
