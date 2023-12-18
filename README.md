@@ -162,9 +162,8 @@ Deuxième version de la pince :
 Première version de la CAO et de l'assemblage de l'ensemble des pièces du robot. [utilisation avec modifications de certaines pièces des années précédentes et modélisation de nouvelles pièces]
 Assemblage du robot : cette première version ne prend pas en compte la pince arrière car nous souhaitons d'abord être certain d'arriver à construire complètement une pince entièrement. Nous la dupliquerons par la suite pour la mettre à l'arrière du robot. 
 
-Changement de l'attache de la pince à l'ascenseur : 
-![Assemblage_Pince_V2 v37](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/890f7cac-70ed-4390-84d6-9c9ce3dcaf6a)
-
+Changement de l'attache de la pince à l'ascenseur :  
+![Assemblage_Pince_V2 v38](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/M%C3%A9canique/CAO/Photos/Assemblage_Pince_V2%20v38.png)
 
 Création de pièces et assemblages de celles-ci avec des pièces utilisées les années passées (ex: roues/batteries/équerres) pour concevoir le robot entièrement :
 
@@ -179,9 +178,15 @@ Création de pièces et assemblages de celles-ci avec des pièces utilisées les
 Décembre 2023:
 
 -Modification du bord de soutien des pots. Utilisation d'une imprimante avec un plus grand plateau afin que la pièce soit imprimée en une fois pour ne pas avoir besoin de la découper en plusieurs parties. Nous avons également augmenter la hauteur de ce bord afin que la plaque en bois soit bien contrainte à rester au milieu de la pièce. Conception de pillones de soutien. 
--Les tests de ce bord de soutien nous ont incité à agrandir son ouverture afin de laisser plus de place aux pots lors de leur sortie. 
--Création de la pièce utilisée pour faire sortie les pots de l'espace de stockage. La modification à apporter et de modifier la form de celle-ci afin qu'elle soit identique à la forme des pots pour qu'elle soit correctement ajustée. 
--Nous avons également ajouté les inserts et les vis dans chaque conception afin de monter le robot entièrement. 
+-Les tests de ce bord de soutien nous ont incité à agrandir son ouverture afin de laisser plus de place aux pots lors de leur sortie.  
+-Création de la pièce utilisée pour faire sortie les pots de l'espace de stockage. La modification à apporter et de modifier la form de celle-ci afin qu'elle soit identique à la forme des pots pour qu'elle soit correctement ajustée.  
+-Nous avons également ajouté les inserts et les vis dans chaque conception afin de monter le robot entièrement.  
+-Les actionneurs AX12 on été remplacer par des petits cerveaux moteurs SG90 pour leur taille et leur facilité de commande.
 
+Amélioration à réaliser:  
 
+-Les bord du stockage sont un peu haut et certaine plante peuvent se coincer en passant sous le stockage.La solution est de changer la hauteur des pilier de soutient.  
+-Décaler la position de l'ascenseur pour laisser plus de place à la rotation des pots  
+-Augmenter la taille de l'ascenseur pour éviter la colision entre les pots.
+-Les roues ne touchent pas le sol il faudrat donc modifier la pièce de maitien des moteurs pas à pas.
 
