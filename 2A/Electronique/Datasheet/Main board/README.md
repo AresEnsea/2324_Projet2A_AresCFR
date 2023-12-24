@@ -1,11 +1,11 @@
-# Inventaire de la carte maire
+# Inventaire de la carte mère
 
 ## Intelligence
 - Carte Nucleo F446RE
 - LED R971 (2pcs)
 - Resistance (10 pcs)
-  -100 ohms
-  -1k (9pcs)
+  - 100 ohms
+  - 1k (9pcs)
 - Diode DF3A6 (6pcs)
   
 ## Motorisation

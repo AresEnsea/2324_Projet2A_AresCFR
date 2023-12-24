@@ -58,8 +58,12 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Création de la CAO de la pince avant du robot pour attraper les pots et les déposer sur la table ou dans les jardinières
 
 ### Mardi 14 novembre (J-176)
+<<<<<<< Updated upstream
 - Présentation de projet n°3 : CAO du Robot, refonte de la statégie d'évitement pour STM32, Avancement Robot Ugway (ROS2), Analyse des cartes électroniques
 - Conversion de la stratégie d'évitement (Python -> C)
+=======
+- Présentation de projet n°3 : CAO du Robot, refonte de la stratégie d'évitement pour STM32, Avancement Robot Ugway (ROS2), Analyse des cartes électroniques 
+>>>>>>> Stashed changes
 
 ### Mardi 28 novembre (J-162)
 - Création d'un package ROS2 pour les capteurs TOF VL53L1X

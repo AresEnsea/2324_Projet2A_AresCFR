@@ -1,5 +1,0 @@
-../Prod/Src/lidarReading.c:30:6:readFrame	4
-../Prod/Src/lidarReading.c:52:6:readHeader	4
-../Prod/Src/lidarReading.c:72:6:readValue	3
-../Prod/Src/lidarReading.c:100:6:frameStatus	13
-../Prod/Src/lidarReading.c:121:9:setFrameIndex	6
