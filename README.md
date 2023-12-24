@@ -21,6 +21,7 @@ Les méthodes utilisées par le robot Trooper sont:
 ![My Remote Image](https://cdn.sick.com/media/content/hf0/h55/13160303034398.jpg)
 
 Figure 1 - Robot Trooper
+
 </center>
 
 ## 03/10/2023: 
@@ -33,6 +34,7 @@ Idées : Positionner un capteur sur chaque côté du robot afin que le contact a
 ![aspirateur_robotique](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/2c2d610f-272f-42f1-89ed-1eb1d0f69897)
 
 Figure 2 - Robot Asprirateur
+
 </center>
                    
                    
@@ -55,6 +57,7 @@ Figure 3 - Capteur TOF : Fonctionnement
 ![385482582_334418605664017_5041229388081065512_n](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/134090919/ff0db04e-0340-4904-bc05-9bb8c706db25)
 
 Figure 4 - Schéma explicatif de la solution mécanique 
+
 </center>
 
 <center>
@@ -63,6 +66,7 @@ Figure 4 - Schéma explicatif de la solution mécanique
 
 
 Figure 5 - Modélisation 3D des pots à soulever (présence d'une bordure au sommet du pot) 
+
 </center>
 
 <center>
@@ -71,6 +75,7 @@ Figure 5 - Modélisation 3D des pots à soulever (présence d'une bordure au som
 
 
 Figure 6 - Modélisation 3D des plantes à soulever (ne présente pas de bordure)
+
 </center>
 
 1) La base du robot : en forme d'entonnoir pour guider les plantes et leurs pots jusqu'à l'endroit où se situe la première pince.
@@ -107,6 +112,7 @@ Les servomoteurs respectent avec précision une position angulaire donnée. Ils 
 <center>
 
 ![Dimension_AX12](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fd9a31f6-4919-4906-8de5-4d902d7033c9)
+
 </center>
 
 Caractéristiques:
@@ -133,6 +139,7 @@ Détails :
 <center>
 
 ![MG](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/1fdad03c-f377-424a-b16b-8ded5f14ea7e)
+
 </center>
 
 Caractéristiques :
@@ -148,6 +155,7 @@ Caractéristiques :
 
 ![servomoteursg90](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/10ae2e94-4ac3-4459-a957-0c6edcf10ca0)
 ![dimension_sg90](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fc6bb665-7202-4726-9e84-5d290d8fb4c5)
+
 </center>
 
 – Dimensions : 22 x 11.5 x 27 mm
@@ -173,6 +181,7 @@ La dernière grosse partie mécanique a concevoir est la pince avant du robot qu
 <center>
 
 ![Pince_v1](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/fe7242a5-99d1-424d-b7d5-a93475979640)
+
 </center>
 
 
@@ -181,6 +190,7 @@ La dernière grosse partie mécanique a concevoir est la pince avant du robot qu
 <center>
 
 ![Pince_v2](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/6610abc2-c8f3-4e79-8543-cfbe28270fe7)
+
 </center>
 
 
@@ -192,13 +202,14 @@ Assemblage du robot : cette première version ne prend pas en compte la pince ar
 
 #### Changement de l'attache de la pince à l'ascenseur :  
 
-![Assemblage_Pince_V2 v38](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/M%C3%A9canique/CAO/Photos/assemblage_23-24_v38.png)
+![Assemblage_Pince_V2 v38](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/M%C3%A9canique/CAO/Photos/Assemblage_Pince_V2_v38.png)
 
 Création de pièces et assemblage de celles-ci avec des pièces utilisées les années passées (ex: roues/batteries/équerres) pour concevoir le robot entièrement :
 
 <center>
 
 ![8](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/114668487/0ba9a741-baf9-45e4-96c7-05244d51a081)
+
 </center>
 
 ## 27/11/2023:
