@@ -58,12 +58,9 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Création de la CAO de la pince avant du robot pour attraper les pots et les déposer sur la table ou dans les jardinières
 
 ### Mardi 14 novembre (J-176)
-<<<<<<< Updated upstream
 - Présentation de projet n°3 : CAO du Robot, refonte de la statégie d'évitement pour STM32, Avancement Robot Ugway (ROS2), Analyse des cartes électroniques
 - Conversion de la stratégie d'évitement (Python -> C)
-=======
 - Présentation de projet n°3 : CAO du Robot, refonte de la stratégie d'évitement pour STM32, Avancement Robot Ugway (ROS2), Analyse des cartes électroniques 
->>>>>>> Stashed changes
 
 ### Mardi 28 novembre (J-162)
 - Création d'un package ROS2 pour les capteurs TOF VL53L1X
@@ -75,7 +72,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Alimentaiton du wiki d'Ares : Comment faire fonctionner un signal PWM sur STM32
 
 ### Mardi 12 décembre (J-148)
-- Présentation de projet n°4 :
+- Test de fonctionnement des capteurs TOF en ROS2
 
 ### Mardi 19 décembre (J-141)
 -
