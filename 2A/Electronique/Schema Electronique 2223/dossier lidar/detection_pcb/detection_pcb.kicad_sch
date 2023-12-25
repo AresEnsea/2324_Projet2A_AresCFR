@@ -1,0 +1,82 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid b8e35f24-ff22-4284-aa50-5284a26c27ab)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 184.785 26.035) (size 67.31 52.705) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 3e7e5c45-0101-4ab0-9386-5837f3a39538)
+    (property "Sheetname" "Sensors" (at 184.785 25.3234 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "sensors.kicad_sch" (at 184.785 79.3246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "detection_pcb"
+        (path "/b8e35f24-ff22-4284-aa50-5284a26c27ab" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 184.785 88.9) (size 66.675 52.07) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 5cdf0a87-2145-4d85-9b51-17e0a03072ac)
+    (property "Sheetname" "LED" (at 184.785 88.1884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "led.kicad_sch" (at 184.785 141.5546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "detection_pcb"
+        (path "/b8e35f24-ff22-4284-aa50-5284a26c27ab" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 30.48 26.035) (size 66.675 53.34) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 627a03ce-9a10-4cd6-adb8-1f4615bc3fd4)
+    (property "Sheetname" "Power supply" (at 30.48 25.3234 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "PSU.kicad_sch" (at 30.48 79.9596 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "detection_pcb"
+        (path "/b8e35f24-ff22-4284-aa50-5284a26c27ab" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 109.22 87.63) (size 66.675 53.34) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 79c054e5-8035-4db7-a1f1-c3aeef364a48)
+    (property "Sheetname" "mcu" (at 109.22 86.9184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "mcu.kicad_sch" (at 109.22 141.5546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "detection_pcb"
+        (path "/b8e35f24-ff22-4284-aa50-5284a26c27ab" (page "4"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

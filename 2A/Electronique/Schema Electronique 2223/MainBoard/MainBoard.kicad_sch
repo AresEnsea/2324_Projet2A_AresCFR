@@ -1,0 +1,82 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid d9206c9f-5419-4e76-8d5b-277d78963758)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 207.01 26.035) (size 48.26 38.1) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 6d231ae7-a8a8-43ea-b3c7-98ef1f461626)
+    (property "Sheetname" "ALIMENTATION" (at 207.01 25.3234 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "ALIMENTATION.kicad_sch" (at 207.01 64.7196 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MainBoard"
+        (path "/d9206c9f-5419-4e76-8d5b-277d78963758" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 25.4 25.4) (size 52.07 39.37) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 782fcb13-8f14-4c4c-bc2f-3b21160c463a)
+    (property "Sheetname" "Intelligence" (at 25.4 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Intelligence.kicad_sch" (at 25.4 65.3546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MainBoard"
+        (path "/d9206c9f-5419-4e76-8d5b-277d78963758" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 156.845 26.035) (size 45.085 38.735) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 8c15e91f-db2a-42f5-9e8c-c3a3da54bfef)
+    (property "Sheetname" "ODOMETRIE" (at 156.845 25.3234 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "ODOMETRIE.kicad_sch" (at 156.845 65.3546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MainBoard"
+        (path "/d9206c9f-5419-4e76-8d5b-277d78963758" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 99.06 26.035) (size 48.895 38.735) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid e7063b04-3aa6-4e45-b979-e71f32b3dbb9)
+    (property "Sheetname" "Motorisation" (at 99.06 25.3234 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Motorisation.kicad_sch" (at 99.06 65.3546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "MainBoard"
+        (path "/d9206c9f-5419-4e76-8d5b-277d78963758" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

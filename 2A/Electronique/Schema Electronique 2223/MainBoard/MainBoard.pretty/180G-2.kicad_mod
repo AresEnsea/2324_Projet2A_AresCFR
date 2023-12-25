@@ -1,0 +1,18 @@
+(footprint "180G-2" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "<b>WEIDMUELLER CLAMP CONNECTOR</b>")
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp a5353bb9-a61a-46b9-9e4d-26090aeb011d)
+  )
+  (fp_text value "Val**" (at 0 0) (layer "Rescue") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp 5dab0172-39a9-434d-9f23-14c207f1510e)
+  )
+  (fp_rect (start -4.18 1.5) (end 4.3 -8.5)
+    (stroke (width 0.12) (type solid)) (fill none) (layer "F.SilkS") (tstamp 9c2d6f9e-50e8-452d-9bba-1befb8d16dd9))
+  (pad "1" thru_hole circle (at -1.69 -0.1 90) (size 2.54 2.54) (drill 1.4224) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.1016) (tstamp d48f2d34-b447-404a-b464-1874a72e9c1a))
+  (pad "2" thru_hole circle (at 1.81 -0.1 90) (size 2.54 2.54) (drill 1.4224) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.1016) (tstamp 39f37558-cd43-458e-ae70-d2597d8e4ebc))
+)

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Deimos")(type "KiCad")(uri "${KIPRJMOD}/Deimos.pretty")(options "")(descr ""))
+)

@@ -1,6 +1,0 @@
-../Prod/Src/drv8825.c:4:6:drv8825_initialize	1
-../Prod/Src/drv8825.c:19:6:drv8825_setDirection	1
-../Prod/Src/drv8825.c:24:6:drv8825_enable	1
-../Prod/Src/drv8825.c:33:6:drv8825_disable	1
-../Prod/Src/drv8825.c:42:6:drv8825_setPWMFrequency	8
-../Prod/Src/drv8825.c:101:6:drv8825_setRotationSpeed	1

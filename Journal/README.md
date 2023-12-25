@@ -1,4 +1,4 @@
-# Journal de Bord d'Ares
+# Journal de Bord d'Ares 
 Ce dossier constitue le journal de bord d'Ares, retraçant les réalisations hebdomadaires de l'association.
 ## Tutoriels
 Tous les tutoriels et les méthodes de réalisations concernant la Coupe de France de Robotique 2024 sont regroupés sur le wiki de l'association : https://wiki.ares.asso-ensea.fr/index.php/Coupe_de_France_de_Robotique
@@ -58,19 +58,27 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Création de la CAO de la pince avant du robot pour attraper les pots et les déposer sur la table ou dans les jardinières
 
 ### Mardi 14 novembre (J-176)
-- Présentation de projet n°3 :
+- Présentation de projet n°3 : CAO du Robot, refonte de la statégie d'évitement pour STM32, Avancement Robot Ugway (ROS2), Analyse des cartes électroniques
+- Conversion de la stratégie d'évitement (Python -> C)
+- Présentation de projet n°3 : CAO du Robot, refonte de la stratégie d'évitement pour STM32, Avancement Robot Ugway (ROS2), Analyse des cartes électroniques 
 
 ### Mardi 28 novembre (J-162)
--
+- Création d'un package ROS2 pour les capteurs TOF VL53L1X
+- Tentative de contact des ingénieurs d'Instar Robotics
+- Essai de fonctionnement du moteur avec ROS2
 
 ### Mardi 5 décembre (J-155)
--
+- Test de fonctionnement de la pince pour attraper les plantes
+- Alimentaiton du wiki d'Ares : Comment faire fonctionner un signal PWM sur STM32
 
 ### Mardi 12 décembre (J-148)
-- Présentation de projet n°4 :
+- Test de fonctionnement des capteurs TOF en ROS2
 
 ### Mardi 19 décembre (J-141)
 -
+
+### Lundi 25 décembre (J-134)
+- Test de fonctionnement du capteur de couleur TCS3200
 
 
 
