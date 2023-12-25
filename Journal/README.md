@@ -77,5 +77,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### Mardi 19 décembre (J-141)
 -
 
+### Lundi 25 décembre (J-134)
+- Test de fonctionnement du capteur de couleur TCS3200
+
 
 
