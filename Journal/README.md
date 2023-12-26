@@ -40,7 +40,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Début de création de l'IHM pour la MPDS : UI réalisée avec PyQt3
 - Finalisation des choix de dimensions pour les pièces mécaniques
 - Recherches au sujet des capteurs de couleurs
-- Ajout sur le wiki du tutoriel pour calibrer l'odométrie du robot
+- Ajout sur le wiki du tutoriel pour calibrer l'odométrie du robot : https://wiki.ares.asso-ensea.fr/index.php/Robot_STM32_%E2%80%93_Calibration_de_l%27odom%C3%A9trie
 - Réalisation de la mécanique des roues + odométrie de Hugway. Ajout des modules phidgets, modélisation 3D des supports de codeurs et roue. 
 
 ### 24 octobre (J-197)
@@ -69,7 +69,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 ### Mardi 5 décembre (J-155)
 - Test de fonctionnement de la pince pour attraper les plantes
-- Alimentaiton du wiki d'Ares : Comment faire fonctionner un signal PWM sur STM32
+- Alimentaiton du wiki d'Ares - Comment faire fonctionner un signal PWM sur STM32 : https://wiki.ares.asso-ensea.fr/index.php/G%C3%A9n%C3%A9rer_des_signaux_PWM_avec_STM32_Cube_IDE
 
 ### Mardi 12 décembre (J-148)
 - Test de fonctionnement des capteurs TOF en ROS2
