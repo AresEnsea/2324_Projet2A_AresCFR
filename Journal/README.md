@@ -40,7 +40,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Début de création de l'IHM pour la MPDS : UI réalisée avec PyQt3
 - Finalisation des choix de dimensions pour les pièces mécaniques
 - Recherches au sujet des capteurs de couleurs
-- Ajout sur le wiki du tutoriel pour calibrer l'odométrie du robot
+- Ajout sur le wiki du tutoriel pour calibrer l'odométrie du robot : https://wiki.ares.asso-ensea.fr/index.php/Robot_STM32_%E2%80%93_Calibration_de_l%27odom%C3%A9trie
 - Réalisation de la mécanique des roues + odométrie de Hugway. Ajout des modules phidgets, modélisation 3D des supports de codeurs et roue. 
 
 ### 24 octobre (J-197)
@@ -48,12 +48,12 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Installation de la nouvelle table
 - Ajout de tutoriels et d'informations supplémentaires sur le wiki
 - Démarrage de la rédaction du cahier des charges à donner aux premières années pour les PAMI
-- Flash de la raspi avec docker
-- Choix d'utiliser ROS2 humble qui est supporté jusqu'en 2027 et connexion des modules phidgets aux composants de Hugway
+- Flash de la Raspberry avec docker
+- Choix d'utiliser ROS2 Humble qui est supporté jusqu'en 2027 et connexion des modules phidgets aux composants de Ugway
 
 ### Mardi 7 novembre (J-183)
 - Installation de ROS2 sur Ubuntu sur PC, prise en main de Gazebo, début de courbes avec phidgets desktop version...
-- Kicad de la carte de puissance pour tout brancher à des batteries pour Hugway
+- KiCad de la carte de puissance pour tout brancher à des batteries pour Hugway
 - Correction du wiki avec l'ajout de ROS2 
 - Création de la CAO de la pince avant du robot pour attraper les pots et les déposer sur la table ou dans les jardinières
 
@@ -69,16 +69,51 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 ### Mardi 5 décembre (J-155)
 - Test de fonctionnement de la pince pour attraper les plantes
-- Alimentaiton du wiki d'Ares : Comment faire fonctionner un signal PWM sur STM32
+- Alimentaiton du wiki d'Ares - Comment faire fonctionner un signal PWM sur STM32 : https://wiki.ares.asso-ensea.fr/index.php/G%C3%A9n%C3%A9rer_des_signaux_PWM_avec_STM32_Cube_IDE
 
 ### Mardi 12 décembre (J-148)
 - Test de fonctionnement des capteurs TOF en ROS2
 
 ### Mardi 19 décembre (J-141)
--
+- 
 
-### Lundi 25 décembre (J-134)
+### Lundi 25 décembre (J-135)
 - Test de fonctionnement du capteur de couleur TCS3200
 
+### Mardi 26 décembre (J-134)
+- Calibration du capteur de couleur, finalisation du code
+- Tentative de refonte du simulateur, prise de contact avec d'anciens membres de l'association
+- Finalisation du code de la pince pour attraper les pots et les plantes
 
+### Mardi 16 Janvier (J-113)
+-
 
+### Mardi 23 Janvier (J-106)
+- 
+
+### Jeudi 25 Janvier (J-104)
+- Match amical avec l'association de robotique Robotium
+
+### Mardi 30 Janvier (J-99)
+-
+
+### Mardi 6 Février (J-92)
+-
+
+### Mardi 27 Février (J-71)
+-
+
+### Mardi 5 Mars (J-64)
+-
+
+### Mardi 12 Mars (J-57)
+-
+
+### Mardi 19 Mars (J-50)
+-
+
+### Mardi 26 Mars (J-43)
+-
+
+### Mardi 2 Avril (J-36)
+-
