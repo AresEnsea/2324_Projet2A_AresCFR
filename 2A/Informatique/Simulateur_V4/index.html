@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ares Simulator V4</title>
+    <link rel="stylesheet" href="graphics/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#222">
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/decomp.js"></script>
+    <script src="lib/matter.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/bezier.js"></script>
+</head>
+
+<body>
+<div class="tool-bar">
+    <div class="selection tool" data-tip="Outil selection"></div>
+    <!-- <div class="segment tool" data-tip="Outil segment"></div> -->
+    <div class="pen tool" data-tip="Outil Bézier"></div>
+    <div class="cutter tool" data-tip="Cutter"></div>
+    <!-- <div class="ruler tool" data-tip="Règle"></div> -->
+    <div class="eraser tool" data-tip="Gomme"></div>
+    <!-- <div class="simulation tool" data-tip="Simulation en temps réel"></div> -->
+
+    <div class="spacer"></div>
+
+    <!-- <div class="rulers button" data-tip="Afficher les règles"></div> -->
+    <!-- <div class="flip button" data-tip="Changer de côté"></div> -->
+    <div class="export button" data-tip="Télécharger strategie.c"></div>
+    <div class="add button" data-tip="Nouvelle stratégie"></div>
+    <div class="load button" data-tip="Liste des stratégies"></div>
+    <div class="help button" data-tip="Aides et astuces"></div>
+    <!-- <div class="disabled settings button" data-tip="Paramètres"></div> -->
+</div>
+<div class="main-view noselect" id="sketch-div">
+    <div class="title-bar">
+        <div class="title">Stratégie 3</div>
+    </div>
+    <div class="zoom-bar">
+        <div class="home button"></div>
+        <div class="zoom-in button"></div>
+        <div class="zoom-out button"></div>
+        <div class="side-bar-toggle button"></div>
+    </div>
+</div>
+<div class="side-bar noselect">
+    <div class="logo">Simulator<span class="logo-superscript">4 beta</span></div>
+    <div class="hidden only-for-simulation simulation section" data-section-name="Simulation">
+        <div class="indicator" id="matter-fps">
+            <div class="label">Fréquence de calcul</div>
+            <div class="value">1200 Hz</div>
+        </div>
+        <div class="indicator" id="points">
+            <div class="label">Points gagnés</div>
+            <div class="value">0 pts</div>
+        </div>
+        <div class="indicator" id="time">
+            <div class="label">Temps écoulé</div>
+            <div class="value">0 s</div>
+        </div>
+        <div class="label">Commandes</div>
+        <div class="button-list">
+            <span class="reset button"></span>
+            <!-- <span class="next button"></span> -->
+            <span class="run button"></span>
+            <span class="pause button"></span>
+            <span class="stop button"></span>
+        </div>
+        <div class="label">Vitesse</div>
+        <div class="button-list options" data-key="simSpeed">
+            <span class="selected button" data-value="1">× 1</span>
+            <span class="button" data-value="2">× 2</span>
+            <span class="button" data-value="4">× 4</span>
+            <span class="button" data-value="8">× 8</span>
+            <span class="button" data-value="32">× 32</span>
+        </div>
+        <div class="label">Étapes de calcul par image</div>
+        <div class="button-list options" data-key="simQuality">
+            <span class="button" data-value="2">2</span>
+            <span class="button" data-value="5">5</span>
+            <span class="selected button" data-value="10">10</span>
+            <span class="button" data-value="20">20</span>
+        </div>
+    </div>
+    <div class="hidden only-for-simulation camera section" data-section-name="Caméra">
+        <div class="label">Suivi du robot</div>
+        <div class="button-list options" data-key="translationType">
+            <span class="button" data-value="0">aucun</span>
+            <span class="button" data-value="1">lent</span>
+            <span class="selected button" data-value="2">rapide</span>
+        </div>
+        <div class="label">Grossisement</div>
+        <div class="button-list options" data-key="zoomAmount">
+            <span class="button" data-value="1">aucun</span>
+            <span class="selected button" data-value="2">× 2</span>
+            <span class="button" data-value="3">× 3</span>
+            <span class="button" data-value="4">× 4</span>
+        </div>
+        <div class="label">Rotation</div>
+        <div class="button-list options" data-key="rotationType">
+            <span class="button" data-value="0">aucune</span>
+            <span class="button" data-value="1">lente</span>
+            <span class="selected button" data-value="2">rapide</span>
+        </div>
+    </div>
+    <div class="not-for-simulation inspector section" data-section-name="Parcours">
+        <div class="indicator" id="speed">
+            <div class="label">Vitesse</div>
+            <div class="value">0 mm/s</div>
+        </div>
+        <input type="range" min="0" max="1000" value="0" class="slider" id="speed-picker" disabled>
+        <div class="label">Direction</div>
+        <div class="button-list disabled options" data-key="direction">
+            <span class="disabled selected button" data-value="forward">Marche avant</span>
+            <span class="disabled button" data-value="backward">Marche arrière</span>
+        </div>
+    </div>
+    <div class="not-for-simulation disabled inspector section" data-section-name="Actionneurs">
+        <div class="label">Actions à l'arrêt</div>
+        <div class="action-list">
+            <div class="add-action">+</div>
+        </div>
+        <div class="label">Actions en mouvement</div>
+        <div class="action-list">
+            <div class="add-action">+</div>
+        </div>
+    </div>
+    <!-- <div class="trajectory section" data-section-name="Parcours">
+        <table class="positions">
+        </table>
+    </div> -->
+    <div class="display section" data-section-name="Affichage">
+        <div class="indicator" id="p5-fps">
+            <div class="label">Fréquence d'affichage</div>
+            <div class="value">60 fps</div>
+        </div>
+        <div class="label">Grille</div>
+        <div class="button-list options" data-key="gridType">
+            <span class="button" data-value="0">aucune</span>
+            <span class="button" data-value="20">20 cm</span>
+            <span class="button" data-value="10">10 cm</span>
+            <span class="selected button" data-value="1">1 cm</span>
+        </div>
+        <div class="hidden only-for-simulation label">Trajectoire</div>
+        <div class="hidden only-for-simulation button-list options" data-key="displayPath">
+            <span class="button" data-value="0">masquer</span>
+            <span class="selected button" data-value="1">afficher</span>
+        </div>
+        <div class="not-for-simulation label">Arrière Plan</div>
+        <div class="not-for-simulation button-list options" data-key="displayBackground">
+            <span class="button" data-value="0">masquer</span>
+            <span class="selected button" data-value="1">afficher</span>
+        </div>
+        <div class="label">Qualité</div>
+        <div class="button-list options" data-key="pixelDensity">
+            <span class="button" data-value="0.25">faible</span>
+            <span class="button" data-value="0.5">moyenne</span>
+            <span class="selected button" data-value="1">maximale</span>
+        </div>
+    </div>
+</div>
+<div class="export pane">
+    <div class="dialog">
+        <div class="close-button noselect"></div>
+        <div class="title noselect">Export</div>
+        <p class="noselect">Organisation des données : abscisses bleues, abscisses jaunes, ordonnées, booléens de marche arrière.</p>
+        <div class="section noselect">Données sous forme de tableaux</div>
+        <pre class="list-pre">
+            </pre>
+        <div class="section noselect">Données formatées en CSV</div>
+        <pre class="csv-pre">
+            </pre>
+    </div>
+</div>
+<div class="help pane">
+    <div class="dialog">
+        <div class="close-button noselect"></div>
+
+        <div class="title noselect">Aides et astuces</div>
+
+        <div class="section noselect">Sélection</div>
+        <div class="selection fake-button float-left"></div>
+        <p class="noselect">Cet outil permet de sélectionner un point pour le déplacer ou le supprimer (en appuyant sur la touche <span class="key">SUPPRIMER</span>). Même quand l'outil n'est pas actif, un autre point peut être sélectionné via le tableau du panneau latéral.</p>
+
+        <div class="section noselect">Le crayon</div>
+        <div class="pen fake-button float-left"></div>
+        <p class="noselect">Le crayon sert à étendre la trajectoire. Chaque point créé est inséré directement après le point sélectionné et l'état des actionneurs au point précédent est copié vers le nouveau point. Cliquer sur un point existant le sélectionne sans créer
+            de nouveau point.</p>
+
+        <!-- <div class="section noselect">Simulation en temps réelle</div>
+        <div class="simulation fake-button float-left"></div>
+        <p class="noselect">Cet outil permet de réaliser une simulation en temps réelle de la stratégie élaborée. Si un point est sélectionné, il sert de point de départ. Le panneau latéral propose quelques réglages. </p>
+        <p>Si tout se passe bien, l'affichage s'actualise à une fréquence de 60 fps. Si ce n'est pas la cas, utiliser une grille moins précise, baisser la qualité d'affichage et/ou diminuer le nombre d'étapes de calculs par image (la simulation sera
+            alors moins fiable). Pour information, le paramètre “vitesse” n'a pas d'impact sur la qualité de la simulation mais il augmente la quantité de calculs par image et peu nuire à la fluidité. De plus, il ne s'agit pas de la vitesse du robot
+            mais de la vitesse d'écoulement du temps.</p> -->
+
+        <!-- <div class="section noselect">Simulation différée</div>
+        <div class="presimulation fake-button float-left"></div>
+        <p class="noselect">Cet outil permet de réaliser une simulation calculée à l'avance, puis de la visualiser. N'étant pas contraint par le temps ou les calculs liés à l'affichage, la qualité de la simulation peut être plus élevée.</p> -->
+
+        <!-- <div class="section noselect">Changement de côté</div>
+        <div class="flip fake-button float-left"></div>
+        <p class="noselect">Normalement, si une stratégie fonctionne d'un côté, elle fonctionne aussi de l'autre. On peut quand même changer de côté si on le souhaite grâce au bouton de symétrie verticale.</p>
+        <p>Le côté de la stratégie (bleu ou jaune) est déterminé par la position du point de départ.</p> -->
+
+        <div class="section noselect">Exportation</div>
+        <div class="export fake-button float-left"></div>
+        <p class="noselect">Une stratégie peut être sauvegardée grâce à ce bouton. Les formats disponibles sont CSV et des tableaux d'entiers en syntaxe C.</p>
+
+        <div class="section noselect">Aides et astuces</div>
+        <div class="help fake-button float-left"></div>
+        <p class="noselect">À votre plus grande surprise, ce bouton mène ici !</p><br>
+
+        <div class="section noselect">Raccourcis</div>
+        <p>Les touches fléchées du clavier permettent de déplacer au millimètre un point sélectionné. Lorsque <span class="key">SHIFT</span> est enfoncé, les déplacements se font par saut de 5 cm.</p>
+        <p>La touche <span class="key">R</span> modifie le sens de parcours du robot vers le point sélectionné (marche avant ou arrière). Cette donnée est visible dans le tableau du panneau latéral, colonne “Direction”.</p>
+        <!-- <p>La touche <span class="key">S</span> active la simulation lorsque l'outil sélection est actif et inversement.</p> -->
+        <!-- <p>La touche <span class="key">ESPACE</span> sert à mettre en pause ou continuer la simulation lorsque l'outil est actif, sinon elle active la simulation.</p>
+        <p>La touche <span class="key">ENTRER</span> réinitialise la simulation au point sélectionné et lorsque <span class="key">SHIFT</span> est enfoncé, la simulation est réinitialisée au point initial.</p> -->
+    </div>
+</div>
+
+<div class="list pane">
+    <div class="dialog">
+        <div class="close-button noselect"></div>
+
+        <div class="title noselect">Liste des stratégies</div>
+
+        <div class="list">
+        </div>
+    </div>
+</div>
+
+<div class="dialog-container noselect">
+    <div class="dialog">
+        <div class="title">Nouvelle stratégie</div>
+        <p>Donnez un nom à la nouvelle stratégie :</p>
+        <input type="text" id="strat-name" value="" name="stratname" placeholder="Nom">
+        <div class="button-list">
+            <div class="cancel button">Annuler</div>
+            <div class="create button">Créer</div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="tutorial-cutout"></div> -->
+
+<svg id="robot" viewBox="-142 -127 254 284" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" style="display: none;">
+    <path
+       d="m 105.49999,-124.5 5,5 v 32.58342 l -4.95556,5.665185 a 37.5,37.5 0 0 0 0,73.502777 l 4.95556,5.665184 v 35.166852 l -4.95556,5.665184 a 37.5,37.5 0 0 0 0,73.502778 l 4.95556,5.66518 V 150.5 l -5,5 H -134.5 l -5,-5 v -32.58343 l 4.95556,-5.66519 a 37.5,37.5 0 0 0 0,-73.502778 L -139.5,33.083418 V -2.083434 l 4.95556,-5.665184 a 37.5,37.5 0 0 0 0,-73.502777 L -139.5,-86.91657 V -119.5 l 5,-5 z"
+       id="ID_159-7"
+       style="fill:none;stroke:rgba(255, 255, 255, 0.2);stroke-opacity:1;stroke-width: 1.25px;" />
+</svg>
+
+<script src="source/tools/tool.js"></script>
+<script src="source/tools/selection-tool.js"></script>
+<script src="source/tools/pen-tool.js"></script>
+<script src="source/tools/eraser-tool.js"></script>
+<script src="source/tools/cutter-tool.js"></script>
+<!-- <script src="source/tools/simulation-tool.js"></script> -->
+
+<script src="source/table-data.js"></script>
+<script src="source/source.js"></script>
+<script src="source/utilities.js"></script>
+<script src="source/simulator.js"></script>
+<script src="source/path.js"></script>
+<script src="source/sketch.js"></script>
+
+<script src="source/interface.js"></script>
+<script src="source/actions.js"></script>
+<script src="source/tool-bar.js"></script>
+
+<script src="source/save-data.js"></script>
+<script src="source/code-generator.js"></script>
+
+</body>
+
+</html>
