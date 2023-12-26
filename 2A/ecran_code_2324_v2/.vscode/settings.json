@@ -1,5 +1,0 @@
-{
-    "cmake.configureOnOpen": true,
-    "cmake.generator": "Ninja",
-    "cmake.buildDirectory" : "${workspaceFolder}/build/debug"
-}
