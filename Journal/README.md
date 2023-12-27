@@ -82,6 +82,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 ### Mardi 26 décembre (J-134)
 - Calibration du capteur de couleur, finalisation du code
+- Analyse du fonctionnement des roues motrices du robot
 - Tentative de refonte du simulateur, prise de contact avec d'anciens membres de l'association
 - Finalisation du code de la pince pour attraper les pots et les plantes
 
