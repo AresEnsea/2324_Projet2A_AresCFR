@@ -82,9 +82,13 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 ### Mardi 26 décembre (J-134)
 - Calibration du capteur de couleur, finalisation du code
-- Analyse du fonctionnement des roues motrices du robot
-- Tentative de refonte du simulateur, prise de contact avec d'anciens membres de l'association
+- Analyse du code de fonctionnement des roues motrices du robot
 - Finalisation du code de la pince pour attraper les pots et les plantes
+
+## Dimanche 31 Décembre (J-129)
+- Rédaction du Dockerfile pour l'environnement ROS2
+- Récupération du code de fonctionnement des capteurs TOF
+- Rédaction du tutoriel (partie 1) sur l'installation de Docker sur Raspberry : https://wiki.ares.asso-ensea.fr/index.php/Introduction_%C3%A0_Docker#Mise_en_place_de_l%27environnement
 
 ### Mardi 16 Janvier (J-113)
 -
