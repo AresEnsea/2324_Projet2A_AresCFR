@@ -89,7 +89,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Rédaction du Dockerfile pour l'environnement ROS2
 - Récupération du code de fonctionnement des capteurs TOF
 - Rédaction du tutoriel (partie 1) sur l'installation de Docker sur Raspberry : https://wiki.ares.asso-ensea.fr/index.php/Introduction_%C3%A0_Docker#Mise_en_place_de_l%27environnement
-- Rédaction du tutoriel sur les images et les conteneurs Docker : https://wiki.ares.asso-ensea.fr/index.php/Images_et_conteneurs
+- Rédaction du tutoriel (partie 2) sur les images et les conteneurs Docker : https://wiki.ares.asso-ensea.fr/index.php/Images_et_conteneurs
 
 ### Mardi 16 Janvier (J-113)
 -
