@@ -91,7 +91,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Rédaction du tutoriel (partie 1) sur l'installation de Docker sur Raspberry : https://wiki.ares.asso-ensea.fr/index.php/Introduction_%C3%A0_Docker#Mise_en_place_de_l%27environnement
 - Rédaction du tutoriel (partie 2) sur les images et les conteneurs Docker : https://wiki.ares.asso-ensea.fr/index.php/Images_et_conteneurs
 
-Lundi 1 Janvier (J-128)
+### Lundi 1 Janvier (J-128)
 - Bonne année !
 - Rédaction du tutoriel (partie 3) sur la création d'un Dockerfile : https://wiki.ares.asso-ensea.fr/index.php/Cr%C3%A9ation_d%27un_Dockerfile
 
