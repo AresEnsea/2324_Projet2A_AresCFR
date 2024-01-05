@@ -95,8 +95,15 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Bonne année !
 - Rédaction du tutoriel (partie 3) sur la création d'un Dockerfile : https://wiki.ares.asso-ensea.fr/index.php/Cr%C3%A9ation_d%27un_Dockerfile
 
+### Vendredi 5 Janvier (J-124)
+- Prise de contact avec l'ancien réalisateur du code du robot/simulateur
+- Récupération du code de la première version du simulateur
+
+### Vendredi 12 Janvier (J-117)
+- Rendez-vous avec le réalisateur du code du robot /simulateur
+
 ### Mardi 16 Janvier (J-113)
--
+- 
 
 ### Mardi 23 Janvier (J-106)
 - 
