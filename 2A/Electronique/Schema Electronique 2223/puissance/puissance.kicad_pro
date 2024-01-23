@@ -326,6 +326,30 @@
     [
       "0d130b37-34b7-46a9-87e1-2e8471e42169",
       ""
+    ],
+    [
+      "304ae953-9ecf-4f76-9c67-6c625b8193a2",
+      "GPIO_filtering"
+    ],
+    [
+      "759e48d6-63e6-40af-afb9-8c3f07fc6cde",
+      "GPIO_filtering1"
+    ],
+    [
+      "17df9f52-8ee9-4730-9d59-f435f337a52d",
+      "GPIO_filtering2"
+    ],
+    [
+      "676f1ae6-e232-4e7c-88cd-04c1027dff72",
+      "GPIO_filtering3"
+    ],
+    [
+      "1102c957-0c72-4739-9178-7c6acddebd3f",
+      "BUCK_5.1V"
+    ],
+    [
+      "fb385e64-ed51-4fb9-92be-be410faa5a42",
+      "BUCK_7.4V"
     ]
   ],
   "text_variables": {}

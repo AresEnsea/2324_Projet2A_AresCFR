@@ -100,10 +100,11 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Récupération du code de la première version du simulateur
 
 ### Vendredi 12 Janvier (J-117)
-- Rendez-vous avec le réalisateur du code du robot /simulateur
+- Rendez-vous avec le réalisateur du code du robot/simulateur
 
 ### Mardi 16 Janvier (J-113)
-- 
+- Présentation de projet n°4 : Récapitulatif des réalisations du semestre passé et plannification des missions pour les semaines à venir
+- Étude de fonctionnement des servomoteurs Dynamixel XL-320
 
 ### Mardi 23 Janvier (J-106)
 - 
