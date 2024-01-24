@@ -449,8 +449,8 @@
     (property "Mouser Part Number" "771-BZX384-A3V3-QX" (at 115.57 85.09 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid e8d61be2-b36f-436b-b0ff-7f6d252ce0ef))
     (pin "1" (uuid 597acb36-707a-4c50-bdb5-1f5dce469dc0))
+    (pin "2" (uuid e8d61be2-b36f-436b-b0ff-7f6d252ce0ef))
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
