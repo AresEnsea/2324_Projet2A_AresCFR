@@ -368,20 +368,20 @@
       "UART4_Connector1"
     ],
     [
-      "ecd3d707-c3dc-4d47-813d-529c0fb9c83e",
-      "GPIO_connector1"
+      "3870049d-8cfc-48cf-b45e-10b2279efb87",
+      "GPIO_3V3_Connector1"
     ],
     [
-      "3a99ce83-13f6-44d7-b097-0336678e1579",
-      "GPIO_connector"
+      "1b14da9d-a013-4781-96ca-627f75997115",
+      "GPIO_3V3_Connector"
     ],
     [
-      "a1d76e7f-ace4-4c62-90cd-9e2610aa0b0a",
-      "GPIO_connector2"
+      "9743065e-d1a0-48bf-a8c9-dead1a633504",
+      "GPIO_3V3_Connector2"
     ],
     [
-      "8417f098-5e4e-491c-9144-2dcc21da4c83",
-      "GPIO_connector3"
+      "50ee3374-811b-4a50-851a-2e3849343600",
+      "GPIO_3V3_Connector3"
     ]
   ],
   "text_variables": {
