@@ -352,9 +352,39 @@
       "GPIO_filtering1"
     ],
     [
-      "357978fd-11fa-43d8-b5bb-86c1a99de305",
-      "CONNECTEURS"
+      "af50aa95-aed2-4d54-9537-cfc75f526261",
+      "IHM_Connector"
+    ],
+    [
+      "6ae65ced-862a-45db-8236-045925bae1ca",
+      "XL_320_half_to_full_duplex"
+    ],
+    [
+      "87662431-78a9-4c9d-bc49-d5c8947794ed",
+      "LIDAR_Connector"
+    ],
+    [
+      "78b7270a-a5a1-4fe9-b966-10927640cfad",
+      "UART4_Connector1"
+    ],
+    [
+      "ecd3d707-c3dc-4d47-813d-529c0fb9c83e",
+      "GPIO_connector1"
+    ],
+    [
+      "3a99ce83-13f6-44d7-b097-0336678e1579",
+      "GPIO_connector"
+    ],
+    [
+      "a1d76e7f-ace4-4c62-90cd-9e2610aa0b0a",
+      "GPIO_connector2"
+    ],
+    [
+      "8417f098-5e4e-491c-9144-2dcc21da4c83",
+      "GPIO_connector3"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "Rbas": "2k8"
+  }
 }
