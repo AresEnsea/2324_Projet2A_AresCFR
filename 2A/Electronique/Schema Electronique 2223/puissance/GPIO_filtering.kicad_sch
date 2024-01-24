@@ -226,10 +226,10 @@
     (uuid e42e03f0-8ae2-471e-b6d2-195f3f15824f)
   )
 
-  (global_label "5.1V" (shape input) (at 124.46 73.66 90) (fields_autoplaced)
+  (global_label "3V3" (shape input) (at 124.46 73.66 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid c3b76195-fa15-46fb-9376-74145c8fe252)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 124.46 66.5624 90)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 124.46 67.1672 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
