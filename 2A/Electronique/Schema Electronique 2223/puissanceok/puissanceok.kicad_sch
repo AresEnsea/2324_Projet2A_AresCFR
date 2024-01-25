@@ -2407,7 +2407,7 @@
     (property "Value" "10u" (at 86.106 42.1259 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4" (at 83.566 41.402 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 83.566 41.402 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.we-online.com/components/products/datasheet/865080642006.pdf" (at 83.566 41.402 0)

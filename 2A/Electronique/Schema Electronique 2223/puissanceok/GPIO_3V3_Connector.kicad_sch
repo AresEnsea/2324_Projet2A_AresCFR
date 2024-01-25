@@ -296,7 +296,7 @@
     (property "Value" "100k" (at 137.16 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 135.89 93.98 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 135.89 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 135.89 93.98 0)
