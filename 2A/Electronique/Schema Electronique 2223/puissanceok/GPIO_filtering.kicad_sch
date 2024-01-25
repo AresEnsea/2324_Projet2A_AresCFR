@@ -238,7 +238,7 @@
   (symbol (lib_id "Device:R_Small") (at 121.92 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 21d09296-a1c4-4ec7-894b-11523c994553)
-    (property "Reference" "R201" (at 123.19 76.2 0)
+    (property "Reference" "R?" (at 123.19 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 123.19 78.74 0)
@@ -255,35 +255,35 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/304ae953-9ecf-4f76-9c67-6c625b8193a2"
-          (reference "R201") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/759e48d6-63e6-40af-afb9-8c3f07fc6cde"
-          (reference "R301") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/676f1ae6-e232-4e7c-88cd-04c1027dff72"
-          (reference "R501") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/17df9f52-8ee9-4730-9d59-f435f337a52d"
-          (reference "R401") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "R10") (unit 1)
+          (reference "R5") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "R12") (unit 1)
+          (reference "R10") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "R14") (unit 1)
+          (reference "R12") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "R16") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
       (project "GPIO_filtering"
         (path "/e39bd985-ee9e-47b9-8baf-592ae1d158f2"
-          (reference "R201") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -292,7 +292,7 @@
   (symbol (lib_id "Device:R_Small") (at 132.334 81.28 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b3c3558-c233-4784-9516-f4ff2d5f02f4)
-    (property "Reference" "R202" (at 131.064 78.74 90)
+    (property "Reference" "R?" (at 131.064 78.74 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 134.874 78.74 90)
@@ -309,35 +309,35 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/304ae953-9ecf-4f76-9c67-6c625b8193a2"
-          (reference "R202") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/759e48d6-63e6-40af-afb9-8c3f07fc6cde"
-          (reference "R302") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/676f1ae6-e232-4e7c-88cd-04c1027dff72"
-          (reference "R502") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/17df9f52-8ee9-4730-9d59-f435f337a52d"
-          (reference "R402") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "R11") (unit 1)
+          (reference "R6") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "R13") (unit 1)
+          (reference "R11") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "R15") (unit 1)
+          (reference "R13") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "R17") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
       (project "GPIO_filtering"
         (path "/e39bd985-ee9e-47b9-8baf-592ae1d158f2"
-          (reference "R202") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -346,7 +346,7 @@
   (symbol (lib_id "power:GND") (at 121.92 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 558ca69c-0702-4f16-b38d-16be54c4b6fc)
-    (property "Reference" "#PWR0201" (at 121.92 97.79 0)
+    (property "Reference" "#PWR?" (at 121.92 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 97.79 0)
@@ -362,35 +362,35 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/304ae953-9ecf-4f76-9c67-6c625b8193a2"
-          (reference "#PWR0201") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/759e48d6-63e6-40af-afb9-8c3f07fc6cde"
-          (reference "#PWR0301") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/17df9f52-8ee9-4730-9d59-f435f337a52d"
-          (reference "#PWR0401") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/676f1ae6-e232-4e7c-88cd-04c1027dff72"
-          (reference "#PWR0501") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "#PWR029") (unit 1)
-        )
-        (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
           (reference "#PWR030") (unit 1)
         )
+        (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
+          (reference "#PWR036") (unit 1)
+        )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
       (project "GPIO_filtering"
         (path "/e39bd985-ee9e-47b9-8baf-592ae1d158f2"
-          (reference "#PWR0201") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -399,7 +399,7 @@
   (symbol (lib_id "Device:C_Small") (at 121.92 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 936ff1d1-1422-462c-8fdf-328270667206)
-    (property "Reference" "C201" (at 124.46 82.5563 0)
+    (property "Reference" "C?" (at 124.46 82.5563 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 124.46 85.0963 0)
@@ -416,27 +416,27 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/304ae953-9ecf-4f76-9c67-6c625b8193a2"
-          (reference "C201") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/759e48d6-63e6-40af-afb9-8c3f07fc6cde"
-          (reference "C301") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/676f1ae6-e232-4e7c-88cd-04c1027dff72"
-          (reference "C501") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/17df9f52-8ee9-4730-9d59-f435f337a52d"
-          (reference "C401") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "C10") (unit 1)
+          (reference "C2") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "C11") (unit 1)
+          (reference "C7") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "C12") (unit 1)
+          (reference "C8") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
           (reference "C13") (unit 1)
@@ -444,7 +444,7 @@
       )
       (project "GPIO_filtering"
         (path "/e39bd985-ee9e-47b9-8baf-592ae1d158f2"
-          (reference "C201") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -453,7 +453,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 142.494 86.36 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b046f62f-24a7-4829-bdae-cc8a5f63e661)
-    (property "Reference" "J201" (at 145.669 85.725 0)
+    (property "Reference" "J?" (at 145.669 85.725 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02" (at 145.669 83.185 0)
@@ -470,16 +470,16 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/304ae953-9ecf-4f76-9c67-6c625b8193a2"
-          (reference "J201") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/759e48d6-63e6-40af-afb9-8c3f07fc6cde"
-          (reference "J301") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/676f1ae6-e232-4e7c-88cd-04c1027dff72"
-          (reference "J501") (unit 1)
+          (reference "J?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/17df9f52-8ee9-4730-9d59-f435f337a52d"
-          (reference "J401") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
       (project "puissanceok"
@@ -498,7 +498,7 @@
       )
       (project "GPIO_filtering"
         (path "/e39bd985-ee9e-47b9-8baf-592ae1d158f2"
-          (reference "J201") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
     )

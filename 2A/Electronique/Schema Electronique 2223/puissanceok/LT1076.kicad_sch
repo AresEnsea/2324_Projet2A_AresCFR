@@ -758,7 +758,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 105.156 74.676 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 10a18818-9b54-4b6c-8e60-9c621f341ae6)
-    (property "Reference" "C601" (at 96.266 73.406 0)
+    (property "Reference" "C?" (at 96.266 73.406 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "220uF" (at 96.266 75.946 0)
@@ -775,23 +775,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "C601") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "C701") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C2") (unit 1)
+          (reference "C3") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C6") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "C601") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -800,7 +800,7 @@
   (symbol (lib_id "custom:DST10100S") (at 136.906 93.726 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 25e6e636-87a9-4954-b029-c210c20ae706)
-    (property "Reference" "CR601" (at 143.256 79.756 90)
+    (property "Reference" "CR?" (at 143.256 79.756 90)
       (effects (font (size 1.524 1.524)) (justify right))
     )
     (property "Value" "100V 10A" (at 143.256 82.296 90)
@@ -821,10 +821,10 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "CR601") (unit 1)
+          (reference "CR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "CR701") (unit 1)
+          (reference "CR?") (unit 1)
         )
       )
       (project "puissanceok"
@@ -837,7 +837,7 @@
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "CR601") (unit 1)
+          (reference "CR?") (unit 1)
         )
       )
     )
@@ -846,7 +846,7 @@
   (symbol (lib_id "Device:C_Small") (at 183.896 105.156 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4fa37b74-991e-40be-a0ee-42657bdf8e0c)
-    (property "Reference" "C704" (at 186.436 103.8923 0)
+    (property "Reference" "C?" (at 186.436 103.8923 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10n" (at 186.436 106.4323 0)
@@ -863,23 +863,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "C704") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "C604") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C5") (unit 1)
+          (reference "C6") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C9") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "C704") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -888,7 +888,7 @@
   (symbol (lib_id "power:GND") (at 172.466 110.236 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5ed1f0ab-ef73-41cb-b65c-c8984a8076e4)
-    (property "Reference" "#PWR0605" (at 172.466 116.586 0)
+    (property "Reference" "#PWR?" (at 172.466 116.586 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.276 112.776 0)
@@ -904,23 +904,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "#PWR0605") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "#PWR0705") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "#PWR0605") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -929,7 +929,7 @@
   (symbol (lib_id "Device:C_Small") (at 110.236 93.726 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7c414367-0fb2-4d91-a2f6-179844ba656a)
-    (property "Reference" "C602" (at 112.776 93.0973 0)
+    (property "Reference" "C?" (at 112.776 93.0973 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10n" (at 112.776 95.6373 0)
@@ -946,23 +946,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "C602") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "C702") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C3") (unit 1)
+          (reference "C4") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C7") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "C602") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -971,7 +971,7 @@
   (symbol (lib_id "power:GND") (at 121.666 100.076 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 965cead4-283a-4b96-96c1-044f9971bfe2)
-    (property "Reference" "#PWR0603" (at 121.666 106.426 0)
+    (property "Reference" "#PWR?" (at 121.666 106.426 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.666 105.156 0)
@@ -987,23 +987,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "#PWR0603") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "#PWR0703") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "#PWR0603") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -1012,7 +1012,7 @@
   (symbol (lib_id "Device:R_Small") (at 172.466 105.156 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a3ad5444-f2b5-4b3b-a359-52152accc22a)
-    (property "Reference" "R603" (at 173.736 105.156 0)
+    (property "Reference" "R?" (at 173.736 105.156 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2k2" (at 173.736 107.696 0)
@@ -1029,23 +1029,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "R603") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "R703") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "R6") (unit 1)
+          (reference "R9") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "R9") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "R603") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -1054,7 +1054,7 @@
   (symbol (lib_id "power:GND") (at 110.236 100.076 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a80e3ff8-373f-4bb7-aa9c-00681a795f5b)
-    (property "Reference" "#PWR0602" (at 110.236 106.426 0)
+    (property "Reference" "#PWR?" (at 110.236 106.426 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 110.236 105.156 0)
@@ -1070,23 +1070,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "#PWR0602") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "#PWR0702") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "#PWR0602") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -1095,7 +1095,7 @@
   (symbol (lib_id "power:GND") (at 161.036 97.536 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b072709c-bed2-4733-b506-d00f0796ed0c)
-    (property "Reference" "#PWR0604" (at 161.036 103.886 0)
+    (property "Reference" "#PWR?" (at 161.036 103.886 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 157.226 98.806 0)
@@ -1111,23 +1111,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "#PWR0604") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "#PWR0704") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "#PWR0604") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -1136,7 +1136,7 @@
   (symbol (lib_id "Device:R_Small") (at 172.466 81.026 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b20626cb-d298-4392-bbe7-7502b91afd89)
-    (property "Reference" "R602" (at 173.736 81.026 0)
+    (property "Reference" "R?" (at 173.736 81.026 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2k87" (at 173.736 83.566 0)
@@ -1153,23 +1153,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "R602") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "R702") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "R5") (unit 1)
+          (reference "R8") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "R8") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "R602") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -1178,7 +1178,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 176.276 68.326 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b8369081-6dea-4c5f-81de-d0f97378e178)
-    (property "Reference" "#FLG0601" (at 176.276 66.421 0)
+    (property "Reference" "#FLG?" (at 176.276 66.421 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 176.276 63.246 0)
@@ -1194,10 +1194,10 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "#FLG0601") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "#FLG0701") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
       )
       (project "puissanceok"
@@ -1210,7 +1210,7 @@
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "#FLG0601") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
       )
     )
@@ -1219,7 +1219,7 @@
   (symbol (lib_id "Device:R_Small") (at 110.236 87.376 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid baa5f51a-3c59-42a8-b546-3082bdd51700)
-    (property "Reference" "R601" (at 111.506 87.376 0)
+    (property "Reference" "R?" (at 111.506 87.376 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.7k" (at 111.506 89.916 0)
@@ -1236,23 +1236,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "R601") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "R701") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "R4") (unit 1)
+          (reference "R7") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "R7") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "R601") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -1261,7 +1261,7 @@
   (symbol (lib_id "power:GND") (at 105.156 82.296 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bc6aca52-0e73-4733-a7cf-e3c953339f9a)
-    (property "Reference" "#PWR0601" (at 105.156 88.646 0)
+    (property "Reference" "#PWR?" (at 105.156 88.646 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 105.156 87.376 0)
@@ -1277,23 +1277,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "#PWR0601") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "#PWR0701") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "#PWR0601") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -1302,7 +1302,7 @@
   (symbol (lib_id "Device:C_Polarized_Small") (at 161.036 74.676 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c580c04e-e0b1-4c86-ad78-b14da7d92a42)
-    (property "Reference" "C603" (at 163.576 74.676 0)
+    (property "Reference" "C?" (at 163.576 74.676 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 162.306 77.216 0)
@@ -1322,23 +1322,23 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "C603") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "C703") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C4") (unit 1)
+          (reference "C5") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C8") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "C603") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -1347,7 +1347,7 @@
   (symbol (lib_name "LT1076_1") (lib_id "custom:LT1076") (at 121.666 74.676 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ce80b6ca-b8ca-4f72-9d41-d4f19f16c649)
-    (property "Reference" "U601" (at 121.666 63.246 0)
+    (property "Reference" "U?" (at 121.666 63.246 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "~" (at 116.586 72.136 0)
@@ -1369,10 +1369,10 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "U601") (unit 1)
+          (reference "U?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "U701") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "puissanceok"
@@ -1385,7 +1385,7 @@
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "U601") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
     )
@@ -1394,7 +1394,7 @@
   (symbol (lib_id "Device:L_Small") (at 149.606 68.326 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e03b8a95-b9b2-405d-87e1-25e053e978f6)
-    (property "Reference" "L601" (at 149.606 64.516 90)
+    (property "Reference" "L?" (at 149.606 64.516 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uH" (at 149.606 67.056 90)
@@ -1417,10 +1417,10 @@
     (instances
       (project "puissance"
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "L601") (unit 1)
+          (reference "L?") (unit 1)
         )
         (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "L701") (unit 1)
+          (reference "L?") (unit 1)
         )
       )
       (project "puissanceok"
@@ -1433,7 +1433,7 @@
       )
       (project "LT1076"
         (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "L601") (unit 1)
+          (reference "L?") (unit 1)
         )
       )
     )

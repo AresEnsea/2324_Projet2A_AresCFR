@@ -196,7 +196,7 @@
   (symbol (lib_id "power:GND") (at 138.43 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 35430d95-2476-44dd-9d13-f2b12e6ab80e)
-    (property "Reference" "#PWR039" (at 138.43 114.3 0)
+    (property "Reference" "#PWR052" (at 138.43 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.97 107.95 0)
@@ -212,28 +212,28 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/1b14da9d-a013-4781-96ca-627f75997115"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/3870049d-8cfc-48cf-b45e-10b2279efb87"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9743065e-d1a0-48bf-a8c9-dead1a633504"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/50ee3374-811b-4a50-851a-2e3849343600"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/0bb23506-fa9f-4a6e-b1fd-c07f5de5ca14"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/68c40a5b-29d8-40fc-a6da-80692adf5f7e"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/2966dbe7-d86f-4e5a-a4e0-23b79617224c"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/12c12d87-707a-4786-bdb3-8f38dcf02850"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -242,7 +242,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 149.86 100.33 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid afef9473-525d-466e-86f6-6730b67bdfa9)
-    (property "Reference" "J6" (at 152.4 101.6 0)
+    (property "Reference" "J22" (at 152.4 101.6 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x03" (at 152.4 99.06 0)
@@ -260,28 +260,28 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/1b14da9d-a013-4781-96ca-627f75997115"
-          (reference "J6") (unit 1)
+          (reference "J22") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9743065e-d1a0-48bf-a8c9-dead1a633504"
-          (reference "J6") (unit 1)
+          (reference "J23") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/3870049d-8cfc-48cf-b45e-10b2279efb87"
-          (reference "J6") (unit 1)
+          (reference "J21") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/50ee3374-811b-4a50-851a-2e3849343600"
-          (reference "J6") (unit 1)
+          (reference "J24") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/0bb23506-fa9f-4a6e-b1fd-c07f5de5ca14"
-          (reference "J6") (unit 1)
+          (reference "J25") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/68c40a5b-29d8-40fc-a6da-80692adf5f7e"
-          (reference "J6") (unit 1)
+          (reference "J26") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/2966dbe7-d86f-4e5a-a4e0-23b79617224c"
-          (reference "J6") (unit 1)
+          (reference "J27") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/12c12d87-707a-4786-bdb3-8f38dcf02850"
-          (reference "J6") (unit 1)
+          (reference "J28") (unit 1)
         )
       )
     )
@@ -290,7 +290,7 @@
   (symbol (lib_id "Device:R_Small") (at 135.89 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cb1e2a42-b27e-4333-b92b-084d35b9e77d)
-    (property "Reference" "R38" (at 137.16 92.71 0)
+    (property "Reference" "R21" (at 137.16 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 137.16 95.25 0)
@@ -307,28 +307,28 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/3870049d-8cfc-48cf-b45e-10b2279efb87"
-          (reference "R38") (unit 1)
+          (reference "R21") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/1b14da9d-a013-4781-96ca-627f75997115"
-          (reference "R39") (unit 1)
+          (reference "R22") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9743065e-d1a0-48bf-a8c9-dead1a633504"
-          (reference "R40") (unit 1)
+          (reference "R23") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/50ee3374-811b-4a50-851a-2e3849343600"
-          (reference "R41") (unit 1)
+          (reference "R24") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/0bb23506-fa9f-4a6e-b1fd-c07f5de5ca14"
-          (reference "R42") (unit 1)
+          (reference "R25") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/68c40a5b-29d8-40fc-a6da-80692adf5f7e"
-          (reference "R43") (unit 1)
+          (reference "R26") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/2966dbe7-d86f-4e5a-a4e0-23b79617224c"
-          (reference "R44") (unit 1)
+          (reference "R27") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/12c12d87-707a-4786-bdb3-8f38dcf02850"
-          (reference "R45") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
     )
