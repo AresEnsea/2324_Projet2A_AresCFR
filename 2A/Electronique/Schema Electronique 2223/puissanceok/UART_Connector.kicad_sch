@@ -180,7 +180,7 @@
     (property "Reference" "J22" (at 160.02 101.6 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_01x04" (at 160.02 99.06 0)
+    (property "Value" "Conn_UART" (at 160.02 99.06 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" (at 157.48 101.6 0)
