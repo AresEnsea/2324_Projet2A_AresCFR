@@ -764,7 +764,7 @@
     (property "Value" "220uF" (at 96.266 75.946 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 106.1212 78.486 0)
+    (property "Footprint" "" (at 106.1212 78.486 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 105.156 74.676 0)
@@ -852,7 +852,7 @@
     (property "Value" "10n" (at 186.436 106.4323 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 183.896 105.156 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 183.896 105.156 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 183.896 105.156 0)
@@ -912,10 +912,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
       (project "LT1076"
@@ -935,7 +935,7 @@
     (property "Value" "10n" (at 112.776 95.6373 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 110.236 93.726 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 110.236 93.726 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 110.236 93.726 0)
@@ -954,10 +954,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C4") (unit 1)
+          (reference "C5") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C10") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
       (project "LT1076"
@@ -995,10 +995,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
       (project "LT1076"
@@ -1078,10 +1078,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
       (project "LT1076"
@@ -1161,10 +1161,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "R8") (unit 1)
+          (reference "R7") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "R15") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
       (project "LT1076"
@@ -1202,10 +1202,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG03") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#FLG03") (unit 1)
+          (reference "#FLG04") (unit 1)
         )
       )
       (project "LT1076"
@@ -1244,10 +1244,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "R7") (unit 1)
+          (reference "R8") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "R14") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
       (project "LT1076"
@@ -1285,10 +1285,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
       (project "LT1076"
@@ -1308,7 +1308,7 @@
     (property "Value" "470uF" (at 162.306 77.216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 161.036 74.676 0)
+    (property "Footprint" "" (at 161.036 74.676 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.036 74.676 0)
@@ -1330,10 +1330,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C5") (unit 1)
+          (reference "C4") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C11") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
       (project "LT1076"

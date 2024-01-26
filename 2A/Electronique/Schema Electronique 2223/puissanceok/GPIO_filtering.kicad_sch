@@ -376,16 +376,16 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
       (project "GPIO_filtering"
@@ -405,7 +405,7 @@
     (property "Value" "100n" (at 124.46 85.0963 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 121.92 83.82 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 121.92 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 121.92 83.82 0)
@@ -459,7 +459,7 @@
     (property "Value" "Conn_01x02" (at 145.669 83.185 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 142.494 86.36 0)
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 142.494 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 142.494 86.36 0)
@@ -484,16 +484,16 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "J13") (unit 1)
+          (reference "J16") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "J14") (unit 1)
+          (reference "J17") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "J15") (unit 1)
+          (reference "J18") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "J16") (unit 1)
+          (reference "J19") (unit 1)
         )
       )
       (project "GPIO_filtering"

@@ -235,7 +235,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -366,38 +366,6 @@
     [
       "78b7270a-a5a1-4fe9-b966-10927640cfad",
       "UART4_Connector1"
-    ],
-    [
-      "3870049d-8cfc-48cf-b45e-10b2279efb87",
-      "GPIO_3V3_Connector1"
-    ],
-    [
-      "1b14da9d-a013-4781-96ca-627f75997115",
-      "GPIO_3V3_Connector"
-    ],
-    [
-      "9743065e-d1a0-48bf-a8c9-dead1a633504",
-      "GPIO_3V3_Connector2"
-    ],
-    [
-      "50ee3374-811b-4a50-851a-2e3849343600",
-      "GPIO_3V3_Connector3"
-    ],
-    [
-      "0bb23506-fa9f-4a6e-b1fd-c07f5de5ca14",
-      "GPIO_3V3_Connector5"
-    ],
-    [
-      "68c40a5b-29d8-40fc-a6da-80692adf5f7e",
-      "GPIO_3V3_Connector4"
-    ],
-    [
-      "2966dbe7-d86f-4e5a-a4e0-23b79617224c",
-      "GPIO_3V3_Connector7"
-    ],
-    [
-      "12c12d87-707a-4786-bdb3-8f38dcf02850",
-      "GPIO_3V3_Connector6"
     ]
   ],
   "text_variables": {
