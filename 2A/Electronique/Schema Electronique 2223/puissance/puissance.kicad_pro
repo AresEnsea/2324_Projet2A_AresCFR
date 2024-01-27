@@ -361,7 +361,7 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
+      "endpoint_off_grid": "ignore",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
@@ -380,7 +380,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -473,32 +473,44 @@
       ""
     ],
     [
-      "304ae953-9ecf-4f76-9c67-6c625b8193a2",
-      "GPIO_filtering"
-    ],
-    [
-      "759e48d6-63e6-40af-afb9-8c3f07fc6cde",
+      "1d7552a4-21ab-426b-b977-97ac6ace3389",
       "GPIO_filtering1"
     ],
     [
-      "17df9f52-8ee9-4730-9d59-f435f337a52d",
+      "7073abae-1b7f-41cf-92bd-1d60d1e1503b",
       "GPIO_filtering2"
     ],
     [
-      "676f1ae6-e232-4e7c-88cd-04c1027dff72",
+      "d851b5b6-4d90-490b-a1d4-05fa38e90480",
       "GPIO_filtering3"
     ],
     [
-      "1102c957-0c72-4739-9178-7c6acddebd3f",
-      "BUCK_5.1V"
+      "f968090f-0bc6-40bc-8206-0785755ba488",
+      "GPIO_filtering"
     ],
     [
-      "fb385e64-ed51-4fb9-92be-be410faa5a42",
+      "39030994-ac7f-4ec3-9144-114497d0bbd0",
       "BUCK_7.4V"
     ],
     [
-      "aa45738f-d2a0-42ad-a16f-7b126e8d8b28",
-      "Connectors"
+      "4acf3b40-fc0a-416d-8021-71dd78539345",
+      "IHM_Connector"
+    ],
+    [
+      "5a31a4b4-4c2f-4775-8a33-cfb27222f41e",
+      "BUCK_5.1V"
+    ],
+    [
+      "590b8393-716b-4b0b-84ff-2efee5a8145e",
+      "LIDAR_Connector"
+    ],
+    [
+      "e8c5c1c1-9ee4-4d8f-a1d2-c0fcbff40511",
+      "XL_320_connector_and_buffer"
+    ],
+    [
+      "e3e36998-df51-4b9a-89ca-ef632b3cdf07",
+      "UART4_Connector1"
     ]
   ],
   "text_variables": {}
