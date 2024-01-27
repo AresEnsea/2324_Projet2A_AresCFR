@@ -3090,14 +3090,14 @@
     (property "Datasheet" "~" (at 215.9 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "8" (uuid cd2db625-39b2-4a1c-bfac-6611b4bfa294))
-    (pin "3" (uuid ee9dc537-4455-464d-982e-b57bac050c4d))
+    (pin "1" (uuid 9b3af94f-97b6-462a-8a9a-c66e168b9f47))
     (pin "2" (uuid d551507c-f4bb-4aa6-bd26-a2c1de1ad80f))
+    (pin "3" (uuid ee9dc537-4455-464d-982e-b57bac050c4d))
     (pin "4" (uuid 9624064a-a2b5-43af-93df-1538b25f9905))
     (pin "5" (uuid 7c110a54-e6f8-47a1-a1a9-0601e9dc22ef))
-    (pin "7" (uuid 4b921a26-e06e-4de8-9396-362e1c4dab33))
     (pin "6" (uuid e3281e16-0bab-4699-8494-c1059e06390b))
-    (pin "1" (uuid 9b3af94f-97b6-462a-8a9a-c66e168b9f47))
+    (pin "7" (uuid 4b921a26-e06e-4de8-9396-362e1c4dab33))
+    (pin "8" (uuid cd2db625-39b2-4a1c-bfac-6611b4bfa294))
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
@@ -3198,14 +3198,14 @@
     (property "Datasheet" "~" (at 200.66 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "8" (uuid 12cbaeaa-4eb5-4c75-9d22-fd9bef90dccf))
-    (pin "3" (uuid a97134d7-e12c-4083-aed1-99309cc864be))
+    (pin "1" (uuid 14bc0135-8bf6-4c8e-9064-c4794f5fb783))
     (pin "2" (uuid 153fdb82-5729-4fa3-a0f6-7876727a01e9))
+    (pin "3" (uuid a97134d7-e12c-4083-aed1-99309cc864be))
     (pin "4" (uuid 8551265c-8d9b-49ae-915d-efeeb2404588))
     (pin "5" (uuid 27524ba5-ce9b-43e4-abae-5c0ad36ea2b9))
-    (pin "7" (uuid 6682841c-64bf-4fbb-92cd-b404a1e1ffae))
     (pin "6" (uuid 93f6f4f0-77e4-47ef-a66f-a9c5482aced3))
-    (pin "1" (uuid 14bc0135-8bf6-4c8e-9064-c4794f5fb783))
+    (pin "7" (uuid 6682841c-64bf-4fbb-92cd-b404a1e1ffae))
+    (pin "8" (uuid 12cbaeaa-4eb5-4c75-9d22-fd9bef90dccf))
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
@@ -3524,14 +3524,14 @@
     (property "Datasheet" "~" (at 233.68 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "8" (uuid 1a2eecaa-7fb5-4f5c-83d3-0e75af20b767))
-    (pin "3" (uuid 90d61e80-7cf6-4951-a4e0-f2a759e3a5c9))
+    (pin "1" (uuid b7144d49-931b-4baf-ac6c-07daa43197e5))
     (pin "2" (uuid 094b942a-8f0d-4ea2-ae3c-a3169f36cf61))
+    (pin "3" (uuid 90d61e80-7cf6-4951-a4e0-f2a759e3a5c9))
     (pin "4" (uuid 0e6596c0-864e-414e-a470-a7c78ed71646))
     (pin "5" (uuid a73ad0f4-dc88-4048-b4c5-6f5d75f8336c))
-    (pin "7" (uuid 08ad536f-89b6-46f5-9f1b-d25c898df110))
     (pin "6" (uuid a0711e04-d8fe-4a1f-af04-3d50ea31d40e))
-    (pin "1" (uuid b7144d49-931b-4baf-ac6c-07daa43197e5))
+    (pin "7" (uuid 08ad536f-89b6-46f5-9f1b-d25c898df110))
+    (pin "8" (uuid 1a2eecaa-7fb5-4f5c-83d3-0e75af20b767))
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"

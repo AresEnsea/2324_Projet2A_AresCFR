@@ -915,8 +915,8 @@
     (property "MPN" "DST10100S" (at 142.24 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid abd29735-afe4-4113-892c-3f1a14a03cba))
     (pin "1" (uuid 4db614cc-e9ec-4518-b4a1-b76fae2bd5f8))
+    (pin "2" (uuid abd29735-afe4-4113-892c-3f1a14a03cba))
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
