@@ -1933,7 +1933,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 20be8eba-eac0-4fa7-84c7-485b7c0152cf)
   )
-  (text "Phidget Power Supply Stepper" (at 120.65 130.81 0)
+  (text "Phidget Power Supply Stepper" (at 124.46 130.81 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 396d54a0-713a-43de-81eb-d9d61cbd0e47)
   )
@@ -2188,13 +2188,6 @@
     (uuid f67c702a-c831-47e2-bfca-3bbf9cdb687d)
   )
 
-  (global_label "Vin" (shape input) (at 121.92 137.16 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 135b00dc-dba7-4350-bc78-2f0e604e56ad)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.92 131.3324 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "5.1V" (shape input) (at 193.04 143.51 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 37b553d6-03be-49a1-a2f0-679ffa02f40a)
@@ -2202,17 +2195,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "Vin" (shape input) (at 99.06 48.26 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 41734e96-9e1a-473c-aed1-9d78cebc7f82)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 93.2324 48.26 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "5.1V" (shape input) (at 87.63 85.09 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 5aa3764b-3646-411c-acfb-dc5f5bfe3b15)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 94.7276 85.09 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "14.4V" (shape input) (at 121.92 137.16 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 68f39398-d998-475e-9855-31cb055a48b6)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.92 128.8529 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2227,13 +2220,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 82713bd5-44a8-4bbf-992c-45478c859ef7)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 136.6376 22.86 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "Vin" (shape input) (at 149.86 24.13 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 8a2470cc-35e2-4b39-a55b-e0f6fc5db8ca)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.86 18.3024 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2258,6 +2244,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "14.4V" (shape input) (at 99.06 48.26 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid a3419219-0fed-45a4-88ce-426a2b22507c)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.7529 48.26 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "7.4V" (shape input) (at 129.54 48.26 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a3e53fda-5b0c-45d1-90b3-de91f50cf5d0)
@@ -2272,17 +2265,24 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "Vin" (shape input) (at 73.66 33.02 0) (fields_autoplaced)
+  (global_label "14.4V" (shape input) (at 149.86 24.13 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid c7321ce5-0788-485c-afe5-2bc9095c800f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 79.4876 33.02 0)
+    (uuid c47e3a70-7e34-4be5-bd49-f945934dc8b4)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.86 15.8229 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Vin" (shape input) (at 99.06 22.86 180) (fields_autoplaced)
+  (global_label "14.4V" (shape input) (at 73.66 33.02 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c7321ce5-0788-485c-afe5-2bc9095c800f)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 81.9671 33.02 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "14.4V" (shape input) (at 99.06 22.86 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid c86f5da6-659b-4e92-848d-1859d8bd033f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 93.2324 22.86 0)
+    (uuid e19deaf7-c967-4d6b-8aa4-6a59030bd53c)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.7529 22.86 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2312,7 +2312,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "D2") (unit 1)
+          (reference "D102") (unit 1)
         )
       )
     )
@@ -2321,7 +2321,7 @@
   (symbol (lib_id "Device:R_Small") (at 181.61 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0610d8e8-fec8-4b7a-b724-723077bb8ffa)
-    (property "Reference" "R4" (at 184.15 29.845 0)
+    (property "Reference" "R104" (at 184.15 29.845 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 184.15 32.385 0)
@@ -2338,7 +2338,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "R4") (unit 1)
+          (reference "R104") (unit 1)
         )
       )
     )
@@ -2368,7 +2368,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "H2") (unit 1)
+          (reference "H102") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -2412,7 +2412,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J4") (unit 1)
+          (reference "J102") (unit 1)
         )
       )
       (project "puissance_pcb"
@@ -2426,7 +2426,7 @@
   (symbol (lib_id "power:+3.3V") (at 179.07 90.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0f91d0ed-e07d-499d-9cfa-a2c12282b15c)
-    (property "Reference" "#PWR014" (at 182.88 90.17 0)
+    (property "Reference" "#PWR0121" (at 182.88 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 175.26 90.17 90)
@@ -2442,7 +2442,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR0121") (unit 1)
         )
       )
     )
@@ -2451,7 +2451,7 @@
   (symbol (lib_id "power:+3.3V") (at 181.61 24.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 12c00011-07a7-49e7-8b5c-c2f6ea4e9153)
-    (property "Reference" "#PWR01" (at 181.61 27.94 0)
+    (property "Reference" "#PWR0124" (at 181.61 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 181.61 19.05 0)
@@ -2467,7 +2467,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR0124") (unit 1)
         )
       )
     )
@@ -2476,7 +2476,7 @@
   (symbol (lib_id "power:+3.3V") (at 179.07 104.14 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 172f0e8f-e92c-4461-8930-6563a0a1a15c)
-    (property "Reference" "#PWR019" (at 182.88 104.14 0)
+    (property "Reference" "#PWR0122" (at 182.88 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 175.26 104.14 90)
@@ -2492,7 +2492,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR0122") (unit 1)
         )
       )
     )
@@ -2501,7 +2501,7 @@
   (symbol (lib_id "power:+3.3V") (at 54.61 105.41 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 18c91bd4-18b0-48f7-a55d-971a330b641a)
-    (property "Reference" "#PWR020" (at 58.42 105.41 0)
+    (property "Reference" "#PWR0105" (at 58.42 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 50.8 105.41 90)
@@ -2517,7 +2517,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -2547,7 +2547,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR0111") (unit 1)
         )
       )
     )
@@ -2556,7 +2556,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x05") (at 260.096 116.586 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1d021504-5aa8-4bc6-a51d-9b42359367c7)
-    (property "Reference" "J10" (at 261.366 108.966 0)
+    (property "Reference" "J115" (at 261.366 108.966 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x05" (at 268.986 124.206 0)
@@ -2576,7 +2576,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J10") (unit 1)
+          (reference "J115") (unit 1)
         )
       )
     )
@@ -2606,7 +2606,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -2643,7 +2643,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "C1") (unit 1)
+          (reference "C101") (unit 1)
         )
       )
     )
@@ -2652,7 +2652,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 129.54 147.32 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2744fb2f-e615-49ad-bb38-ab9cff25c566)
-    (property "Reference" "J13" (at 132.715 146.685 0)
+    (property "Reference" "J107" (at 132.715 146.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_Phidget_PS_Stepper_2" (at 132.715 144.145 0)
@@ -2669,7 +2669,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J13") (unit 1)
+          (reference "J107") (unit 1)
         )
       )
     )
@@ -2699,7 +2699,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR0118") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -2730,7 +2730,7 @@
   (symbol (lib_id "power:GND") (at 123.19 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2a8cc9f9-fd1b-4816-ac5a-efdd4c5a86ec)
-    (property "Reference" "#PWR030" (at 123.19 167.64 0)
+    (property "Reference" "#PWR0112" (at 123.19 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 123.19 166.37 0)
@@ -2746,7 +2746,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR0112") (unit 1)
         )
       )
     )
@@ -2755,7 +2755,7 @@
   (symbol (lib_id "power:+3.3V") (at 242.9656 111.6259 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ba6bb02-cd51-4943-bbe6-9dc1b6f2fb99)
-    (property "Reference" "#PWR02" (at 246.7756 111.6259 0)
+    (property "Reference" "#PWR0130" (at 246.7756 111.6259 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 239.1556 111.6259 90)
@@ -2771,7 +2771,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR0130") (unit 1)
         )
       )
     )
@@ -2801,7 +2801,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -2831,7 +2831,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR0113") (unit 1)
         )
       )
     )
@@ -2840,7 +2840,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 129.54 140.97 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2fdf3eaf-76a8-43aa-a3c6-cc38e4ef6489)
-    (property "Reference" "J11" (at 132.715 140.335 0)
+    (property "Reference" "J106" (at 132.715 140.335 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_Phidget_PS_Stepper_1" (at 132.715 137.795 0)
@@ -2857,7 +2857,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J11") (unit 1)
+          (reference "J106") (unit 1)
         )
       )
     )
@@ -2866,7 +2866,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 180.34 25.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41dacd4a-43ad-4cba-ae55-95417bf8349d)
-    (property "Reference" "TP1" (at 174.869 26.423 0)
+    (property "Reference" "TP104" (at 174.869 26.423 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3V3" (at 176.8013 24.8317 0)
@@ -2882,7 +2882,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "TP1") (unit 1)
+          (reference "TP104") (unit 1)
         )
       )
     )
@@ -2891,7 +2891,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 129.54 160.02 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42d82126-05a0-4eb9-b0ce-0313e05e2acd)
-    (property "Reference" "J15" (at 132.08 159.385 0)
+    (property "Reference" "J109" (at 132.08 159.385 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_Phidget_PS_Stepper_4" (at 132.08 156.845 0)
@@ -2908,7 +2908,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J15") (unit 1)
+          (reference "J109") (unit 1)
         )
       )
     )
@@ -2938,7 +2938,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -2969,7 +2969,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "D3") (unit 1)
+          (reference "D103") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -3000,7 +3000,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 127 24.13 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 653b740f-b3cb-48de-b768-da246e5a20ef)
-    (property "Reference" "TP3" (at 128.023 29.601 0)
+    (property "Reference" "TP102" (at 128.023 29.601 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5.1V" (at 126.4317 27.6687 0)
@@ -3016,7 +3016,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "TP3") (unit 1)
+          (reference "TP102") (unit 1)
         )
       )
     )
@@ -3025,7 +3025,7 @@
   (symbol (lib_id "power:GND") (at 241.046 124.206 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65dbf8de-7b3b-48e0-99d5-e39fbb633bc6)
-    (property "Reference" "#PWR026" (at 241.046 130.556 0)
+    (property "Reference" "#PWR0128" (at 241.046 130.556 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.506 124.206 0)
@@ -3041,7 +3041,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR0128") (unit 1)
         )
       )
     )
@@ -3050,7 +3050,7 @@
   (symbol (lib_id "power:+3.3V") (at 179.07 118.11 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6927d099-e0a5-4a1b-adaf-6d3e913bb12c)
-    (property "Reference" "#PWR024" (at 182.88 118.11 0)
+    (property "Reference" "#PWR0123" (at 182.88 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 175.26 118.11 90)
@@ -3066,7 +3066,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR0123") (unit 1)
         )
       )
     )
@@ -3075,7 +3075,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 181.61 25.4 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a6e4505-0be8-42fc-8874-86244ba86a99)
-    (property "Reference" "#FLG0101" (at 183.515 25.4 0)
+    (property "Reference" "#FLG0103" (at 183.515 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 182.88 26.67 90)
@@ -3091,7 +3091,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#FLG0101") (unit 1)
+          (reference "#FLG0103") (unit 1)
         )
       )
     )
@@ -3100,7 +3100,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x08") (at 215.9 34.29 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b716b81-fcbf-4d13-a444-63974fa28ea8)
-    (property "Reference" "J6" (at 215.9 20.32 0)
+    (property "Reference" "J112" (at 215.9 20.32 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_GPIO_unused" (at 218.44 22.86 0)
@@ -3123,7 +3123,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J6") (unit 1)
+          (reference "J112") (unit 1)
         )
       )
     )
@@ -3132,7 +3132,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 199.39 146.05 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6eb53159-c3e0-4e1c-9dea-eaf83d2cbc04)
-    (property "Reference" "J12" (at 205.74 143.51 0)
+    (property "Reference" "J110" (at 205.74 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02" (at 201.93 146.05 0)
@@ -3149,7 +3149,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J12") (unit 1)
+          (reference "J110") (unit 1)
         )
       )
     )
@@ -3158,7 +3158,7 @@
   (symbol (lib_id "power:GND") (at 208.28 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6fd208e6-f782-4df7-9d4b-c39f58c45b97)
-    (property "Reference" "#PWR016" (at 208.28 52.07 0)
+    (property "Reference" "#PWR0127" (at 208.28 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 208.28 50.8 0)
@@ -3174,7 +3174,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR0127") (unit 1)
         )
       )
     )
@@ -3183,7 +3183,7 @@
   (symbol (lib_id "power:+3.3V") (at 149.86 76.2 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 726fbbe1-71ef-4414-bcc7-1770ba7dce49)
-    (property "Reference" "#PWR010" (at 146.05 76.2 0)
+    (property "Reference" "#PWR0114" (at 146.05 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 153.67 76.2 90)
@@ -3199,7 +3199,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR0114") (unit 1)
         )
       )
     )
@@ -3208,7 +3208,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x08") (at 200.66 34.29 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 75304b25-465b-4b28-8614-a34200d6a6aa)
-    (property "Reference" "J5" (at 200.66 20.32 0)
+    (property "Reference" "J111" (at 200.66 20.32 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_GND" (at 200.66 22.86 0)
@@ -3231,7 +3231,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J5") (unit 1)
+          (reference "J111") (unit 1)
         )
       )
     )
@@ -3240,7 +3240,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 69.85 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 794ce575-c874-4b07-b70e-b7e734dd8d7d)
-    (property "Reference" "TP2" (at 68.827 27.549 0)
+    (property "Reference" "TP101" (at 68.827 27.549 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 70.4183 29.4813 0)
@@ -3256,7 +3256,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "TP2") (unit 1)
+          (reference "TP101") (unit 1)
         )
       )
     )
@@ -3290,7 +3290,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J1") (unit 1)
+          (reference "J103") (unit 1)
         )
       )
       (project "puissance_pcb"
@@ -3304,7 +3304,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 129.54 153.67 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 838155a4-09cf-425d-b953-716a3313dedf)
-    (property "Reference" "J14" (at 132.08 153.035 0)
+    (property "Reference" "J108" (at 132.08 153.035 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_Phidget_PS_Stepper_3" (at 132.08 150.495 0)
@@ -3321,7 +3321,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J14") (unit 1)
+          (reference "J108") (unit 1)
         )
       )
     )
@@ -3330,7 +3330,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 127 48.26 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 884e1a60-9523-4597-8333-b89d25111a66)
-    (property "Reference" "TP4" (at 128.023 53.731 0)
+    (property "Reference" "TP103" (at 128.023 53.731 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "7.4V" (at 126.4317 51.7987 0)
@@ -3346,7 +3346,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "TP4") (unit 1)
+          (reference "TP103") (unit 1)
         )
       )
     )
@@ -3376,7 +3376,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG0101") (unit 1)
         )
       )
     )
@@ -3445,7 +3445,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J8") (unit 1)
+          (reference "J105") (unit 1)
         )
       )
     )
@@ -3454,7 +3454,7 @@
   (symbol (lib_id "power:+3.3V") (at 177.8 74.93 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8f82b2e3-1356-4ee7-8c16-bb9d0f0e03c2)
-    (property "Reference" "#PWR09" (at 181.61 74.93 0)
+    (property "Reference" "#PWR0120" (at 181.61 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 173.99 74.93 90)
@@ -3470,7 +3470,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR0120") (unit 1)
         )
       )
     )
@@ -3479,7 +3479,7 @@
   (symbol (lib_id "power:GND") (at 181.61 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 94077bcd-5640-45ff-864c-ee423344e3fe)
-    (property "Reference" "#PWR06" (at 181.61 53.34 0)
+    (property "Reference" "#PWR0125" (at 181.61 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 181.61 52.07 0)
@@ -3495,7 +3495,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR0125") (unit 1)
         )
       )
     )
@@ -3525,7 +3525,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -3534,7 +3534,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x08") (at 233.68 34.29 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 96e395a2-ac4a-43e2-98b0-8ad156f027a9)
-    (property "Reference" "J7" (at 233.68 20.32 0)
+    (property "Reference" "J113" (at 233.68 20.32 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_3.3V" (at 233.68 22.86 0)
@@ -3557,7 +3557,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J7") (unit 1)
+          (reference "J113") (unit 1)
         )
       )
     )
@@ -3588,7 +3588,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "R1") (unit 1)
+          (reference "R101") (unit 1)
         )
       )
     )
@@ -3618,7 +3618,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR0131") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -3658,7 +3658,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -3688,7 +3688,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "H1") (unit 1)
+          (reference "H101") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -3707,7 +3707,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 58.42 48.26 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a025bf97-1950-48f0-89ee-f62af2a0f1f1)
-    (property "Reference" "#FLG02" (at 58.42 50.165 0)
+    (property "Reference" "#FLG0102" (at 58.42 50.165 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 58.42 53.34 0)
@@ -3723,7 +3723,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG0102") (unit 1)
         )
       )
     )
@@ -3753,7 +3753,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR0119") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -3809,7 +3809,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J2") (unit 1)
+          (reference "J104") (unit 1)
         )
       )
     )
@@ -3839,7 +3839,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -3848,7 +3848,7 @@
   (symbol (lib_id "power:+3.3V") (at 54.61 85.09 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a6375dbe-9bb2-45d8-92a3-3d46b85734dd)
-    (property "Reference" "#PWR011" (at 58.42 85.09 0)
+    (property "Reference" "#PWR0104" (at 58.42 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 50.8 85.09 90)
@@ -3864,7 +3864,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -3895,7 +3895,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "R2") (unit 1)
+          (reference "R102") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -3926,7 +3926,7 @@
   (symbol (lib_id "power:+3.3V") (at 241.3 24.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a9ecc6ea-20c9-4320-8513-d90972c3d220)
-    (property "Reference" "#PWR08" (at 241.3 27.94 0)
+    (property "Reference" "#PWR0129" (at 241.3 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 241.3 19.05 0)
@@ -3942,7 +3942,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR0129") (unit 1)
         )
       )
     )
@@ -3951,7 +3951,7 @@
   (symbol (lib_id "power:+3.3V") (at 149.86 102.87 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b41777bc-5f10-4ffd-b83c-72026434b615)
-    (property "Reference" "#PWR018" (at 146.05 102.87 0)
+    (property "Reference" "#PWR0116" (at 146.05 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 153.67 102.87 90)
@@ -3967,7 +3967,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR0116") (unit 1)
         )
       )
     )
@@ -3997,7 +3997,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -4027,7 +4027,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "H3") (unit 1)
+          (reference "H103") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -4067,7 +4067,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "H4") (unit 1)
+          (reference "H104") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -4086,7 +4086,7 @@
   (symbol (lib_id "power:+3.3V") (at 149.86 116.84 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d0be51ab-9df7-4cc2-9a9e-a55ca49ce884)
-    (property "Reference" "#PWR023" (at 146.05 116.84 0)
+    (property "Reference" "#PWR0117" (at 146.05 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 153.67 116.84 90)
@@ -4102,7 +4102,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR0117") (unit 1)
         )
       )
     )
@@ -4111,7 +4111,7 @@
   (symbol (lib_id "power:+3.3V") (at 149.86 88.9 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4ded9b2-f426-4b34-b8e3-90ee78b56e99)
-    (property "Reference" "#PWR012" (at 146.05 88.9 0)
+    (property "Reference" "#PWR0115" (at 146.05 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 153.67 88.9 90)
@@ -4127,7 +4127,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR0115") (unit 1)
         )
       )
     )
@@ -4157,7 +4157,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -4188,7 +4188,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "R3") (unit 1)
+          (reference "R103") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -4219,7 +4219,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x05") (at 253.746 116.586 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dfb200f6-85c1-4b18-9ac4-e7cdcb0fd61d)
-    (property "Reference" "J9" (at 251.206 108.966 0)
+    (property "Reference" "J114" (at 251.206 108.966 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x05" (at 244.856 124.206 0)
@@ -4239,7 +4239,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J9") (unit 1)
+          (reference "J114") (unit 1)
         )
       )
     )
@@ -4273,7 +4273,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "J3") (unit 1)
+          (reference "J101") (unit 1)
         )
       )
       (project "puissance_pcb"
@@ -4312,7 +4312,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "D1") (unit 1)
+          (reference "D101") (unit 1)
         )
       )
     )
@@ -4343,7 +4343,7 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "D4") (unit 1)
+          (reference "D104") (unit 1)
         )
       )
       (project "Regulateurs"
@@ -4374,7 +4374,7 @@
   (symbol (lib_id "Device:LED") (at 181.61 40.64 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f1508243-1874-40d8-821f-02a48262e6d4)
-    (property "Reference" "D5" (at 185.42 41.5925 90)
+    (property "Reference" "D105" (at 185.42 41.5925 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (at 185.42 44.1325 90)
@@ -4391,7 +4391,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "D5") (unit 1)
+          (reference "D105") (unit 1)
         )
       )
     )
@@ -4400,7 +4400,7 @@
   (symbol (lib_id "power:GND") (at 191.77 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f6566810-8ea4-48a3-aa07-f0516f601e4d)
-    (property "Reference" "#PWR029" (at 191.77 153.67 0)
+    (property "Reference" "#PWR0126" (at 191.77 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 191.516 152.146 0)
@@ -4416,7 +4416,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR0126") (unit 1)
         )
       )
     )

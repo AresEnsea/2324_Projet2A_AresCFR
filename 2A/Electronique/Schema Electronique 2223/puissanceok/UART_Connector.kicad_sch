@@ -146,7 +146,7 @@
   (symbol (lib_id "power:GND") (at 151.13 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d69f9cb9-1350-4385-8fd1-9dd9534f8543)
-    (property "Reference" "#PWR051" (at 151.13 111.76 0)
+    (property "Reference" "#PWR01001" (at 151.13 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.13 110.49 0)
@@ -162,13 +162,13 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/87662431-78a9-4c9d-bc49-d5c8947794ed"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR01001") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/af50aa95-aed2-4d54-9537-cfc75f526261"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR0801") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/78b7270a-a5a1-4fe9-b966-10927640cfad"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR01101") (unit 1)
         )
       )
     )
@@ -177,7 +177,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 157.48 101.6 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d809529c-8548-4298-881f-7ddf486c45bd)
-    (property "Reference" "J22" (at 160.02 101.6 0)
+    (property "Reference" "J1001" (at 160.02 101.6 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_UART" (at 160.02 99.06 0)
@@ -196,13 +196,13 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/87662431-78a9-4c9d-bc49-d5c8947794ed"
-          (reference "J22") (unit 1)
+          (reference "J1001") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/78b7270a-a5a1-4fe9-b966-10927640cfad"
-          (reference "J23") (unit 1)
+          (reference "J1101") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/af50aa95-aed2-4d54-9537-cfc75f526261"
-          (reference "J20") (unit 1)
+          (reference "J801") (unit 1)
         )
       )
     )
