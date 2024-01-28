@@ -110,6 +110,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Changement des pièces du robot pour s'addapter au xl-320
 - Test du capteur de couleurs
 - Réalisation du schématique de la carte mère
+- Test des nouvelles pièces imprimées  
 
 ### Jeudi 25 Janvier (J-104)
 - Match amical avec l'association de robotique Robotium
