@@ -234,3 +234,22 @@ Création de pièces et assemblage de celles-ci avec des pièces utilisées les 
 - Augmenter la taille de l'ascenseur pour éviter la collision entre les pots.
 - Les roues ne touchent pas le sol il faudrat donc modifier la pièce de maintien des moteurs pas à pas (correction des trous pour l'odométrie).
 
+## Janvier 2023: 
+
+
+### CAO
+
+- Changement des actionneurs SG90 par des XL-320 pour des raisons de performence et de connectivité simplifié.  
+- L'ascenseur a été améliorer pour faciliter la rotation de la pince et a été rehausser pour limiter la perte de pot potentiel.  
+- La pince a été améliorer pour recevoir un XL-320
+- Le pousse pot a été améliorer pour recevoir un XL-320
+- Le périmètre du robot à été réduit
+
+### Electronique
+
+- Réalisation du schémaique et du pcb de la carte mère du robot.
+- Choix de différents capteurs de détection de pot (capteur de couleurs et de proximité)
+
+### Code  
+
+- Test du capteur de couleurs
