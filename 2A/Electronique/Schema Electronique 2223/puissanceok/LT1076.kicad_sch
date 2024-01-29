@@ -664,6 +664,15 @@
     (uuid fb77cc48-bedb-4d60-9426-084991d66e39)
   )
 
+  (label "voutbuck" (at 135.382 68.58 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 379279ab-b781-4ffc-be55-f0ee43135252)
+  )
+  (label "vc" (at 110.744 83.82 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 4adc2eda-542b-43db-97a1-fb49804429d5)
+  )
+
   (hierarchical_label "Vout" (shape input) (at 148.59 106.68 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 234380bd-ac16-4583-8060-9882d6cebdcb)
