@@ -584,7 +584,7 @@
   (symbol (lib_id "power:GND") (at 176.53 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 246dd8a8-6d1a-4e9b-a0c4-0964e4f4c5d4)
-    (property "Reference" "#PWR050" (at 176.53 118.11 0)
+    (property "Reference" "#PWR0903" (at 176.53 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 116.84 0)
@@ -600,7 +600,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR0903") (unit 1)
         )
       )
     )
@@ -609,7 +609,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 182.88 107.95 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3317842c-0a2b-4f1f-8ed6-756e466878aa)
-    (property "Reference" "J21" (at 185.42 109.22 0)
+    (property "Reference" "J901" (at 185.42 109.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_XL320" (at 185.42 106.68 0)
@@ -627,7 +627,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "J21") (unit 1)
+          (reference "J901") (unit 1)
         )
       )
     )
@@ -636,7 +636,7 @@
   (symbol (lib_id "Device:C_Small") (at 201.93 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 33538104-ba22-4eb0-8af6-0c5d5ede5d14)
-    (property "Reference" "C16" (at 203.708 65.024 0)
+    (property "Reference" "C903" (at 203.708 65.024 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 203.2 67.31 0)
@@ -653,7 +653,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "C16") (unit 1)
+          (reference "C903") (unit 1)
         )
       )
     )
@@ -662,7 +662,7 @@
   (symbol (lib_id "74xGxx:74LVC2G241") (at 105.41 69.85 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 40523b59-4a1e-4851-8f9b-56b8a5abdd6e)
-    (property "Reference" "U3" (at 106.68 58.42 0)
+    (property "Reference" "U901" (at 106.68 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LVC2G241" (at 106.68 60.96 0)
@@ -688,7 +688,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "U3") (unit 1)
+          (reference "U901") (unit 1)
         )
       )
     )
@@ -697,7 +697,7 @@
   (symbol (lib_id "Device:C_Small") (at 175.5932 64.0011 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a3e2fb8-bda1-49af-b92a-e8112a91a9c6)
-    (property "Reference" "C14" (at 177.8 62.23 0)
+    (property "Reference" "C901" (at 177.8 62.23 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 177.8 66.04 0)
@@ -714,7 +714,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "C14") (unit 1)
+          (reference "C901") (unit 1)
         )
       )
     )
@@ -723,7 +723,7 @@
   (symbol (lib_id "Device:R_Small") (at 87.63 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5a78cf32-9ca1-416f-8618-1b0184cd4ef4)
-    (property "Reference" "R19" (at 89.408 64.135 0)
+    (property "Reference" "R901" (at 89.408 64.135 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 89.408 66.675 0)
@@ -740,7 +740,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "R19") (unit 1)
+          (reference "R901") (unit 1)
         )
       )
     )
@@ -749,7 +749,7 @@
   (symbol (lib_id "power:GND") (at 196.85 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5acf859b-9a89-41e8-a096-cd1fafb1d7d3)
-    (property "Reference" "#PWR047" (at 196.85 76.2 0)
+    (property "Reference" "#PWR0904" (at 196.85 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.85 74.93 0)
@@ -765,7 +765,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR0904") (unit 1)
         )
       )
     )
@@ -774,7 +774,7 @@
   (symbol (lib_id "power:GND") (at 167.64 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65aaf58a-d303-4a7e-bdbf-5847d14e6553)
-    (property "Reference" "#PWR048" (at 167.64 81.28 0)
+    (property "Reference" "#PWR0902" (at 167.64 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 163.83 74.93 0)
@@ -790,7 +790,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR0902") (unit 1)
         )
       )
     )
@@ -799,7 +799,7 @@
   (symbol (lib_id "74xGxx:74LVC2G241") (at 107.95 93.98 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7aa96b65-25f1-4087-bddd-831d2c10f0cb)
-    (property "Reference" "U3" (at 106.68 102.87 0)
+    (property "Reference" "U901" (at 106.68 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LVC2G241" (at 106.68 105.41 0)
@@ -825,7 +825,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "U3") (unit 2)
+          (reference "U901") (unit 2)
         )
       )
     )
@@ -834,7 +834,7 @@
   (symbol (lib_id "power:GND") (at 93.98 87.884 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 996e331d-0141-40a9-b493-72642f5ed932)
-    (property "Reference" "#PWR049" (at 93.98 94.234 0)
+    (property "Reference" "#PWR0901" (at 93.98 94.234 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 87.884 0)
@@ -850,7 +850,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR0901") (unit 1)
         )
       )
     )
@@ -859,7 +859,7 @@
   (symbol (lib_id "Device:R_Small") (at 93.98 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a15b0ff3-57a2-44ce-a2db-98288415d6b1)
-    (property "Reference" "R21" (at 95.758 84.455 0)
+    (property "Reference" "R902" (at 95.758 84.455 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 95.758 86.995 0)
@@ -876,7 +876,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "R21") (unit 1)
+          (reference "R902") (unit 1)
         )
       )
     )
@@ -885,7 +885,7 @@
   (symbol (lib_id "74xGxx:74LVC2G241") (at 167.64 64.77 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b339a9f8-21a3-4268-b92f-627f0eb9ae86)
-    (property "Reference" "U3" (at 158.75 66.04 90)
+    (property "Reference" "U901" (at 158.75 66.04 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "74LVC2G241" (at 161.29 71.12 90)
@@ -911,7 +911,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "U3") (unit 3)
+          (reference "U901") (unit 3)
         )
       )
     )
@@ -920,7 +920,7 @@
   (symbol (lib_id "Device:R_Small") (at 121.92 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid deaf6440-3fc5-49bf-8cb1-d91525acf185)
-    (property "Reference" "R20" (at 124.46 64.77 0)
+    (property "Reference" "R903" (at 124.46 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 124.46 67.31 0)
@@ -937,7 +937,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "R20") (unit 1)
+          (reference "R903") (unit 1)
         )
       )
     )
@@ -946,7 +946,7 @@
   (symbol (lib_id "Device:C_Polarized_Small") (at 191.77 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e1d50fae-18d8-4e2a-adf2-207ca6ee53f8)
-    (property "Reference" "C15" (at 194.31 64.2239 0)
+    (property "Reference" "C902" (at 194.31 64.2239 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100u" (at 194.31 66.7639 0)
@@ -969,7 +969,7 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/6ae65ced-862a-45db-8236-045925bae1ca"
-          (reference "C15") (unit 1)
+          (reference "C902") (unit 1)
         )
       )
     )

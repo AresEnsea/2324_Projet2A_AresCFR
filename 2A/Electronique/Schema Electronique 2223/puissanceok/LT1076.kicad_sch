@@ -482,11 +482,17 @@
   (junction (at 110.49 68.58) (diameter 0) (color 0 0 0 0)
     (uuid 44045d9b-3d02-4142-860f-9bd422eaac1f)
   )
+  (junction (at 171.45 68.58) (diameter 0) (color 0 0 0 0)
+    (uuid 67a1205e-2ad6-4ef2-95ea-e52b7ba68c0e)
+  )
   (junction (at 152.4 78.74) (diameter 0) (color 0 0 0 0)
     (uuid 78de89b5-e32a-405d-98ba-00709328829b)
   )
   (junction (at 161.29 68.58) (diameter 0) (color 0 0 0 0)
     (uuid d9de4f44-82b4-4e68-bfbb-a29e2fd5ff7b)
+  )
+  (junction (at 161.29 78.74) (diameter 0) (color 0 0 0 0)
+    (uuid f5e0dcdf-557d-464d-9328-05cd6ce4a9d9)
   )
 
   (no_connect (at 113.03 78.74) (uuid 0b0394e9-b7e1-4b99-a404-b7d8e64818b7))
@@ -495,9 +501,17 @@
     (stroke (width 0) (type default))
     (uuid 00728bfb-ab77-4a21-af48-b068954173b9)
   )
+  (wire (pts (xy 171.45 78.74) (xy 171.45 77.47))
+    (stroke (width 0) (type default))
+    (uuid 05dc8718-67e7-4336-b0eb-fcc91543ab37)
+  )
   (wire (pts (xy 110.49 73.66) (xy 110.49 68.58))
     (stroke (width 0) (type default))
     (uuid 0851b457-6346-449e-95e2-c45115aec265)
+  )
+  (wire (pts (xy 171.45 68.58) (xy 171.45 72.39))
+    (stroke (width 0) (type default))
+    (uuid 164eded3-a25c-4ad2-bfcc-eedbf1eb418e)
   )
   (wire (pts (xy 133.35 68.58) (xy 142.24 68.58))
     (stroke (width 0) (type default))
@@ -519,7 +533,7 @@
     (stroke (width 0) (type default))
     (uuid 2948e902-d81d-4dba-84c0-9bc2d516a278)
   )
-  (wire (pts (xy 162.56 68.58) (xy 161.29 68.58))
+  (wire (pts (xy 175.26 68.58) (xy 171.45 68.58))
     (stroke (width 0) (type default))
     (uuid 33e02d84-7647-420b-b260-66c4346f3308)
   )
@@ -595,6 +609,10 @@
     (stroke (width 0) (type default))
     (uuid 8c63e4cd-ffab-4482-bd12-b7d3ea3f4fee)
   )
+  (wire (pts (xy 171.45 68.58) (xy 161.29 68.58))
+    (stroke (width 0) (type default))
+    (uuid 8eb039d8-ea1b-46b9-b4cd-815fa091fb58)
+  )
   (wire (pts (xy 110.49 85.09) (xy 110.49 83.82))
     (stroke (width 0) (type default))
     (uuid 925916f1-d8ce-44be-af1c-fc98f3ea35a7)
@@ -614,6 +632,10 @@
   (wire (pts (xy 157.48 68.58) (xy 161.29 68.58))
     (stroke (width 0) (type default))
     (uuid de513117-8864-4b6e-82fe-3b99af315606)
+  )
+  (wire (pts (xy 161.29 78.74) (xy 171.45 78.74))
+    (stroke (width 0) (type default))
+    (uuid e859b9fc-c8ce-490a-a3a0-d17d2e01eff6)
   )
   (wire (pts (xy 110.49 100.33) (xy 110.49 96.52))
     (stroke (width 0) (type default))
@@ -646,7 +668,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 234380bd-ac16-4583-8060-9882d6cebdcb)
   )
-  (hierarchical_label "Vout" (shape input) (at 162.56 68.58 0) (fields_autoplaced)
+  (hierarchical_label "Vout" (shape input) (at 175.26 68.58 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a96932c9-3b85-4dce-9f48-92b7e4ecf2ee)
   )
@@ -667,7 +689,7 @@
     (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7" (at 103.8352 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 102.87 73.66 0)
+    (property "Datasheet" "https://www.we-online.com/components/products/datasheet/865060445005.pdf" (at 102.87 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "MPN" "865060445005" (at 102.87 73.66 0)
@@ -689,10 +711,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C3") (unit 1)
+          (reference "C301") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C9") (unit 1)
+          (reference "C601") (unit 1)
         )
       )
       (project "LT1076"
@@ -731,6 +753,41 @@
     )
   )
 
+  (symbol (lib_id "Device:C_Polarized_Small") (at 171.45 74.93 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1d0f128e-b930-4dc2-91e4-b8d5f0b3cb3b)
+    (property "Reference" "C304" (at 173.99 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "22u" (at 172.72 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4" (at 171.45 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.we-online.com/components/products/datasheet/865060240001.pdf" (at 171.45 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFR" "865060240001" (at 171.45 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Vmax" "10V" (at 171.45 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d2fd8ee2-783c-49cc-bbdb-a92cd4e30bc1))
+    (pin "2" (uuid 86b51138-5a99-42f9-a081-9f2fe4202411))
+    (instances
+      (project "puissanceok"
+        (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
+          (reference "C304") (unit 1)
+        )
+        (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
+          (reference "C604") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C_Small") (at 152.4 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4fa37b74-991e-40be-a0ee-42657bdf8e0c)
@@ -759,10 +816,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C6") (unit 1)
+          (reference "C303") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C12") (unit 1)
+          (reference "C603") (unit 1)
         )
       )
       (project "LT1076"
@@ -800,10 +857,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR0304") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR0604") (unit 1)
         )
       )
       (project "LT1076"
@@ -842,10 +899,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C5") (unit 1)
+          (reference "C302") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C11") (unit 1)
+          (reference "C602") (unit 1)
         )
       )
       (project "LT1076"
@@ -883,10 +940,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR0303") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR0603") (unit 1)
         )
       )
       (project "LT1076"
@@ -900,7 +957,7 @@
   (symbol (lib_id "Device:D_Schottky") (at 142.24 73.66 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9cfb4816-4246-4dc0-a945-3bad628438a3)
-    (property "Reference" "D602" (at 144.78 72.0725 90)
+    (property "Reference" "D601" (at 144.78 72.0725 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "D_Schottky" (at 144.78 74.6125 90)
@@ -920,10 +977,10 @@
     (instances
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "D602") (unit 1)
+          (reference "D601") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "D302") (unit 1)
+          (reference "D301") (unit 1)
         )
       )
     )
@@ -957,10 +1014,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "R9") (unit 1)
+          (reference "R303") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "R16") (unit 1)
+          (reference "R603") (unit 1)
         )
       )
       (project "LT1076"
@@ -998,10 +1055,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR0302") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR0602") (unit 1)
         )
       )
       (project "LT1076"
@@ -1039,10 +1096,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR0305") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR0605") (unit 1)
         )
       )
       (project "LT1076"
@@ -1081,10 +1138,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "R7") (unit 1)
+          (reference "R302") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "R14") (unit 1)
+          (reference "R602") (unit 1)
         )
       )
       (project "LT1076"
@@ -1123,10 +1180,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "R8") (unit 1)
+          (reference "R301") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "R15") (unit 1)
+          (reference "R601") (unit 1)
         )
       )
       (project "LT1076"
@@ -1164,10 +1221,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR0301") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR0601") (unit 1)
         )
       )
       (project "LT1076"
@@ -1180,44 +1237,34 @@
 
   (symbol (lib_id "Device:C_Polarized_Small") (at 161.29 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid c580c04e-e0b1-4c86-ad78-b14da7d92a42)
-    (property "Reference" "C?" (at 163.83 74.93 0)
+    (uuid cbc4e269-7d31-408e-b90c-1702d279b8dd)
+    (property "Reference" "C305" (at 163.83 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "47u" (at 162.56 77.47 0)
+    (property "Value" "22u" (at 162.56 77.47 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4" (at 161.29 74.93 0)
+    (property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4" (at 161.29 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 161.29 74.93 0)
+    (property "Datasheet" "https://www.we-online.com/components/products/datasheet/865060240001.pdf" (at 161.29 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFR" "865060543005" (at 161.29 74.93 0)
+    (property "MFR" "865060240001" (at 161.29 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1360cff3-e511-4e45-a7b6-d3bf0a467f98))
-    (pin "2" (uuid d93aed77-0eab-44da-a6d0-e3c231212a62))
+    (property "Vmax" "10V" (at 161.29 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cf25b337-b017-4fc0-82d7-64329243e2f4))
+    (pin "2" (uuid aac3952e-21fe-4a0f-824f-22c6e7771172))
     (instances
-      (project "puissance"
-        (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/1102c957-0c72-4739-9178-7c6acddebd3f"
-          (reference "C?") (unit 1)
-        )
-        (path "/0d130b37-34b7-46a9-87e1-2e8471e42169/fb385e64-ed51-4fb9-92be-be410faa5a42"
-          (reference "C?") (unit 1)
-        )
-      )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "C4") (unit 1)
+          (reference "C305") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "C10") (unit 1)
-        )
-      )
-      (project "LT1076"
-        (path "/7a72ba39-2c16-4369-b19e-b43db5a2fe7b"
-          (reference "C?") (unit 1)
+          (reference "C605") (unit 1)
         )
       )
     )
@@ -1256,10 +1303,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "U1") (unit 1)
+          (reference "U301") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "U2") (unit 1)
+          (reference "U601") (unit 1)
         )
       )
       (project "LT1076"
@@ -1304,10 +1351,10 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/d0016765-fb7e-4c4e-9d8c-f91c29732bdf"
-          (reference "L1") (unit 1)
+          (reference "L301") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/7ec9b85e-02d5-4657-bc47-51feb658e8df"
-          (reference "L2") (unit 1)
+          (reference "L601") (unit 1)
         )
       )
       (project "LT1076"

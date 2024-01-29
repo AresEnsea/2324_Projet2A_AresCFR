@@ -269,16 +269,16 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "R5") (unit 1)
+          (reference "R201") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "R10") (unit 1)
+          (reference "R401") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "R12") (unit 1)
+          (reference "R501") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "R17") (unit 1)
+          (reference "R701") (unit 1)
         )
       )
       (project "GPIO_filtering"
@@ -323,16 +323,16 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "R6") (unit 1)
+          (reference "R202") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "R11") (unit 1)
+          (reference "R402") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "R13") (unit 1)
+          (reference "R502") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "R18") (unit 1)
+          (reference "R702") (unit 1)
         )
       )
       (project "GPIO_filtering"
@@ -376,16 +376,16 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR0201") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR0401") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR0501") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR0701") (unit 1)
         )
       )
       (project "GPIO_filtering"
@@ -430,16 +430,16 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "C2") (unit 1)
+          (reference "C201") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "C7") (unit 1)
+          (reference "C401") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "C8") (unit 1)
+          (reference "C501") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "C13") (unit 1)
+          (reference "C701") (unit 1)
         )
       )
       (project "GPIO_filtering"
@@ -484,16 +484,16 @@
       )
       (project "puissanceok"
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/9b22c488-baa3-42ae-9ef5-b083dc19096a"
-          (reference "J16") (unit 1)
+          (reference "J201") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/ae22de61-0699-445c-b49e-1232b8ae9dd6"
-          (reference "J17") (unit 1)
+          (reference "J401") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/991e50e5-567d-4a30-9947-41feef9d79c1"
-          (reference "J18") (unit 1)
+          (reference "J501") (unit 1)
         )
         (path "/50648b18-b1a7-4d76-a5dd-1fad5f3e825e/461af59c-9ba2-44c6-95d1-ce4131c667f6"
-          (reference "J19") (unit 1)
+          (reference "J701") (unit 1)
         )
       )
       (project "GPIO_filtering"
