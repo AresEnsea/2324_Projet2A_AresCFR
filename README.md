@@ -250,6 +250,54 @@ Création de pièces et assemblage de celles-ci avec des pièces utilisées les 
 - Réalisation du schémaique et du pcb de la carte mère du robot.
 - Choix de différents capteurs de détection de pot (capteur de couleurs et de proximité)
 
+#### Réalisation du schéma Electronique  
+On commence par réaliser le schéma fonctionnel pour avoir une petite idée de l'architecture de la carte principal du Robot:  
+![Schéma fonctionnel](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Architecture/schema_fonctionnel.png)  
+On réalise ensuite le sschéma électronique avec les composants de base et en fabriquant les composants inexistants .
+Pour faciliter la lisibilité du schéma les différentes partis(conversion communication calcul ) on les séparer dans des blocks ou des sous pages.
+Partis alimentation de la carte :  
+![Power](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/power.png)  
+Pour cette partis nous avons repris et amélioré le shéma réalisé réaliser pour la coupe de france de robotique 2023.
+Etant donné la place limité sur la nouvelle carte et la présence de détrompeur sur les connecteurs nous avons décider de retirer le système anti inversion de polarité et de retour de courant ainsi que le fusible de protection(car il n'a jamais servis avant et les pistes peuvent réaliser cette fonctions en cas d'extrême nécéssité xD).
+Seule la diode TVS pour les surtension à été laissée ainsi que le condensateur de filtrage.
+Comme on l'a vue dans le schéma fonctionnel il nous faut du 5.1v,7.4v et3.3v pour les différentes applications sachant que les batteries fournissent en série 14.4v.
+On utilise donc 2 bucks pour cette transformation.
+Lorsque deux schéma sont similaire pour éviter de prendre plus de place dans le schématique on peut creer des pages hierarchique ou seuls certaine entrée et sortie apparaissent sur la page principal:  
+![Buck](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/buck.png)  
+Pour délivrer la tension souhaiter il faut bien définir notre pont diviseur qui sont finalement les seuls choses qui changent entre le bick 5.1v et 7.4v.  
+/!\ C'est la qu'intervient la limite de la page hiérarchique car entre les deux bucks 2 resistances ont des valeurs différents (nous n'avons pas trouvé de solution pour résoudre ce pb dans les pages hiérarchiques).  
+On a également mis 2 capacités de 22uF en parrallèle, pour apres avoir plus de facilité à placer les composants sur le pcb.(cette modification à été réalisé pendant le placement des composants).  
+La référence du pont diviseur aurais du idéalement être mis au GND du buck pour être au plus proche pour calculer la différence de tension afin de réguler la tension au mieux. 
+Une fois les alimentations réalisées on rajoute des leds de controls sur chaques tensions afin d'avoir un control visuel et des points de tests afin de controler la tension avec un voltmètre.  
+On réalise maintenant la partis capteurs avec les différents systèmes de communication:  
+![sensors](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/sensors.png)  
+Les capteurs font appel à des communications séries UART et des gpio pour le capteurs de couleur et les capteurs fin de course.  
+
+Capteurs Fin de course:  
+![Capteur fin de course](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/findecourse.png)  
+L'orsque l'on appuit sur un boutin et qu'on relache il y a un effet rebond ,le microcontrolleur voie plusieurs appuis/relache rapide .  
+Pour limiter cela on ajoute un filtre RC pour lisser cela .On rajoute également une résistance de tirage pour évité l'effet antenne quand le bouton est ouvert.  
+
+UART:  
+![UART](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/uartconnector.png)  
+Contrairement aux années précédants nous avons décidé d'enlever les diodes TVS anti sur tension par manque de place.  
+
+Connection XL-320:  
+![UART](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/UARTXL320.png)  
+Pour le control des XL-320 le protocole fait appel à une connection série UART alf duplex(com dans un sens a la fois) en 5v or la Pi4 utilise des UARTs full duplex en 3.3v.  
+On utilise donc le 74LVC2G241 pour convertir du alf en full duplex (communication dans deux sens en même temp).De plus ce module permet de remplacer un level shifter pour adapter la tension de communication.  
+
+Capteurs de couleur:
+Le capteurs de couleurs fonctionne en 5v et 3.3v ce qui est intéréssant pour notre PI4 qui accepte uniquement du 3.3v .
+
+On relis tout les signaux à la PI4 (on l'a choisis pour avoir 4 UART à disposition ) et on récupère le 3.3v pour l'alimentation 3v3.  
+![UART](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/piconnector.png)  
+On finis par rajouter les GPIO non utilisé de la pi sur un bornier avec l'alim a coté pour pouvoir rajouter de potentiels capteurs imprévue .  
+On obtient donc ce magnifique schéma:  
+![UART](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/schema.png)  
+
+#### Réalisation du PCB  
+
 ### Code  
 
 - Test du capteur de couleurs
