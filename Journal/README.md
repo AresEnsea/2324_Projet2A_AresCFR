@@ -116,7 +116,9 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Match amical avec l'association de robotique Robotium
 
 ### Mardi 30 Janvier (J-99)
--
+- Finalisation du pcb et commande des cartes et composants 
+- testes des nouvelles pièces 3D 
+
 
 ### Mardi 6 Février (J-92)
 -
