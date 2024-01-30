@@ -64,8 +64,8 @@
       39,
       40
     ],
-    "visible_layers": "000ffff_00000001",
-    "zone_display_mode": 1
+    "visible_layers": "000ffff_80000001",
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "puissanceok.kicad_prl",
