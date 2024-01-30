@@ -152,6 +152,7 @@
   (net 53 "/BUCK_5.1V/vc")
   (net 54 "unconnected-(U301-Ilim-Pad3)")
   (net 55 "unconnected-(U601-Ilim-Pad3)")
+  (net 56 "unconnected-(J105-Pin_1-Pad1)")
 
   (footprint "Capacitor_SMD:CP_Elec_6.3x7.7" (layer "F.Cu")
     (tstamp 024002c8-7e18-49cf-910e-533611395544)
@@ -5881,7 +5882,7 @@
     (fp_line (start 1.27 0.27) (end 1.27 -49.53)
       (stroke (width 0.1) (type solid)) (layer "B.Fab") (tstamp 6c2c5dd1-8923-4cae-b09b-de4a8149e050))
     (pad "1" thru_hole rect (at 0 0 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
-      (net 6 "+3.3V") (pinfunction "Pin_1") (pintype "passive") (tstamp 3aef27f1-aace-4871-a34e-8c6c4389ca8a))
+      (net 56 "unconnected-(J105-Pin_1-Pad1)") (pinfunction "Pin_1") (pintype "passive+no_connect") (tstamp 3aef27f1-aace-4871-a34e-8c6c4389ca8a))
     (pad "2" thru_hole oval (at -2.54 0 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 16 "5.1V") (pinfunction "Pin_2") (pintype "passive") (tstamp 742ec1cf-000d-4734-84f2-15d02cb0292f))
     (pad "3" thru_hole oval (at 0 -2.54 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
