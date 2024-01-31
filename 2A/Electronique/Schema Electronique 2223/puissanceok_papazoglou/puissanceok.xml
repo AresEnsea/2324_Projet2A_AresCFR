@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\natha\Documents\Scolarite\ENSEA\cfrobotique\Projet\2324_Projet2A_AresCFR\2A\Electronique\Schema Electronique 2223\puissanceok_papazoglou\puissanceok.kicad_sch</source>
-    <date>30/01/2024 17:35:17</date>
-    <tool>Eeschema 7.0.10</tool>
+    <source>/home/nicolas/git/2324_Projet2A_AresCFR/2A/Electronique/Schema Electronique 2223/puissanceok_papazoglou/puissanceok.kicad_sch</source>
+    <date>mer. 31 janv. 2024 11:38:50</date>
+    <tool>Eeschema 7.0.10-7.0.10~ubuntu22.04.1</tool>
     <textvar name="Rbas">2k8</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
+        <title>Carte de commande Coupe de France de Robotique 2024</title>
+        <company>Ares ENSEA</company>
         <rev/>
-        <date/>
+        <date>2024-01-30</date>
         <source>puissanceok.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -689,11 +689,11 @@
       <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
       <datasheet>https://www.we-online.com/components/products/datasheet/865060240001.pdf</datasheet>
       <fields>
-        <field name="MFR">865060240001</field>
+        <field name="MPN">865060240001</field>
         <field name="Vmax">10V</field>
       </fields>
       <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
-      <property name="MFR" value="865060240001"/>
+      <property name="MPN" value="865060240001"/>
       <property name="Vmax" value="10V"/>
       <property name="Sheetname" value="BUCK_7.4V"/>
       <property name="Sheetfile" value="LT1076.kicad_sch"/>
@@ -707,11 +707,11 @@
       <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
       <datasheet>https://www.we-online.com/components/products/datasheet/865060240001.pdf</datasheet>
       <fields>
-        <field name="MFR">865060240001</field>
+        <field name="MPN">865060240001</field>
         <field name="Vmax">10V</field>
       </fields>
       <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
-      <property name="MFR" value="865060240001"/>
+      <property name="MPN" value="865060240001"/>
       <property name="Vmax" value="10V"/>
       <property name="Sheetname" value="BUCK_7.4V"/>
       <property name="Sheetfile" value="LT1076.kicad_sch"/>
@@ -740,10 +740,10 @@
       <value>22m</value>
       <footprint>Inductor_SMD:L_Changjiang_FNR8065S</footprint>
       <fields>
-        <field name="MFR">7447709220</field>
+        <field name="MPN">7447709220</field>
       </fields>
       <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
-      <property name="MFR" value="7447709220"/>
+      <property name="MPN" value="7447709220"/>
       <property name="Field5" value=""/>
       <property name="Sheetname" value="BUCK_7.4V"/>
       <property name="Sheetfile" value="LT1076.kicad_sch"/>
@@ -789,7 +789,11 @@
       <value>LT1076CR-PBF</value>
       <footprint>Package_TO_SOT_SMD:TO-263-7_TabPin4</footprint>
       <datasheet>https://www.mouser.fr/datasheet/2/609/1074fds-3123169.pdf</datasheet>
+      <fields>
+        <field name="MPN">LT1076CR</field>
+      </fields>
       <libsource lib="" part="LT1076_1" description=""/>
+      <property name="MPN" value="LT1076CR"/>
       <property name="Sheetname" value="BUCK_7.4V"/>
       <property name="Sheetfile" value="LT1076.kicad_sch"/>
       <sheetpath names="/BUCK_7.4V/" tstamps="/d0016765-fb7e-4c4e-9d8c-f91c29732bdf/"/>
@@ -928,11 +932,11 @@
       <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
       <datasheet>https://www.we-online.com/components/products/datasheet/865060240001.pdf</datasheet>
       <fields>
-        <field name="MFR">865060240001</field>
+        <field name="MPN">865060240001</field>
         <field name="Vmax">10V</field>
       </fields>
       <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
-      <property name="MFR" value="865060240001"/>
+      <property name="MPN" value="865060240001"/>
       <property name="Vmax" value="10V"/>
       <property name="Sheetname" value="BUCK_5.1V"/>
       <property name="Sheetfile" value="LT1076.kicad_sch"/>
@@ -946,11 +950,11 @@
       <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
       <datasheet>https://www.we-online.com/components/products/datasheet/865060240001.pdf</datasheet>
       <fields>
-        <field name="MFR">865060240001</field>
+        <field name="MPN">865060240001</field>
         <field name="Vmax">10V</field>
       </fields>
       <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
-      <property name="MFR" value="865060240001"/>
+      <property name="MPN" value="865060240001"/>
       <property name="Vmax" value="10V"/>
       <property name="Sheetname" value="BUCK_5.1V"/>
       <property name="Sheetfile" value="LT1076.kicad_sch"/>
@@ -979,10 +983,10 @@
       <value>22m</value>
       <footprint>Inductor_SMD:L_Changjiang_FNR8065S</footprint>
       <fields>
-        <field name="MFR">7447709220</field>
+        <field name="MPN">7447709220</field>
       </fields>
       <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
-      <property name="MFR" value="7447709220"/>
+      <property name="MPN" value="7447709220"/>
       <property name="Field5" value=""/>
       <property name="Sheetname" value="BUCK_5.1V"/>
       <property name="Sheetfile" value="LT1076.kicad_sch"/>
@@ -1028,7 +1032,11 @@
       <value>LT1076CR-PBF</value>
       <footprint>Package_TO_SOT_SMD:TO-263-7_TabPin4</footprint>
       <datasheet>https://www.mouser.fr/datasheet/2/609/1074fds-3123169.pdf</datasheet>
+      <fields>
+        <field name="MPN">LT1076CR</field>
+      </fields>
       <libsource lib="" part="LT1076_1" description=""/>
+      <property name="MPN" value="LT1076CR"/>
       <property name="Sheetname" value="BUCK_5.1V"/>
       <property name="Sheetfile" value="LT1076.kicad_sch"/>
       <sheetpath names="/BUCK_5.1V/" tstamps="/7ec9b85e-02d5-4657-bc47-51feb658e8df/"/>
@@ -1178,9 +1186,11 @@
       <datasheet>https://4donline.ihs.com/images/VipMasterIC/IC/PHGL/PHGLS27073/PHGLS27073-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0</datasheet>
       <fields>
         <field name="Farnell">https://fr.farnell.com/nexperia/74lvc2g241dc-125/buffer-driver-de-ligne-40-a-125/dp/3442085?st=74LVC2G241DC,125</field>
+        <field name="MPN">74LVC2G241DC,125</field>
       </fields>
       <libsource lib="74xGxx" part="74LVC2G241" description="Dual Buffer Tri-State, Low-Voltage CMOS"/>
       <property name="Farnell" value="https://fr.farnell.com/nexperia/74lvc2g241dc-125/buffer-driver-de-ligne-40-a-125/dp/3442085?st=74LVC2G241DC,125"/>
+      <property name="MPN" value="74LVC2G241DC,125"/>
       <property name="Sheetname" value="XL_320_connector_and_buffer"/>
       <property name="Sheetfile" value="XL320.kicad_sch"/>
       <property name="ki_description" value="Dual Buffer Tri-State, Low-Voltage CMOS"/>
@@ -1565,22 +1575,22 @@
   </libparts>
   <libraries>
     <library logical="74xGxx">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/74xGxx.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//74xGxx.kicad_sym</uri>
     </library>
     <library logical="Connector">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
     </library>
     <library logical="Device">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
     </library>
     <library logical="Diode">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Diode.kicad_sym</uri>
     </library>
     <library logical="Mechanical">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
