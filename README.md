@@ -234,3 +234,93 @@ Création de pièces et assemblage de celles-ci avec des pièces utilisées les 
 - Augmenter la taille de l'ascenseur pour éviter la collision entre les pots.
 - Les roues ne touchent pas le sol il faudrat donc modifier la pièce de maintien des moteurs pas à pas (correction des trous pour l'odométrie).
 
+## Janvier 2023: 
+
+
+### CAO
+
+- Changement des actionneurs SG90 par des XL-320 pour des raisons de performence et de connectivité simplifié.  
+- L'ascenseur a été améliorer pour faciliter la rotation de la pince et a été rehausser pour limiter la perte de pot potentiel.  
+- La pince a été améliorer pour recevoir un XL-320
+- Le pousse pot a été améliorer pour recevoir un XL-320
+- Le périmètre du robot à été réduit
+
+### Electronique
+
+- Réalisation du schémaique et du pcb de la carte mère du robot.
+- Choix de différents capteurs de détection de pot (capteur de couleurs et de proximité)
+
+#### Réalisation du schéma Electronique  
+On commence par réaliser le schéma fonctionnel pour avoir une petite idée de l'architecture de la carte principal du Robot:  
+![Schéma fonctionnel](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Architecture/schema_fonctionnel.png)  
+On réalise ensuite le schéma électronique avec les composants de base et en fabriquant les composants inexistants .
+Pour faciliter la lisibilité du schéma les différentes partis(conversion communication calcul ), on les sépare dans des blocks ou des sous pages.  
+Partie alimentation de la carte :  
+![Power](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/power.png)  
+Pour cette partis nous avons repris et amélioré le schéma réalisé pour la coupe de france de robotique 2023.
+Etant donné la place limité sur la nouvelle carte et la présence de détrompeur sur les connecteurs, nous avons décidé de retirer le système anti inversion de polarité et anti retour de courant.Et le fusible de protection car il n'a jamais servis avant et les pistes peuvent réaliser cette fonctions en cas d'extrême nécéssité xD.
+Seule la diode TES pour les surtensions a été laissée ainsi que le condensateur de filtrage.  
+Comme on l'a vue dans le schéma fonctionnel il nous faut du 5.1v,7.4v et3.3v pour les différentes applications, avec des batteries qui fournissent en série 14.4v.
+On utilise donc 2 bucks pour cette transformation.
+Lorsque deux schémas sont similaires, pour éviter de prendre plus de place dans le schématique, on peut creer des pages hierarchiques ou seuls certaines entrées et sorties apparaissent sur la page principal:  
+![Buck](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/buck.png)  
+Pour délivrer la tension souhaité il faut bien définir notre pont diviseur qui est finalement la seul choses qui change entre le buck 5.1v et 7.4v.  
+/!\ C'est la qu'intervient la limite de la page hiérarchique car entre les deux bucks, 2 resistances ont des valeurs différents (nous n'avons pas trouvés de solution pour résoudre ce pb dans les pages hiérarchiques).  
+On a également mis 2 capacités de 22uF en parrallèle, pour apres avoir plus de facilité à placer les composants sur le pcb.(cette modification à été réalisé pendant le placement des composants).  
+La référence du pont diviseur aurait du idéalement être mis au GND du buck pour être au plus proche pour calculer la différence de tension afin de réguler la tension au mieux. 
+Une fois les alimentations réalisées on rajoute des leds de controls sur chaques tensions afin d'avoir un control visuel.On rajoute des points de tests afin de controler la tension avec un voltmètre.  
+On réalise maintenant la partis capteurs avec les différents systèmes de communication:  
+![sensors](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/sensors.png)  
+Les capteurs font appels à des communications séries UART et des gpio pour le capteurs de couleur et les capteurs fin de course.  
+
+Capteurs Fin de course:  
+![Capteur fin de course](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/findecourse.png)  
+L'orsque l'on appuit sur un bouton et qu'on relache il y a un effet rebond ,le microcontrolleur voie plusieurs appuis/relache rapide .  
+Pour limiter cela on ajoute un filtre RC pour lisser cela .On rajoute également une résistance de tirage pour évité l'effet antenne quand le bouton est ouvert.  
+
+UART:  
+![UART](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/uartconnector.png)  
+Contrairement aux années précédants nous avons décidé d'enlever les diodes TVS anti surtension par manque de place.  
+
+Connection XL-320:  
+![uartxl320](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/UARTXL320.png)  
+Pour le control des XL-320 le protocole fait appel à une connection série UART alf duplex(com dans un sens a la fois) en 5v or la Pi4 utilise des UARTs full duplex en 3.3v.  
+On utilise donc le 74LVC2G241 pour convertir du alf en full duplex (communication dans deux sens en même temp).De plus ce module permet de remplacer un level shifter pour adapter la tension de communication.  
+
+Capteurs de couleur:
+Le capteur de couleurs fonctionne en 5v et 3.3v, ce qui est intéréssant pour notre PI4 qui accepte uniquement du 3.3v .
+
+On relis tout les signaux à la PI4 (on l'a choisis pour avoir 4 UART à disposition ) et on récupère le 3.3v pour l'alimentation 3v3.  
+![connecteur](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/piconnector.png)  
+On finis par rajouter les GPIO non utilisé de la pi sur un bornier avec l'alim a coté pour pouvoir rajouter de potentiels capteurs imprévue .  
+On lance le control de règle électrique ,on modifie pour regler les érreures et on obtient ce magnifique schéma:  
+![schema final](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/schema.png)  
+(Ne pas oublier de bien référencer tous les composants or mini capa resistances et led)
+#### Réalisation du PCB 4 couches  
+1ère étape:
+Il faut commencer par affecter les bonnes empreintes au composants et les creer si elles n'existent pas.
+Par exemple tous les connecteurs JST sont référencés , cependant pour l'allimentation principale nous avons décidé de prendre des connecteurs plus gros non référencés.  
+
+2ème étape:  
+On place les composants en pensant à bien prendre en compte les proximités des composants (condo de filtrage résistance ...) avec les signaux concernés et de regrouper les alimentations.  
+Quitte à séparer une grosse capacité en 2 petites.
+Dans notre cas la place etait assez restreinte car on ne pouvais pas mettre de consensateur sous la carte pour ne pas percuter la PI4.
+Dans ce cas le chevauchement de sérigraphie n'est alors plus un problème .  
+![placement](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/placement.png)  
+
+3ème étape:
+On paramètre les signaux pour définir une taille de piste et de via en fonction du courant qui passera à traver.Et l'isolation en fonction de la tension.(on utilise pour cela le calculateur kicad)
+On commencer par placer les plans de masses et d'alimentations en fonction des placments des composants .  
+Dans notre cas on a choisi de faire la première couche signal/alim/composants/masse, deuxième plan de masse ou on interdit le placement de piste pour la laisser le plus intacte possible,troisième plan de puissance ou l'on crée des zones 3.3v , 5.1v , 7.4v et 14.4v pour faciliter le routage.
+On termine par la dernière couche qui est aussi un couche de signal/masse.
+Dans l'idéal il faudrait réaliser une cage de faraday en mettant le plan d'allimentation et le plan de masse de part et autre du plan de signal. Cepandant cela empêche toute intervention de rectification de routage apres fabrication en cas de problème.  
+On commence par réaliser le routage des alimentations en veillant à bien faire soit des grosses pistes , soit plusieurs via ou bien des zones.Afin de permettre le passage.
+Puis on réalise le routage des signaux en faisant des bus de piste pour améliorer la propreté et on modifie le schéma si nécéssaire pour le faciliter.  
+/!\ Éviter les pistes qui font le tour du pcb !  
+On lance l'analyse des règles électrique, on rectifie les différents problèmes et on obtient ce magnifique pcb:  
+![routage](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/schemaroute.png)
+![routage](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/pcb3d.png)  
+
+### Code  
+
+- Test du capteur de couleurs
