@@ -107,21 +107,26 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Étude de fonctionnement des servomoteurs Dynamixel XL-320
 
 ### Mardi 23 Janvier (J-106)
-- Changement des pièces du robot pour s'addapter au xl-320
+- Changement des pièces du robot pour s'addapter au XL-320
 - Test du capteur de couleurs
 - Réalisation du schématique de la carte mère
 - Test des nouvelles pièces imprimées  
 
 ### Jeudi 25 Janvier (J-104)
-- Match amical avec l'association de robotique Robotium
+- Paramétrisation de la Raspberry Pi 4
+- Installation de Docker avec un image ROS2 Humble
+- Recherche d'un package ROS2 pour faire fonctionner les Dynamixel
 
 ### Mardi 30 Janvier (J-99)
 - Finalisation du pcb et commande des cartes et composants 
-- testes des nouvelles pièces 3D 
+- testes des nouvelles pièces 3D
+- Implémentation de la deuxième partie de la stratégie d'évitement
+- Test d'un capteur inductif pour la différenciation des pots métallique
+- Rédaction du code de fonctionnement des XL-320 (STM32)
 
 
 ### Mardi 6 Février (J-92)
--
+- Présentation de projet n°5
 
 ### Mardi 27 Février (J-71)
 -
@@ -130,7 +135,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 -
 
 ### Mardi 12 Mars (J-57)
--
+- Présentation de projet n°6 :
 
 ### Mardi 19 Mars (J-50)
 -
@@ -139,4 +144,4 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 -
 
 ### Mardi 2 Avril (J-36)
--
+- Présentation finale :
