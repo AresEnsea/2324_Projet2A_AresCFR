@@ -300,6 +300,18 @@ int main(void)
 		  );
 	  }
 
+	  else if (avoidanceState == BACKTRACKING2) {
+	  		  strategy->path[curveIndex] = avoidance_path_return(robot.position.x, robot.position.y); //Test redéfinition de trajectoire n°2
+
+	  		  t = propulsion_followBezier(
+	  				  strategy->path[curveIndex],
+	  				  strategy->directions[curveIndex],
+	  				  strategy->speeds[curveIndex],
+	  				  strategy->speeds[curveIndex+1],
+	  				  true
+	  		  );
+	  	  }
+
 	  if (t > 0.99 && !robot.waitingForOnMoveAction) {
 	      curveIndex = (curveIndex + 1);// % strategy->length;
 	      onSiteActionIndex = 0;

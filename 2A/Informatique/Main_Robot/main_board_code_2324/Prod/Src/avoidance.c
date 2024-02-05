@@ -41,13 +41,25 @@ void avoidance_update(float t, Direction dir) {
 		printf("Path cleared.\r\n");
 	}
 
+//	if (avoidanceState == PATH_OBSTRUCTED && distance < LIDAR_THRESHOLD) {
+//		avoidanceState = BACKTRACKING;
+//		printf("Backtracking...\r\n");
+//		backtrackingAim = t - 0.2;
+//		if (backtrackingAim < 0) {
+//			backtrackingAim = 0;
+//		}
+//	}:
+
 	if (avoidanceState == PATH_OBSTRUCTED && distance < LIDAR_THRESHOLD) {
 		avoidanceState = BACKTRACKING;
 		printf("Backtracking...\r\n");
-		backtrackingAim = t - 0.2;
-		if (backtrackingAim < 0) {
-			backtrackingAim = 0;
+		if (t >= 0.95) {
+			avoidanceState = BACKTRACKING2;
 		}
+	}
+
+	if (avoidanceState == BACKTRACKING2 && t >= 0.95){
+		avoidanceState = PATH_CLEAR;
 	}
 
 	if (avoidanceState == BACKTRACKING && t <= backtrackingAim + 0.01) {

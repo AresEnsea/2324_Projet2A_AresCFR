@@ -27,6 +27,8 @@ typedef enum {
 
 	/** Abandon du suivi de la trajectoire d'évitement en marche arrière. */
 	AVOIDANCE_ABORT=5,
+
+	BACKTRACKING2=6,
 } AvoidanceState;
 
 
