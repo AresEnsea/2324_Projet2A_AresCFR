@@ -253,12 +253,12 @@ Création de pièces et assemblage de celles-ci avec des pièces utilisées les 
 #### Réalisation du schéma Electronique  
 On commence par réaliser le schéma fonctionnel pour avoir une petite idée de l'architecture de la carte principal du Robot:  
 ![Schéma fonctionnel](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Architecture/schema_fonctionnel.png)  
-On réalise ensuite le schéma électronique avec les composants de base et en fabriquant les composants inexistants .
-Pour faciliter la lisibilité du schéma les différentes partis(conversion communication calcul ), on les sépare dans des blocks ou des sous pages.  
+On réalise ensuite le schéma électronique avec les composants de base et en ajoutant les composants inexistants .
+Pour faciliter la lisibilité des différentes parties du schéma (conversion, communication ou encore calcul ), nous les séparons dans des blocks ou des sous-pages.  
 Partie alimentation de la carte :  
 ![Power](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/power.png)  
-Pour cette partis nous avons repris et amélioré le schéma réalisé pour la coupe de france de robotique 2023.
-Etant donné la place limité sur la nouvelle carte et la présence de détrompeur sur les connecteurs, nous avons décidé de retirer le système anti inversion de polarité et anti retour de courant.Et le fusible de protection car il n'a jamais servis avant et les pistes peuvent réaliser cette fonctions en cas d'extrême nécéssité xD.
+Pour cette partie nous avons repris et amélioré le schéma réalisé pour la coupe de france de robotique 2023.
+Etant donné que la place est limitée sur la nouvelle carte et la présence de détrompeur sur les connecteurs, nous avons décidé de retirer le système anti inversion de polarité et anti retour de courant.Et le fusible de protection car il n'a jamais servis avant et les pistes peuvent réaliser cette fonctions en cas d'extrême nécéssité xD.
 Seule la diode TES pour les surtensions a été laissée ainsi que le condensateur de filtrage.  
 Comme on l'a vue dans le schéma fonctionnel il nous faut du 5.1v,7.4v et3.3v pour les différentes applications, avec des batteries qui fournissent en série 14.4v.
 On utilise donc 2 bucks pour cette transformation.
