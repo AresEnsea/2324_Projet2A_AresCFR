@@ -257,12 +257,14 @@ On réalise ensuite le schéma électronique avec les composants de base et en a
 Pour faciliter la lisibilité des différentes parties du schéma (conversion, communication ou encore calcul ), nous les séparons dans des blocks ou des sous-pages.  
 Partie alimentation de la carte :  
 ![Power](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/power.png)  
-Pour cette partie nous avons repris et amélioré le schéma réalisé pour la coupe de france de robotique 2023.
-Etant donné que la place est limitée sur la nouvelle carte et la présence de détrompeur sur les connecteurs, nous avons décidé de retirer le système anti inversion de polarité et anti retour de courant.Et le fusible de protection car il n'a jamais servis avant et les pistes peuvent réaliser cette fonctions en cas d'extrême nécéssité xD.
-Seule la diode TES pour les surtensions a été laissée ainsi que le condensateur de filtrage.  
-Comme on l'a vue dans le schéma fonctionnel il nous faut du 5.1v,7.4v et3.3v pour les différentes applications, avec des batteries qui fournissent en série 14.4v.
-On utilise donc 2 bucks pour cette transformation.
-Lorsque deux schémas sont similaires, pour éviter de prendre plus de place dans le schématique, on peut creer des pages hierarchiques ou seuls certaines entrées et sorties apparaissent sur la page principal:  
+Pour cette partie nous avons repris certaines idées du schématique réalisé pour la coupe de france de robotique 2023 (notamment pour la partie qui concerne la batterie et le bouton d'arrêt d'urgence).
+La taille du PCB a été choisie de manière à ce qu'elle se stack (mettre en médzanine) sur la rasberryPi. 
+De plus, nous avons du faire attention à la présence de détrompeurs sur les connecteurs et nous avons donc décidé de retirer le système anti-inversion de polarité et anti-retour de courant. De même pour le fusible de protection car il n'a jamais servi auparavant.
+Nous avons par ailleurs choisi de conserver la diode TES pour les surtensions ainsi que le condensateur de filtrage.  
+
+Comme nous l'avons décrit dans le schéma fonctionnel, nous avons besoin des tensions suivantes: 5.1v,7.4v ainsi que du 3.3v pour les différents actionneurs. Nous allons donc devoir utiliser des convertisseurs Bucks car les 2 batteries branchées en série fournissent du 14.4v.
+
+Remarque: Lorsque deux schémas sont similaires, afin de rendre plus lisible le schématique, nous créons des pages hierarchiques sur lesquelles seuls les entrées et sorties apparaissent sur la page principale:  
 ![Buck](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/buck.png)  
 Pour délivrer la tension souhaité il faut bien définir notre pont diviseur qui est finalement la seul choses qui change entre le buck 5.1v et 7.4v.  
 /!\ C'est la qu'intervient la limite de la page hiérarchique car entre les deux bucks, 2 resistances ont des valeurs différents (nous n'avons pas trouvés de solution pour résoudre ce pb dans les pages hiérarchiques).  
