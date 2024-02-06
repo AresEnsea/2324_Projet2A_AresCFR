@@ -312,15 +312,16 @@ Dans ce cas, le chevauchement de sérigraphie n'est alors plus un problème .
 ![placement](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/placement.png)  
 
 3ème étape:
-On paramètre les signaux pour définir une taille de piste et de via en fonction du courant qui passera à traver.Et l'isolation en fonction de la tension.(on utilise pour cela le calculateur kicad)
-On commencer par placer les plans de masses et d'alimentations en fonction des placments des composants .  
-Dans notre cas on a choisi de faire la première couche signal/alim/composants/masse, deuxième plan de masse ou on interdit le placement de piste pour la laisser le plus intacte possible,troisième plan de puissance ou l'on crée des zones 3.3v , 5.1v , 7.4v et 14.4v pour faciliter le routage.
-On termine par la dernière couche qui est aussi un couche de signal/masse.
-Dans l'idéal il faudrait réaliser une cage de faraday en mettant le plan d'allimentation et le plan de masse de part et autre du plan de signal. Cepandant cela empêche toute intervention de rectification de routage apres fabrication en cas de problème.  
-On commence par réaliser le routage des alimentations en veillant à bien faire soit des grosses pistes , soit plusieurs via ou bien des zones.Afin de permettre le passage.
-Puis on réalise le routage des signaux en faisant des bus de piste pour améliorer la propreté et on modifie le schéma si nécéssaire pour le faciliter.  
-/!\ Éviter les pistes qui font le tour du pcb !  
-On lance l'analyse des règles électrique, on rectifie les différents problèmes et on obtient ce magnifique pcb:  
+Nous devons paramétrer différents paramètres pour définir: une taille de piste et de via en fonction du courant qui passera à travers (notamment en utilisant le calculateur de kicad) ainsi que  l'isolation en fonction de la tension.
+On commence par placer les plans de masses et d'alimentations en fonction du placements des composants .  
+Dans notre cas, nous avons choisi de faire la première couche signal/alim/composants/masse, deuxième plan de masse dans lequel nous interdisons le placement de pistes pour la laisser la plus intacte possible, et le troisième plan de puissance dans lequel nous créeons des zones 3.3v , 5.1v , 7.4v et 14.4v afin de faciliter le routage.
+Nous terminons par la dernière couche qui est aussi un couche de signal/masse.
+Dans l'idéal, il faudrait réaliser une cage de faraday en mettant le plan d'allimentation et le plan de masse de part et autre du plan de signal. Cepandant cela empêche toute intervention de rectification de routage après fabrication (en cas de problème).  
+Nous débutons la réalisation du routage des alimentations en veillant à bien faire des grosses pistes, plusieurs via ou bien des zones. 
+Enfin, nous réalisons le routage des signaux en faisant des bus de pistes pour améliorer la propreté et nous modifions le schéma lorsque c'est nécéssaire pour le "faciliter".  
+/!\ Éviter les pistes trop longues qui font le tour du pcb !  
+Il faut par la suite lancer l'analyse des règles électorniques ainsi que rectifier les différents problèmes.
+Nous obtenons, principalement grâce à l'aide de Monsieur Papazoglou le magnifique PCB suivant : 
 ![routage](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/schemaroute.png)
 ![routage](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/pcb3d.png)  
 
