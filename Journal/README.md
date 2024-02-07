@@ -126,7 +126,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 
 ### Mardi 6 Février (J-92)
-- Présentation de projet n°5
+- Présentation de projet n°5 : Présentation de la carte électronique de puissance, Mise à jour de la CAO, Actionneurs et Stratégie d'évitement, Avancement ROS2 et Dockerfiles
 
 ### Mardi 27 Février (J-71)
 -
