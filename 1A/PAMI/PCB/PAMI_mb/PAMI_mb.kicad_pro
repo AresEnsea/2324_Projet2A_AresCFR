@@ -329,11 +329,11 @@
     ],
     [
       "a28b8add-1ed1-4780-b0a0-cc15581d2014",
-      "TMC2225"
+      "TMC2225-1"
     ],
     [
       "0e3b4a17-dedf-4ef8-99bd-6617ca6e1a75",
-      "TMC2226"
+      "TMC2225-2"
     ]
   ],
   "text_variables": {}
