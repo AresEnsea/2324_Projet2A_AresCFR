@@ -288,5 +288,6 @@ int8_t XL320_pingModule(XL320* xl320);
 int8_t XL320_errorControl(uint8_t data);
 
 unsigned short update_crc(unsigned short crc_accum, unsigned char *data_blk_ptr, unsigned short data_blk_size);
+void update_crc2(unsigned char *data_blk_ptr, unsigned short data_blk_size);
 
 #endif /* XL320_H_ */

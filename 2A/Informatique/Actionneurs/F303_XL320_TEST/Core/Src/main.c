@@ -90,20 +90,34 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  XL320 xl320;
-  XL320_Init(&xl320, &huart2, 1, BR_115200);
-  XL320_EnableLED(&xl320, GREEN);
+  //XL320 xl320;
+  //XL320_Init(&xl320, &huart2, 1, BR_115200);
+  //XL320_EnableLED(&xl320, GREEN);
+  unsigned char command[10] = {0xFF, 0xFF, 0xFD, 0x00, 0xFE, 0x03, 0x00, 0x01, 0x00, 0x00};
+  unsigned char response[14] = {0};
+  unsigned char found_id = 0;
 
+  update_crc2(command, 8);
+  HAL_HalfDuplex_EnableTransmitter(&huart1);
+  HAL_UART_Transmit(&huart1, command, 10, 1000);
+
+  HAL_HalfDuplex_EnableReceiver(&huart1);
+
+  HAL_UART_Receive(&huart1, response, 14, 40);
+
+  if(response[0] == 0xFF){
+	  found_id = response[4];
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  XL320_sendData(&xl320, SIZE_PING, XL320_Ping, 0);
+	  //XL320_sendData(&xl320, SIZE_PING, XL320_Ping, 0);
 	  //HAL_UART_Transmit(&huart2, (unsigned char *)"hello\n", sizeof("hello\n"), 500); //Debug
 
-	  HAL_Delay(1000);
+	  //HAL_Delay(1000);
 
 
 
