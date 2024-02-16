@@ -128,7 +128,10 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Présentation de projet n°5 : Présentation de la carte électronique de puissance, Mise à jour de la CAO, Actionneurs et Stratégie d'évitement, Avancement ROS2 et Dockerfiles
 
 ### Lundi 12 Février (J-86)
-- Praramétrisation de la Raspberry Pi 4
+- Paramétrisation de la Raspberry Pi 4
+
+### Mercredi 14 Février (J-84)
+- Révision du code de fonctionnement des XL-320 (STM32)
 
 ### Mardi 27 Février (J-71)
 -
