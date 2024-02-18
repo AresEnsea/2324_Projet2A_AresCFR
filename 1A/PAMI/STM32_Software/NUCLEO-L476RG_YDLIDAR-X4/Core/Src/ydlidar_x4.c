@@ -193,6 +193,8 @@ HAL_StatusTypeDef YDLIDAR_X4_Soft_Reboot(__YDLIDAR_X4_HandleTypeDef *YDLIDAR_X4_
 	return YDLIDAR_X4_Send_Cmd(YDLIDAR_X4_Handle, CMD_SOFT_RESTART);
 }
 HAL_StatusTypeDef YDLIDAR_X4_Compute_Payload(__YDLIDAR_X4_HandleTypeDef *YDLIDAR_X4_Handle){
+	// 50us to compute this function approx, 4000 cyles.
+
 	float start_angle = ((float)(YDLIDAR_X4_Handle->scan_response.start_angle >> 1))/64;
 	float end_angle = ((float)(YDLIDAR_X4_Handle->scan_response.end_angle >> 1))/64;
 	float diff_angle = end_angle - start_angle;
@@ -206,6 +208,7 @@ HAL_StatusTypeDef YDLIDAR_X4_Compute_Payload(__YDLIDAR_X4_HandleTypeDef *YDLIDAR
 	}
 
 	// Compute distance
+	HAL_GPIO_WritePin(DEBUG_GPIO_Port, DEBUG_Pin, SET);
 	for(int idx=0; idx<YDLIDAR_X4_Handle->scan_response.sample_quantity; idx++){
 		distance_raw = YDLIDAR_X4_Handle->scan_response.buffer_data[2*idx];
 		distance_raw |= YDLIDAR_X4_Handle->scan_response.buffer_data[2*idx+1]<<8;
@@ -214,7 +217,24 @@ HAL_StatusTypeDef YDLIDAR_X4_Compute_Payload(__YDLIDAR_X4_HandleTypeDef *YDLIDAR
 		YDLIDAR_X4_Handle->scan_response.distance[(uint32_t)angle]=distance;
 	}
 
-	txBufferSize = snprintf((char *)uart2TxBuffer, UART_TX_BUFFER_SIZE, "Distance 0 : %4.3f mm\r\n", YDLIDAR_X4_Handle->scan_response.distance[180]);
+
+	int idx_angle_min_distance = -1;
+	float min_distance = 10000;
+	for(int idx_angle=120; idx_angle<240; idx_angle++){
+		if((10 < YDLIDAR_X4_Handle->scan_response.distance[idx_angle]) &&
+				(YDLIDAR_X4_Handle->scan_response.distance[idx_angle] < min_distance)){
+			idx_angle_min_distance = idx_angle;
+			min_distance = YDLIDAR_X4_Handle->scan_response.distance[idx_angle];
+		}
+	}
+	if(min_distance < 200){
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, SET);
+	}
+	else{
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, RESET);
+	}
+	HAL_GPIO_WritePin(DEBUG_GPIO_Port, DEBUG_Pin, RESET);
+	txBufferSize = snprintf((char *)uart2TxBuffer, UART_TX_BUFFER_SIZE, "Angle %3d , Distance : %4.3f mm\r\n", idx_angle_min_distance, min_distance);
 	HAL_UART_Transmit(&huart2, uart2TxBuffer, txBufferSize, 10);
 
 

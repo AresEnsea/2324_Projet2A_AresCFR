@@ -162,9 +162,9 @@ void SystemClock_Config(void)
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if(huart->Instance==huart1.Instance){
-		HAL_GPIO_WritePin(DEBUG_GPIO_Port, DEBUG_Pin, SET);
+//		HAL_GPIO_WritePin(DEBUG_GPIO_Port, DEBUG_Pin, SET);
 		YDLIDAR_X4_State_Machine(&hlidar);
-		HAL_GPIO_WritePin(DEBUG_GPIO_Port, DEBUG_Pin, RESET);
+//		HAL_GPIO_WritePin(DEBUG_GPIO_Port, DEBUG_Pin, RESET);
 	}
 	if(huart->Instance==huart2.Instance){
 		uart1TxBuffer[0] = uart2RxBuffer[0];
