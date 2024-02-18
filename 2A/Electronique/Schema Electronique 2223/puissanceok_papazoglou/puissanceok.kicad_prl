@@ -1,7 +1,7 @@
 {
   "board": {
     "active_layer": 0,
-    "active_layer_preset": "",
+    "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -64,13 +64,8 @@
       39,
       40
     ],
-<<<<<<< HEAD
-    "visible_layers": "000ffff_80000001",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 1
-=======
-    "visible_layers": "000ffe0_00000001",
-    "zone_display_mode": 0
->>>>>>> bd03ec3b22f316ed53a760ff84b3ab3cfa41432b
   },
   "meta": {
     "filename": "puissanceok.kicad_prl",
