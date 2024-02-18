@@ -119,14 +119,19 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 ### Mardi 30 Janvier (J-99)
 - Finalisation du pcb et commande des cartes et composants 
-- testes des nouvelles pièces 3D
+- Tests des nouvelles pièces 3D
 - Implémentation de la deuxième partie de la stratégie d'évitement
-- Test d'un capteur inductif pour la différenciation des pots métallique
+- Test d'un capteur inductif pour la différenciation des pots métalliques
 - Rédaction du code de fonctionnement des XL-320 (STM32)
 
-
 ### Mardi 6 Février (J-92)
-- Présentation de projet n°5
+- Présentation de projet n°5 : Présentation de la carte électronique de puissance, Mise à jour de la CAO, Actionneurs et Stratégie d'évitement, Avancement ROS2 et Dockerfiles
+
+### Lundi 12 Février (J-86)
+- Paramétrisation de la Raspberry Pi 4
+
+### Mercredi 14 Février (J-84)
+- Révision du code de fonctionnement des XL-320 (STM32)
 
 ### Mardi 27 Février (J-71)
 -
