@@ -232,7 +232,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "ignore",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -329,11 +329,23 @@
     ],
     [
       "a28b8add-1ed1-4780-b0a0-cc15581d2014",
-      "TMC2225-1"
+      "TMC2225"
     ],
     [
       "0e3b4a17-dedf-4ef8-99bd-6617ca6e1a75",
-      "TMC2225-2"
+      "TMC2226"
+    ],
+    [
+      "b74b7472-b7d2-4b72-8a8d-d152a9cce4ed",
+      "GPIO_Filter"
+    ],
+    [
+      "e35bafc9-e0aa-4431-83a8-584d217afb21",
+      "GPIO_Filter1"
+    ],
+    [
+      "f5d83293-9460-4743-be34-e43aa5f52b77",
+      "GPIO_Filter2"
     ]
   ],
   "text_variables": {}
