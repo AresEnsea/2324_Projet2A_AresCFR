@@ -133,6 +133,9 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### Mercredi 14 Février (J-84)
 - Révision du code de fonctionnement des XL-320 (STM32)
 
+### Mercredi 21 Février (J-77)
+- Intégration du code des moteurs dans la Raspberry Pi 4
+
 ### Mardi 27 Février (J-71)
 -
 
