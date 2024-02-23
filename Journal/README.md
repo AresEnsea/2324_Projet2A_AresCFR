@@ -136,6 +136,9 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### Mercredi 21 Février (J-77)
 - Intégration du code des moteurs dans la Raspberry Pi 4
 
+- ### Vendredi 23 Février (J-75)
+- Test de micro-ros 2 pour l'utilisation du lidar
+
 ### Mardi 27 Février (J-71)
 -
 
