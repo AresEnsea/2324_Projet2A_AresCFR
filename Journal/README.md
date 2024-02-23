@@ -14,7 +14,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Installation de ROS2 et réalisation du tutoriel
 - Inscription d'Ares à la Coupe de France de Robotique
 - Rédaction de la démarche sur le wiki : https://wiki.ares.asso-ensea.fr/index.php/Introduction_%C3%A0_ROS_2
-- Rédaction du tutoriel d'utilisation de GitHub pour les premières années (voir "Tutoriel GitHub.pdf" à la racine du repositary)
+- Rédaction du tutoriel d'utilisation de GitHub pour les premières années (voir "Tutoriel GitHub.pdf" à la racine du repository)
 
 ### Mardi 3 octobre (J-218)
 - Poursuite de l'apprentissage de ROS2, assimilation des différentes notions (Nodes, topics, services, actions)
