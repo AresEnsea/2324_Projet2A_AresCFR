@@ -365,4 +365,4 @@ Nous obtenons, principalement grâce à l'aide de Monsieur Papazoglou le magnifi
 
 ### Code  
 
-- Test du capteur de couleurs
+- Test du capteur de couleurs : Les essais réalisés avec le capteur de couleur se sont révélés assez satisfaisants pour distinguer les pots blancs des pots violets, mais cela ne permet pas de différencier les pots blancs des pots métalliques. Pour pallier ce problème, nous combinons l'utilisation du capteur avec celui d'un capteur à induction, ce dernier permettant de détecter les objets métalliques à sa proximité.
