@@ -137,10 +137,12 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Intégration du code des moteurs dans la Raspberry Pi 4
 
 - ### Vendredi 23 Février (J-75)
-- Test de micro-ros 2 pour l'utilisation du lidar
+- Test de micro-ros pour l'utilisation du lidar
 
 ### Mardi 27 Février (J-71)
--
+- Rédaction d'un code Python permettant la gestion de la communication série
+- Paramétrisation de la Raspberry Pi 4
+- Ajout de la page wiki sur les bases de ROS2 : https://wiki.ares.asso-ensea.fr/index.php/Les_bases_de_ROS2 
 
 ### Mardi 5 Mars (J-64)
 -
