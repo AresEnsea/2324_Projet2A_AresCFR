@@ -145,10 +145,10 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Ajout de la page wiki sur les bases de ROS2 : https://wiki.ares.asso-ensea.fr/index.php/Les_bases_de_ROS2 
 
 ### Mardi 5 Mars (J-64)
--
+- Modification du code du lidar, tests du protocole 2 Dynamixel
 
 ### Mardi 12 Mars (J-57)
-- Présentation de projet n°6 :
+- Présentation de projet n°6 : Présentation de la carte électronique, avancement ROS2 et communication avec le lidar
 
 ### Mardi 19 Mars (J-50)
 -
@@ -157,4 +157,4 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 -
 
 ### Mardi 2 Avril (J-36)
-- Présentation finale :
+- Présentation finale : Présentation du robot et de ses fonctionnalités
