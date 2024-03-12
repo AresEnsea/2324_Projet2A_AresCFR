@@ -107,7 +107,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Étude de fonctionnement des servomoteurs Dynamixel XL-320
 
 ### Mardi 23 Janvier (J-106)
-- Changement des pièces du robot pour s'addapter au XL-320
+- Changement des pièces du robot pour s'adapter au XL-320
 - Test du capteur de couleurs
 - Réalisation du schématique de la carte mère
 - Test des nouvelles pièces imprimées  
