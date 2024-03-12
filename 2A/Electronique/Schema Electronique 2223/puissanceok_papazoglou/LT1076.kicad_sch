@@ -599,7 +599,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f93d74eb-bd14-4d46-b3fc-89319012fedc)
   )
-  (text "WARNING !!!\n\nFor Vout = 5.1V\nR602 = 2k87\nR603 = 2k2\n\nFor Vout = 7.4V\nR702 = 3k52\nR703 = 1k5"
+  (text "WARNING !!!\n\nFor Vout = 5.1V\nR602 = 2k87 -->12k\nR603 = 2k2  -->9k1\n\nFor Vout = 7.4V\nR702 = 3k52\nR703 = 1k5"
     (at 158.75 121.92 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fb77cc48-bedb-4d60-9426-084991d66e39)
