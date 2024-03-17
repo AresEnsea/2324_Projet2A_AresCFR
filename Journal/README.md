@@ -150,6 +150,9 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### Mardi 12 Mars (J-57)
 - Présentation de projet n°6 : Présentation de la carte électronique, avancement ROS2 et communication avec le lidar
 
+### Dimanche 17 Mars (J-52)
+- Réadaptation du code du lidar au formar micro-ROS
+
 ### Mardi 19 Mars (J-50)
 -
 
