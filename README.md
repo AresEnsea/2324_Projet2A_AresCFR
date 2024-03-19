@@ -391,7 +391,7 @@ Remarques importantes :
 
 Par la suite, une fois que tous les composants CMS ont été soudés, il faut vérifier si les tensions qui sortent de la carte ont la bonne valeur. Pour ce faire, on utilise une alimentation et un voltmètre aux bornes des points de test. Si toutes les valeurs recuillies sont cohérentes avec celles attendues alors nous pouvons passer à l'étaper suivante. Sinon, 
 
-il faut ajouter les composants traversants (Connecteurs des batteris, du bouton d'arrêt d'urgence, des capteurs et des actionneurs).
-Pour ce faire, il faut utiliser une pince afin de tenir la carte en hauteur afin de souder correctement les différents composants qui ont des tailles différentes.
+Puis, il faut ajouter les composants traversants (Connecteurs des batteris, du bouton d'arrêt d'urgence, des capteurs et des actionneurs).
+Pour ce faire, il faut utiliser une pince afin de tenir la carte en hauteur pour souder correctement les différents composants qui ont des tailles différentes. 
 
 
