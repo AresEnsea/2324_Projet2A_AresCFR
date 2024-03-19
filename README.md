@@ -366,3 +366,32 @@ Nous obtenons, principalement grâce à l'aide de Monsieur Papazoglou le magnifi
 ### Code  
 
 - Test du capteur de couleurs : Les essais réalisés avec le capteur de couleur se sont révélés assez satisfaisants pour distinguer les pots blancs des pots violets, mais cela ne permet pas de différencier les pots blancs des pots métalliques. Pour pallier ce problème, nous combinons l'utilisation du capteur avec celui d'un capteur à induction, ce dernier permettant de détecter les objets métalliques à sa proximité.
+
+
+
+Notre carte PCB de puissance 3 couches a été commandée en 5 exemplaires.
+
+Tout d'abord, nous avons choisi de souder entièrement une carte électronique afin de vérifier son fonctionnement global. 
+Les étapes de la soudure des composants grâce au four sont :
+- Le placement de la carte à souder entre 4 autres cartes avec du scotch autour afin que la principale ne bouge pas
+- Chauffer la pâte à braser entre les mains
+- Etaler cette pâte sur le PCB grâce à une carte en plastique
+- Poser les boîtes des composants de différentes tailles sur la paillasse
+- Afficher le schématic et le routage kicad afin de suivre les valeurs des composants
+- Positionner tous les composants sur le PCB
+- Vérifier que chaque composant est correctement positionné et n'a pas bougé
+- Allumer le four, attendre le préchauffage puis mettre la carte électornique à l'intérieur
+- Suivre l'évolution de la cuisson via l'ordinateur de suivi (augmentation de la température, arrivée au point culminant, baisse de la température)
+
+
+Remarques importantes :
+ - Il faut commencer par positionner les plus petits composants de la carte
+ - Par la suite il faut positionner les composants par taille croissante
+
+
+Par la suite, une fois que tous les composants CMS ont été soudés, il faut vérifier si les tensions qui sortent de la carte ont la bonne valeur. Pour ce faire, on utilise une alimentation et un voltmètre aux bornes des points de test. Si toutes les valeurs recuillies sont cohérentes avec celles attendues alors nous pouvons passer à l'étaper suivante. Sinon, 
+
+il faut ajouter les composants traversants (Connecteurs des batteris, du bouton d'arrêt d'urgence, des capteurs et des actionneurs).
+Pour ce faire, il faut utiliser une pince afin de tenir la carte en hauteur afin de souder correctement les différents composants qui ont des tailles différentes.
+
+
