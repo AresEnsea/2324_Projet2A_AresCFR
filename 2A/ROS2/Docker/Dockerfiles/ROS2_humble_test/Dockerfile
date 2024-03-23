@@ -15,6 +15,9 @@ RUN apt-get update && apt-get install -y curl \
     && curl -fsSL https://www.phidgets.com/downloads/setup_linux | bash - \
     && apt-get install -y libphidget22
 
+# Installation de pyserial
+RUN pip install pyserial
+
 
 #Activation de ROS2 pour ne pas avoir a le faire a chaque lancement
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash"
