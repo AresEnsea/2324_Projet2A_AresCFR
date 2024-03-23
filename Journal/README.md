@@ -151,10 +151,11 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Présentation de projet n°6 : Présentation de la carte électronique, avancement ROS2 et communication avec le lidar
 
 ### Dimanche 17 Mars (J-52)
-- Réadaptation du code du lidar au formar micro-ROS
+- Réadaptation du code du lidar au format micro-ROS
 
 ### Mardi 19 Mars (J-50)
--
+- Création du package de récupératioon des données du lidar
+- Réédition du Dockerfile test pour ajouter les librairies nécessaires au fonctionnement du lidar 
 
 ### Mardi 26 Mars (J-43)
 -
