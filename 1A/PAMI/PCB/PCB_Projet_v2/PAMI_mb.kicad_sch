@@ -9699,17 +9699,6 @@
 		)
 		(uuid "d7afec07-8968-48bc-af18-78b057700190")
 	)
-	(label "DIR_MOTOR_L"
-		(at 85.09 41.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "00a51066-615a-4083-843e-b48946fb46da")
-	)
 	(label "ADC_BATT"
 		(at 168.91 133.35 180)
 		(fields_autoplaced yes)
@@ -9720,6 +9709,17 @@
 			(justify right bottom)
 		)
 		(uuid "01cb6261-12dd-493e-9129-14458ff81030")
+	)
+	(label "RASPBERRY_PI_TX"
+		(at 85.09 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "043a2cce-9c53-4b46-b283-bb84f5fe4e55")
 	)
 	(label "STLINK_TX"
 		(at 15.24 46.99 0)
@@ -9820,6 +9820,17 @@
 		)
 		(uuid "376545ee-5889-4b7b-a0b2-b7e02762e4ad")
 	)
+	(label "PA12_USR_BTN_2"
+		(at 85.09 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3b884c6e-b6cc-44ab-b22a-81af2a391c06")
+	)
 	(label "LIDAR_LP_RX"
 		(at 182.88 154.94 0)
 		(fields_autoplaced yes)
@@ -9830,17 +9841,6 @@
 			(justify left bottom)
 		)
 		(uuid "4a6bec6b-2da6-4c60-b45c-ea4e8de47bc6")
-	)
-	(label "PA12_USR_BTN_2"
-		(at 85.09 62.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4e6fd635-49c5-4a37-a78d-e5336a7bee64")
 	)
 	(label "V_CHARGE"
 		(at 77.47 127 0)
@@ -9875,6 +9875,17 @@
 		)
 		(uuid "552d8c03-bf98-42f4-bb39-c0305a123da2")
 	)
+	(label "DIR_MOTOR_L"
+		(at 85.09 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5563a105-a18a-48b1-bc3a-78e04155d7c5")
+	)
 	(label "PWM_MOTOR_R_TIM3_CH1"
 		(at 85.09 44.45 180)
 		(fields_autoplaced yes)
@@ -9886,16 +9897,16 @@
 		)
 		(uuid "58204550-5953-4c5f-b074-22d279301d47")
 	)
-	(label "RASPBERRY_PI_TX"
-		(at 15.24 54.61 0)
+	(label "DIR_MOTOR_R"
+		(at 85.09 41.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "59eddd0b-87d3-4a8f-a9a5-e261cef38d28")
+		(uuid "5bfe08f4-cee8-471e-b280-a484699faac1")
 	)
 	(label "SWCLK"
 		(at 121.92 36.83 180)
@@ -9908,6 +9919,17 @@
 		)
 		(uuid "63557f9f-aabe-4ecd-829f-1ec121b8e168")
 	)
+	(label "LIDAR_LP_RX"
+		(at 85.09 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63d6899a-a9fd-4425-b6e6-62ea0770595a")
+	)
 	(label "I2C_SDA"
 		(at 15.24 57.15 0)
 		(fields_autoplaced yes)
@@ -9919,6 +9941,17 @@
 		)
 		(uuid "6403ba60-7bf3-4775-90c2-ad3fce2695de")
 	)
+	(label "PA1_USR_BTN_0"
+		(at 85.09 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "79924809-710f-4a92-ab80-c237c181a836")
+	)
 	(label "I2C_SDA"
 		(at 187.96 137.16 0)
 		(fields_autoplaced yes)
@@ -9929,17 +9962,6 @@
 			(justify left bottom)
 		)
 		(uuid "79b3c2c3-6813-4ca3-9fa1-b22e9e2a1625")
-	)
-	(label "LIDAR_LP_TX"
-		(at 85.09 36.83 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7bfb0e00-67db-4853-b1c4-2cacc1d2dd12")
 	)
 	(label "PA11_USR_BTN_1"
 		(at 85.09 59.69 180)
@@ -10029,17 +10051,6 @@
 		)
 		(uuid "95c2c389-fc65-426b-8976-b36a341a0d8c")
 	)
-	(label "PA1_USR_BTN_0"
-		(at 85.09 34.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "96015142-0933-452f-a1a4-7e85b190847b")
-	)
 	(label "DATA_RECEIVER"
 		(at 16.51 190.5 0)
 		(fields_autoplaced yes)
@@ -10128,6 +10139,17 @@
 		)
 		(uuid "aaa4ad74-e594-4c89-9a45-378a6275a792")
 	)
+	(label "RASPBERRY_PI_RX"
+		(at 85.09 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ac7b33f6-06b2-410d-9a46-c2ae2ef89148")
+	)
 	(label "ENCODEUR_BTN"
 		(at 173.99 179.07 180)
 		(fields_autoplaced yes)
@@ -10205,17 +10227,6 @@
 		)
 		(uuid "ba3c5004-b847-495e-bb55-763ba6c99fbc")
 	)
-	(label "DIR_MOTOR_R"
-		(at 85.09 49.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bf164c5e-5315-4edb-a5b3-1c5c4a7c83fa")
-	)
 	(label "SWCLK"
 		(at 85.09 67.31 180)
 		(fields_autoplaced yes)
@@ -10248,17 +10259,6 @@
 			(justify right bottom)
 		)
 		(uuid "c924a7f5-b645-4449-ac5e-20a898a41254")
-	)
-	(label "LIDAR_LP_RX"
-		(at 85.09 39.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ce5f6348-c198-4ebd-b58e-98b8afbea897")
 	)
 	(label "PB8-BOOT0_LED0"
 		(at 95.25 66.04 270)
@@ -10359,17 +10359,6 @@
 		)
 		(uuid "eed327e0-648c-4984-ab8e-d321879eb37a")
 	)
-	(label "RASPBERRY_PI_RX"
-		(at 85.09 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ef32f0c8-e649-4528-800a-5fdb368a1033")
-	)
 	(label "STLINK_TX"
 		(at 121.92 57.15 180)
 		(fields_autoplaced yes)
@@ -10391,6 +10380,17 @@
 			(justify left bottom)
 		)
 		(uuid "f62336ca-c43b-4dbf-80c3-f29d729dfc9d")
+	)
+	(label "LIDAR_LP_TX"
+		(at 15.24 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f820b473-a165-4221-b89a-12d794024c15")
 	)
 	(global_label "+5.1V"
 		(shape input)
