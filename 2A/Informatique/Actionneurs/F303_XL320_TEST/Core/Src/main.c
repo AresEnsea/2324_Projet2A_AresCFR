@@ -93,9 +93,9 @@ int main(void)
   //XL320 xl320;
   //XL320_Init(&xl320, &huart2, 1, BR_115200);
   //XL320_EnableLED(&xl320, GREEN);
-  unsigned char command[10] = {0xFF, 0xFF, 0xFD, 0x00, 0xFE, 0x03, 0x00, 0x01, 0x00, 0x00};
-  unsigned char response[14] = {0};
-  unsigned char found_id = 0;
+  uint8_t command[10] = {0xFF, 0xFF, 0xFD, 0x00, 0xFE, 0x03, 0x00, 0x01, 0x00, 0x00};
+  uint8_t response[14] = {0};
+  uint8_t found_id = 0;
 
   update_crc2(command, 8);
   HAL_HalfDuplex_EnableTransmitter(&huart1);

@@ -14,6 +14,11 @@ RUN pip install setuptools==58.2.0
 RUN apt-get update && apt-get install -y curl \
     && curl -fsSL https://www.phidgets.com/downloads/setup_linux | bash - \
     && apt-get install -y libphidget22
+RUN pip install Phidget22
+
+# Installation de tf_transformations
+RUN apt-get install ros-humble-tf-transformations
+RUN pip install transform3d
 
 # Installation de pyserial
 RUN pip install pyserial
@@ -22,5 +27,8 @@ RUN pip install pyserial
 #Activation de ROS2 pour ne pas avoir a le faire a chaque lancement
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash"
 
-#Creation d'un workspace ROS2
-RUN mkdir -p ~/ros2_ws/src
+# Changement du repertoire de travail
+WORKDIR /root
+
+#Creation du workspace ROS2
+RUN git clone https://github.com/Creesix/Ugway.git
