@@ -3429,8 +3429,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 6.604 0)
+			(property "Reference" "SW102"
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3438,14 +3438,14 @@
 				)
 			)
 			(property "Value" "RotaryEncoder_Switch"
-				(at 0 -6.604 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Rotatory_encoder_button:SW_482016514001"
 				(at -3.81 4.064 0)
 				(effects
 					(font
@@ -3463,7 +3463,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -6527,16 +6527,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 184.15) (xy 146.05 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0301a564-283a-492d-a0ba-59b205773b86")
-	)
-	(wire
-		(pts
 			(xy 147.32 179.07) (xy 148.59 179.07)
 		)
 		(stroke
@@ -6627,16 +6617,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 179.07) (xy 146.05 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fa8f5a7-c8b7-4c20-8468-13379b219bb9")
-	)
-	(wire
-		(pts
 			(xy 256.54 82.55) (xy 256.54 83.82)
 		)
 		(stroke
@@ -6664,16 +6644,6 @@
 			(type default)
 		)
 		(uuid "11dec015-14f6-4be9-82f7-5c2e5185a622")
-	)
-	(wire
-		(pts
-			(xy 144.78 179.07) (xy 144.78 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "135cc579-6285-4a5f-b574-3e7e165f1b06")
 	)
 	(wire
 		(pts
@@ -7007,16 +6977,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 179.07) (xy 144.78 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "295bf086-bdfe-4c6e-9321-38f1ffe1b6ed")
-	)
-	(wire
-		(pts
 			(xy 215.9 45.72) (xy 215.9 46.99)
 		)
 		(stroke
@@ -7264,6 +7224,16 @@
 			(type default)
 		)
 		(uuid "3f2e1070-50b7-4644-9ab6-996716f4f0f4")
+	)
+	(wire
+		(pts
+			(xy 143.51 184.15) (xy 144.78 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f44b14d-9128-4146-abbe-55184e6b993c")
 	)
 	(wire
 		(pts
@@ -7587,7 +7557,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 179.07) (xy 146.05 179.07)
+			(xy 143.51 179.07) (xy 147.32 179.07)
 		)
 		(stroke
 			(width 0)
@@ -8224,6 +8194,16 @@
 			(type default)
 		)
 		(uuid "8cd2d753-77ee-4a2e-bb83-f216039d48f1")
+	)
+	(wire
+		(pts
+			(xy 144.78 185.42) (xy 144.78 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f16c7ac-3abc-49c1-9a94-ce7897039fcd")
 	)
 	(wire
 		(pts
@@ -9787,6 +9767,28 @@
 		)
 		(uuid "2342f599-3b79-4cfe-ba5b-0dca96dc0eb3")
 	)
+	(label "PF1_LED2"
+		(at 130.81 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23e8621f-c1e3-4735-9c7e-6d1ec6ba857f")
+	)
+	(label "PB8-BOOT0_LED0"
+		(at 130.81 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "258b88ac-d7b2-4b9e-93d3-b165755683b3")
+	)
 	(label "NRST"
 		(at 121.92 31.75 180)
 		(fields_autoplaced yes)
@@ -10304,17 +10306,6 @@
 		)
 		(uuid "dc1622f3-70ab-4b18-afa7-dcd56144432a")
 	)
-	(label "PB8-BOOT0_LED0"
-		(at 130.81 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dc9efbe7-32ce-490f-9849-c2f1ec2454e2")
-	)
 	(label "PA11_USR_BTN_1"
 		(at 125.73 55.88 0)
 		(fields_autoplaced yes)
@@ -10369,17 +10360,6 @@
 			(justify right bottom)
 		)
 		(uuid "f2552b93-60e9-4f0c-a212-b02fb958b6c2")
-	)
-	(label "PF1_LED2"
-		(at 130.81 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f62336ca-c43b-4dbf-80c3-f29d729dfc9d")
 	)
 	(label "LIDAR_LP_TX"
 		(at 15.24 54.61 0)
