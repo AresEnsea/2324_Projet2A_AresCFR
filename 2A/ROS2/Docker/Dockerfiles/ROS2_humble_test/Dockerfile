@@ -13,16 +13,18 @@ RUN pip install setuptools==58.2.0
 # Installation de curl et des pilotes Phidget
 RUN apt-get update && apt-get install -y curl \
     && curl -fsSL https://www.phidgets.com/downloads/setup_linux | bash - \
-    && apt-get install -y libphidget22
+    && apt-get install -y libphidget22 libphidget22-dev
 RUN pip install Phidget22
 
 # Installation de tf_transformations
 RUN apt-get install ros-humble-tf-transformations
-RUN pip install transform3d
+RUN pip install transforms3d
 
 # Installation de pyserial
 RUN pip install pyserial
 
+# Installation de pigpio
+RUN pip install pigpio
 
 #Activation de ROS2 pour ne pas avoir a le faire a chaque lancement
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash"
