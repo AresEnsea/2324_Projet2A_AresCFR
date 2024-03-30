@@ -2523,7 +2523,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2uF"
+		(property "Value" "2u2"
 			(at 182.88 123.19 90)
 			(effects
 				(font
@@ -2680,7 +2680,7 @@
 				)
 			)
 		)
-		(property "Value" "22nF"
+		(property "Value" "22n"
 			(at 135.89 120.65 90)
 			(effects
 				(font
@@ -3378,7 +3378,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 127 130.81 90)
 			(effects
 				(font
