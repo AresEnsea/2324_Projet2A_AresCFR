@@ -1,5 +1,6 @@
 # Journal de Bord d'Ares 
 Ce dossier constitue le journal de bord d'Ares, retraçant les réalisations hebdomadaires de l'association.
+
 ## Tutoriels
 Tous les tutoriels et les méthodes de réalisations concernant la Coupe de France de Robotique 2024 sont regroupés sur le wiki de l'association : https://wiki.ares.asso-ensea.fr/index.php/Coupe_de_France_de_Robotique
 
@@ -14,7 +15,7 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Installation de ROS2 et réalisation du tutoriel
 - Inscription d'Ares à la Coupe de France de Robotique
 - Rédaction de la démarche sur le wiki : https://wiki.ares.asso-ensea.fr/index.php/Introduction_%C3%A0_ROS_2
-- Rédaction du tutoriel d'utilisation de GitHub pour les premières années (voir "Tutoriel GitHub.pdf" à la racine du repositary)
+- Rédaction du tutoriel d'utilisation de GitHub pour les premières années (voir "Tutoriel GitHub.pdf" à la racine du repository)
 
 ### Mardi 3 octobre (J-218)
 - Poursuite de l'apprentissage de ROS2, assimilation des différentes notions (Nodes, topics, services, actions)
@@ -74,11 +75,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### Mardi 12 décembre (J-148)
 - Test de fonctionnement des capteurs TOF en ROS2
 
-### Mardi 19 décembre (J-141)
-- 
-
 ### Lundi 25 décembre (J-135)
-- Test de fonctionnement du capteur de couleur TCS3200
+- Test de fonctionnement du capteur de couleur TCS3200 sous STM32
 
 ### Mardi 26 décembre (J-134)
 - Calibration du capteur de couleur, finalisation du code
@@ -107,36 +105,58 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Étude de fonctionnement des servomoteurs Dynamixel XL-320
 
 ### Mardi 23 Janvier (J-106)
-- Changement des pièces du robot pour s'addapter au xl-320
+- Changement des pièces du robot pour s'adapter au XL-320
 - Test du capteur de couleurs
 - Réalisation du schématique de la carte mère
 - Test des nouvelles pièces imprimées  
 
 ### Jeudi 25 Janvier (J-104)
-- Match amical avec l'association de robotique Robotium
+- Paramétrisation de la Raspberry Pi 4
+- Installation de Docker avec un image ROS2 Humble
+- Recherche d'un package ROS2 pour faire fonctionner les Dynamixel
 
 ### Mardi 30 Janvier (J-99)
 - Finalisation du pcb et commande des cartes et composants 
-- testes des nouvelles pièces 3D 
-
+- Tests des nouvelles pièces 3D
+- Implémentation de la deuxième partie de la stratégie d'évitement
+- Test d'un capteur inductif pour la différenciation des pots métalliques
+- Rédaction du code de fonctionnement des XL-320 (STM32)
 
 ### Mardi 6 Février (J-92)
--
+- Présentation de projet n°5 : Présentation de la carte électronique de puissance, Mise à jour de la CAO, Actionneurs et Stratégie d'évitement, Avancement ROS2 et Dockerfiles
+
+### Lundi 12 Février (J-86)
+- Paramétrisation de la Raspberry Pi 4
+
+### Mercredi 14 Février (J-84)
+- Révision du code de fonctionnement des XL-320 (STM32)
+
+### Mercredi 21 Février (J-77)
+- Intégration du code des moteurs dans la Raspberry Pi 4
+
+- ### Vendredi 23 Février (J-75)
+- Test de micro-ros pour l'utilisation du lidar
 
 ### Mardi 27 Février (J-71)
--
+- Rédaction d'un code Python permettant la gestion de la communication série
+- Paramétrisation de la Raspberry Pi 4
+- Ajout de la page wiki sur les bases de ROS2 : https://wiki.ares.asso-ensea.fr/index.php/Les_bases_de_ROS2 
 
 ### Mardi 5 Mars (J-64)
--
+- Modification du code du lidar, tests du protocole 2 Dynamixel
 
 ### Mardi 12 Mars (J-57)
--
+- Présentation de projet n°6 : Présentation de la carte électronique, avancement ROS2 et communication avec le lidar
+
+### Dimanche 17 Mars (J-52)
+- Réadaptation du code du lidar au format micro-ROS
 
 ### Mardi 19 Mars (J-50)
--
+- Création du package de récupératioon des données du lidar
+- Réédition du Dockerfile test pour ajouter les librairies nécessaires au fonctionnement du lidar 
 
 ### Mardi 26 Mars (J-43)
--
+- Création du package de gestion du démarrage du robot (Écran de séléction de stratégie et démarrage à la tirette)
 
 ### Mardi 2 Avril (J-36)
--
+- Présentation finale : Présentation de la Coupe de France de Robotique, du robot et de ses fonctionnalités

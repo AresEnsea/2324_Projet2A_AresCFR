@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Phobos Mainboard Firmware 2022:  Fichier source de Core/Prod/Inc/bezier.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ares.svg"/></td>
+  <td id="projectalign">
+   <div id="projectname">Phobos Mainboard Firmware 2022<span id="projectnumber">&#160;v0.2</span>
+   </div>
+   <div id="projectbrief">Robot principal d&#39;Ares ENSEA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('bezier_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bezier.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bezier_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _BEZIER_</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _BEZIER_</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="vector2_8h.html">vector2.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_bezier.html">   20</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_bezier.html#a179065ecfc03fc2b434abbc9b9b7c490">   22</a></span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a> <a class="code hl_variable" href="struct_bezier.html#a179065ecfc03fc2b434abbc9b9b7c490">p1</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_bezier.html#ad379f502e5e5cab87843daa7e4411287">   25</a></span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a> <a class="code hl_variable" href="struct_bezier.html#ad379f502e5e5cab87843daa7e4411287">p2</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_bezier.html#ad63ad420a29de7549b32997fe8e27ff6">   28</a></span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a> <a class="code hl_variable" href="struct_bezier.html#ad63ad420a29de7549b32997fe8e27ff6">p3</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_bezier.html#a37b9d953a7e35cd786ca60714ac7633e">   31</a></span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a> <a class="code hl_variable" href="struct_bezier.html#a37b9d953a7e35cd786ca60714ac7633e">p4</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_bezier.html#ae57dfe077ca9e285a77f277c5947da27">   34</a></span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a>* <a class="code hl_variable" href="struct_bezier.html#ae57dfe077ca9e285a77f277c5947da27">lut</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_bezier.html#a91942ece6a30446a1e2e96bc056dfb55">   37</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_bezier.html#a91942ece6a30446a1e2e96bc056dfb55">lutLength</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>} <a class="code hl_struct" href="struct_bezier.html">Bezier</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_struct" href="struct_bezier.html">Bezier</a>* <a class="code hl_function" href="bezier_8h.html#ae09fc89e932c799fa1955727ed1b0522">bezier_new</a>(<span class="keywordtype">float</span> x1, <span class="keywordtype">float</span> y1, <span class="keywordtype">float</span> x2, <span class="keywordtype">float</span> y2, <span class="keywordtype">float</span> x3, <span class="keywordtype">float</span> y3, </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                   <span class="keywordtype">float</span> x4, <span class="keywordtype">float</span> y4, <span class="keywordtype">int</span> lutLength);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span> <a class="code hl_function" href="bezier_8h.html#a40c9661942fccc97d08bfe6c84f210bb">bezier_display</a>(<a class="code hl_struct" href="struct_bezier.html">Bezier</a>* b);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><a class="code hl_struct" href="struct_vector2.html">Vector2</a> <a class="code hl_function" href="bezier_8h.html#af052c95075be81a29eec3c37b79d4941">bezier_eval</a>(<a class="code hl_struct" href="struct_bezier.html">Bezier</a>* b, <span class="keywordtype">float</span> t);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><a class="code hl_struct" href="struct_vector2.html">Vector2</a> <a class="code hl_function" href="bezier_8h.html#ad6e8244e863235873ec208c470eba052">bezier_evalLut</a>(<a class="code hl_struct" href="struct_bezier.html">Bezier</a>* b, <span class="keywordtype">float</span> t);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><a class="code hl_struct" href="struct_vector2.html">Vector2</a> <a class="code hl_function" href="bezier_8h.html#a9ccc95ed67f1943c701f853d8bca6ec2">bezier_deriv1</a>(<a class="code hl_struct" href="struct_bezier.html">Bezier</a>* b, <span class="keywordtype">float</span> t);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><a class="code hl_struct" href="struct_vector2.html">Vector2</a> <a class="code hl_function" href="bezier_8h.html#abbf88d9b88d4faa234210bd1df4a9446">bezier_deriv2</a>(<a class="code hl_struct" href="struct_bezier.html">Bezier</a>* b, <span class="keywordtype">float</span> t);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keywordtype">float</span> <a class="code hl_function" href="bezier_8h.html#aafefea9f784c278a5d2aa616ebb32701">bezier_curvature</a>(<a class="code hl_struct" href="struct_bezier.html">Bezier</a>* b, <span class="keywordtype">float</span> t);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keywordtype">float</span> <a class="code hl_function" href="bezier_8h.html#a390368900974782bbaafefe8aee28ae7">bezier_projectLut</a>(<a class="code hl_struct" href="struct_bezier.html">Bezier</a>* b, <a class="code hl_struct" href="struct_vector2.html">Vector2</a> p);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keywordtype">float</span> <a class="code hl_function" href="bezier_8h.html#aa6ca1862b8689d242d0856b4d37dc9c2">bezier_project</a>(<a class="code hl_struct" href="struct_bezier.html">Bezier</a>* b, <a class="code hl_struct" href="struct_vector2.html">Vector2</a> p, <span class="keywordtype">float</span> precision);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abezier_8h_html_a390368900974782bbaafefe8aee28ae7"><div class="ttname"><a href="bezier_8h.html#a390368900974782bbaafefe8aee28ae7">bezier_projectLut</a></div><div class="ttdeci">float bezier_projectLut(Bezier *b, Vector2 p)</div><div class="ttdef"><b>Definition:</b> bezier.c:78</div></div>
+<div class="ttc" id="abezier_8h_html_a40c9661942fccc97d08bfe6c84f210bb"><div class="ttname"><a href="bezier_8h.html#a40c9661942fccc97d08bfe6c84f210bb">bezier_display</a></div><div class="ttdeci">void bezier_display(Bezier *b)</div><div class="ttdef"><b>Definition:</b> bezier.c:21</div></div>
+<div class="ttc" id="abezier_8h_html_a9ccc95ed67f1943c701f853d8bca6ec2"><div class="ttname"><a href="bezier_8h.html#a9ccc95ed67f1943c701f853d8bca6ec2">bezier_deriv1</a></div><div class="ttdeci">Vector2 bezier_deriv1(Bezier *b, float t)</div><div class="ttdef"><b>Definition:</b> bezier.c:49</div></div>
+<div class="ttc" id="abezier_8h_html_aa6ca1862b8689d242d0856b4d37dc9c2"><div class="ttname"><a href="bezier_8h.html#aa6ca1862b8689d242d0856b4d37dc9c2">bezier_project</a></div><div class="ttdeci">float bezier_project(Bezier *b, Vector2 p, float precision)</div><div class="ttdef"><b>Definition:</b> bezier.c:93</div></div>
+<div class="ttc" id="abezier_8h_html_aafefea9f784c278a5d2aa616ebb32701"><div class="ttname"><a href="bezier_8h.html#aafefea9f784c278a5d2aa616ebb32701">bezier_curvature</a></div><div class="ttdeci">float bezier_curvature(Bezier *b, float t)</div><div class="ttdef"><b>Definition:</b> bezier.c:67</div></div>
+<div class="ttc" id="abezier_8h_html_abbf88d9b88d4faa234210bd1df4a9446"><div class="ttname"><a href="bezier_8h.html#abbf88d9b88d4faa234210bd1df4a9446">bezier_deriv2</a></div><div class="ttdeci">Vector2 bezier_deriv2(Bezier *b, float t)</div><div class="ttdef"><b>Definition:</b> bezier.c:58</div></div>
+<div class="ttc" id="abezier_8h_html_ad6e8244e863235873ec208c470eba052"><div class="ttname"><a href="bezier_8h.html#ad6e8244e863235873ec208c470eba052">bezier_evalLut</a></div><div class="ttdeci">Vector2 bezier_evalLut(Bezier *b, float t)</div><div class="ttdef"><b>Definition:</b> bezier.c:43</div></div>
+<div class="ttc" id="abezier_8h_html_ae09fc89e932c799fa1955727ed1b0522"><div class="ttname"><a href="bezier_8h.html#ae09fc89e932c799fa1955727ed1b0522">bezier_new</a></div><div class="ttdeci">Bezier * bezier_new(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, int lutLength)</div><div class="ttdef"><b>Definition:</b> bezier.c:4</div></div>
+<div class="ttc" id="abezier_8h_html_af052c95075be81a29eec3c37b79d4941"><div class="ttname"><a href="bezier_8h.html#af052c95075be81a29eec3c37b79d4941">bezier_eval</a></div><div class="ttdeci">Vector2 bezier_eval(Bezier *b, float t)</div><div class="ttdef"><b>Definition:</b> bezier.c:34</div></div>
+<div class="ttc" id="astruct_bezier_html"><div class="ttname"><a href="struct_bezier.html">Bezier</a></div><div class="ttdef"><b>Definition:</b> bezier.h:20</div></div>
+<div class="ttc" id="astruct_bezier_html_a179065ecfc03fc2b434abbc9b9b7c490"><div class="ttname"><a href="struct_bezier.html#a179065ecfc03fc2b434abbc9b9b7c490">Bezier::p1</a></div><div class="ttdeci">Vector2 p1</div><div class="ttdef"><b>Definition:</b> bezier.h:22</div></div>
+<div class="ttc" id="astruct_bezier_html_a37b9d953a7e35cd786ca60714ac7633e"><div class="ttname"><a href="struct_bezier.html#a37b9d953a7e35cd786ca60714ac7633e">Bezier::p4</a></div><div class="ttdeci">Vector2 p4</div><div class="ttdef"><b>Definition:</b> bezier.h:31</div></div>
+<div class="ttc" id="astruct_bezier_html_a91942ece6a30446a1e2e96bc056dfb55"><div class="ttname"><a href="struct_bezier.html#a91942ece6a30446a1e2e96bc056dfb55">Bezier::lutLength</a></div><div class="ttdeci">int lutLength</div><div class="ttdef"><b>Definition:</b> bezier.h:37</div></div>
+<div class="ttc" id="astruct_bezier_html_ad379f502e5e5cab87843daa7e4411287"><div class="ttname"><a href="struct_bezier.html#ad379f502e5e5cab87843daa7e4411287">Bezier::p2</a></div><div class="ttdeci">Vector2 p2</div><div class="ttdef"><b>Definition:</b> bezier.h:25</div></div>
+<div class="ttc" id="astruct_bezier_html_ad63ad420a29de7549b32997fe8e27ff6"><div class="ttname"><a href="struct_bezier.html#ad63ad420a29de7549b32997fe8e27ff6">Bezier::p3</a></div><div class="ttdeci">Vector2 p3</div><div class="ttdef"><b>Definition:</b> bezier.h:28</div></div>
+<div class="ttc" id="astruct_bezier_html_ae57dfe077ca9e285a77f277c5947da27"><div class="ttname"><a href="struct_bezier.html#ae57dfe077ca9e285a77f277c5947da27">Bezier::lut</a></div><div class="ttdeci">Vector2 * lut</div><div class="ttdef"><b>Definition:</b> bezier.h:34</div></div>
+<div class="ttc" id="astruct_vector2_html"><div class="ttname"><a href="struct_vector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> vector2.h:18</div></div>
+<div class="ttc" id="avector2_8h_html"><div class="ttname"><a href="vector2_8h.html">vector2.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_542ed4cc54dd0f66b276e41c84137820.html">Prod</a></li><li class="navelem"><a class="el" href="dir_5d189f72b21093759a55927cf148c63a.html">Inc</a></li><li class="navelem"><a class="el" href="bezier_8h.html">bezier.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
+</body>
+</html>

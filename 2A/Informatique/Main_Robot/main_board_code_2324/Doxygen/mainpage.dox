@@ -1,0 +1,26 @@
+/** \mainpage 
+ *
+ * \section intro_sec Introduction
+ *
+ * Ce projet *STM32CubeIDE* concerne le robot pricipal Phobos qui participera à
+ * la Coupe de France de Robotique en 2022.
+ * 
+ * \section structure_sec Structure du projet
+ * 
+ * Tous les fichiers écrits par l'équipe se trouvent dans le répertoire 
+ * `Core/Prod/`. Ce site ne documente aucun fichier en dehors de ce dernier. 
+ * Il a deux exceptions : `main.c` et `stm32f4xx_it.c`, qui sont 
+ * générés par l'IDE puis complétés par l'équipe. Tous les autres fichiers
+ * sont générés intégralement par l'IDE et ne sont pas inclus dans la 
+ * documentation.
+ * 
+ * Le fichiers `.h` contiennent la documention. C'est elle qui est reproduite 
+ * sur ce site pour une consultation plus aisée. Les fichiers `.c` contiennent
+ * la substance du code. Les commentaires s'y trouvant concernent son
+ * fonctionnement interne plutôt que son utilisation.
+ *
+ * \section install_sec Installation
+ * 
+ * Le projet nécessite *STM32CubeIDE*. Clonner le répertoire git pour commencer
+ * à travailler dessus ou pour programmer le robot.
+ */
