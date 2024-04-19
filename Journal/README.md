@@ -160,3 +160,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 
 ### Mardi 2 Avril (J-36)
 - Présentation finale : Présentation de la Coupe de France de Robotique, du robot et de ses fonctionnalités
+- Démonstration technique du robot
+
+### Dimanche 7 Avril (J-31)
+- Réécriture de la librairie pour les XL320 en Python
+
