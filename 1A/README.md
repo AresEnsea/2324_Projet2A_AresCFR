@@ -1,4 +1,32 @@
-# 1A
-Ce dossier regroupe les fichiers réalisés par les étudiants en première année de l'association.
+# Coupe de France de Robotique 2024 : les PAMI
+> Présentation du projet, cahier des charges, état de l'art, etc...
 
-Il regroupe aussi les formations réalisés par les anciens membres qui pourraient être utiles pour la coupe de France de Robotique.
+# Equipe
+> Courte présentation de vous !
+
+# Journal de bord
+> Déroulé séance par séance
+
+## Séance 1
+## Séance 2
+## Séance 3
+## Séance 4
+## Séance 5
+## Séance 6
+## Séance 7
+## Séance 8
+## Séance 9
+## Séance 10
+
+# Livrables
+## PCB
+> Présentation du schéma (grandes lignes) + PCB
+
+## Code
+> Architecture de votre code
+
+## Getting Started Guide
+> Ici le manuel d'utilisation simple et pratique !
+
+## Rendu final
+> Video ici de votre projet
