@@ -339,7 +339,7 @@ Cela nous a "obligé" à séparer une grosse capacité en 2 petites.
 Dans notre cas, la place était assez restreinte car nous ne pouvions pas mettre de condensateurs sous la carte pour éviter de percuter les composants qui se situent déjà sur la PI4.
 Dans ce cas, le chevauchement de sérigraphie n'est alors plus un problème.
 
-![placement](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/placement.png)  
+![Placement](https://github.com/AresEnsea/2324_Projet2A_AresCFR/blob/main/2A/Electronique/Schema%20Electronique%202223/pictures/placement.png)  
 
 ##### 3ème étape :
 
@@ -367,31 +367,31 @@ Nous obtenons, principalement grâce à l'aide de Monsieur Papazoglou le magnifi
 
 - Test du capteur de couleurs : Les essais réalisés avec le capteur de couleur se sont révélés assez satisfaisants pour distinguer les pots blancs des pots violets, mais cela ne permet pas de différencier les pots blancs des pots métalliques. Pour pallier ce problème, nous combinons l'utilisation du capteur avec celui d'un capteur à induction, ce dernier permettant de détecter les objets métalliques à sa proximité.
 
-
+### Brasage (Soudure)  
 
 Notre carte PCB de puissance 3 couches a été commandée en 5 exemplaires.
 
 Tout d'abord, nous avons choisi de souder entièrement une carte électronique afin de vérifier son fonctionnement global. 
+
 Les étapes de la soudure des composants grâce au four sont :
-- Le placement de la carte à souder entre 4 autres cartes avec du scotch autour afin que la principale ne bouge pas
-- Chauffer la pâte à braser entre les mains
-- Etaler cette pâte sur le PCB grâce à une carte en plastique
-- Poser les boîtes des composants de différentes tailles sur la paillasse
-- Afficher le schématic et le routage kicad afin de suivre les valeurs des composants
-- Positionner tous les composants sur le PCB
-- Vérifier que chaque composant est correctement positionné et n'a pas bougé
-- Allumer le four, attendre le préchauffage puis mettre la carte électornique à l'intérieur
-- Suivre l'évolution de la cuisson via l'ordinateur de suivi (augmentation de la température, arrivée au point culminant, baisse de la température)
+
+- Le placement de la carte à souder entre 4 autres cartes avec du scotch autour afin que la carte principale ne bouge pas.
+- Le chauffage de la pâte à braser entre les mains.
+- L'étalage de la pâte sur le PCB grâce à une carte en plastique.
+- La pose des boîtiers des composants de différentes tailles sur la paillasse.
+- L'affichage du schématique et du routage KiCad afin de suivre les valeurs des composants.
+- Le positionnement de tous les composants sur le PCB
+- La vérification que chaque composant est correctement positionné et n'a pas bougé.
+- L'allumage du four, l'attente du préchauffage puis le placement de la carte électornique à l'intérieur.
+- Le suivi de l'évolution de la cuisson via l'ordinateur de suivi (augmentation de la température, arrivée au point culminant, baisse de la température).
 
 
-Remarques importantes :
- - Il faut commencer par positionner les plus petits composants de la carte
- - Par la suite il faut positionner les composants par taille croissante
+Remarque importante : Il faut commencer par positionner les composants sur la carte par ordre de taille croissante.
 
 
-Par la suite, une fois que tous les composants CMS ont été soudés, il faut vérifier si les tensions qui sortent de la carte ont la bonne valeur. Pour ce faire, on utilise une alimentation et un voltmètre aux bornes des points de test. Si toutes les valeurs recuillies sont cohérentes avec celles attendues alors nous pouvons passer à l'étaper suivante. Sinon, 
+Par la suite, une fois que tous les composants CMS ont été soudés, il faut vérifier si les tensions qui sortent de la carte ont la bonne valeur. Pour ce faire, on utilise une alimentation et un voltmètre aux bornes des points de test. Si toutes les valeurs recuillies sont cohérentes avec celles attendues, alors nous pouvons passer à l'étape suivante. Sinon, il faut faire des réajustements sur la source du problème (composants, soudure, ...).
 
-Puis, il faut ajouter les composants traversants (Connecteurs des batteris, du bouton d'arrêt d'urgence, des capteurs et des actionneurs).
-Pour ce faire, il faut utiliser une pince afin de tenir la carte en hauteur pour souder correctement les différents composants qui ont des tailles différentes. 
+Puis, il faut ajouter les composants traversants (connecteurs des batteries, du bouton d'arrêt d'urgence, des capteurs et des actionneurs, ...).
+Pour ce faire, il faut utiliser une pince afin de tenir la carte en hauteur afin de pouvoir souder correctement les différents composants qui ont des tailles différentes. 
 
 

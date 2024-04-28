@@ -1,5 +1,6 @@
 # Journal de Bord d'Ares 
 Ce dossier constitue le journal de bord d'Ares, retraçant les réalisations hebdomadaires de l'association.
+
 ## Tutoriels
 Tous les tutoriels et les méthodes de réalisations concernant la Coupe de France de Robotique 2024 sont regroupés sur le wiki de l'association : https://wiki.ares.asso-ensea.fr/index.php/Coupe_de_France_de_Robotique
 
@@ -74,11 +75,8 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 ### Mardi 12 décembre (J-148)
 - Test de fonctionnement des capteurs TOF en ROS2
 
-### Mardi 19 décembre (J-141)
-- 
-
 ### Lundi 25 décembre (J-135)
-- Test de fonctionnement du capteur de couleur TCS3200
+- Test de fonctionnement du capteur de couleur TCS3200 sous STM32
 
 ### Mardi 26 décembre (J-134)
 - Calibration du capteur de couleur, finalisation du code
@@ -158,7 +156,12 @@ Tous les tutoriels et les méthodes de réalisations concernant la Coupe de Fran
 - Réédition du Dockerfile test pour ajouter les librairies nécessaires au fonctionnement du lidar 
 
 ### Mardi 26 Mars (J-43)
--
+- Création du package de gestion du démarrage du robot (Écran de séléction de stratégie et démarrage à la tirette)
 
 ### Mardi 2 Avril (J-36)
-- Présentation finale : Présentation du robot et de ses fonctionnalités
+- Présentation finale : Présentation de la Coupe de France de Robotique, du robot et de ses fonctionnalités
+- Démonstration technique du robot
+
+### Dimanche 7 Avril (J-31)
+- Réécriture de la librairie pour les XL320 en Python
+
