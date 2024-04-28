@@ -26,6 +26,12 @@ RUN pip install pyserial
 # Installation de pigpio
 RUN pip install pigpio
 
+# Installation de numpy
+RUN pip install numpy
+
+# Installation de RPi.GPIO
+RUN pip install RPi.GPIO
+
 #Activation de ROS2 pour ne pas avoir a le faire a chaque lancement
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash"
 
