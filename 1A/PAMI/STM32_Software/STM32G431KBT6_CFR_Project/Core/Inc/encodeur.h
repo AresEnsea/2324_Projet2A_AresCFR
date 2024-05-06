@@ -14,6 +14,7 @@
 typedef struct __ENC_HandleTypeDef
 {
 	TIM_HandleTypeDef *htim;
+	uint8_t it;
 	uint32_t channel;
 	uint32_t value;
 } __ENC_HandleTypeDef;

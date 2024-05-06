@@ -168,6 +168,18 @@ char SCREEN_SSD1306_Write_String(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_
     return *str;
 }
 
+void SCREEN_SSD1306_Fill_String(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, char* str, FontDef Font, SSD1306_COLOR color) {
+	SCREEN_SSD1306_Fill(&hscreen1, Black);
+	SCREEN_SSD1306_Set_Position(&hscreen1, 0, 0);
+	SCREEN_SSD1306_Write_String(&hscreen1, str, Font_11x18, color);
+	SCREEN_SSD1306_Update_Screen(&hscreen1);
+}
+
+void SCREEN_SSD1306_Set_Position(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, uint8_t x, uint8_t y){
+	SCREEN_SSD1306_Handle->CurrentX = x;
+	SCREEN_SSD1306_Handle->CurrentY = y;
+}
+
 
 HAL_StatusTypeDef SCREEN_SSD1306_State_Machine(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle){
 

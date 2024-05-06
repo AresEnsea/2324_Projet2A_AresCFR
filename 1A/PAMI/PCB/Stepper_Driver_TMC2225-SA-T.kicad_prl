@@ -67,6 +67,12 @@
     "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
+  "git": {
+    "repo_password": "",
+    "repo_type": "",
+    "repo_username": "",
+    "ssh_key": ""
+  },
   "meta": {
     "filename": "Stepper_Driver_TMC2225-SA-T.kicad_prl",
     "version": 3

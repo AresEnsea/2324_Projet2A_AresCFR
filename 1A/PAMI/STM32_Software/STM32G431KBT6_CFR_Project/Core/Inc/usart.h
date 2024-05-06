@@ -39,7 +39,7 @@ extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN Private defines */
-
+#define UART_TX_BUFFER_SIZE 64
 /* USER CODE END Private defines */
 
 void MX_LPUART1_UART_Init(void);
@@ -47,7 +47,8 @@ void MX_USART1_UART_Init(void);
 void MX_USART2_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-
+extern uint8_t tx_Buffer_Size;
+extern uint8_t vcp_Tx_Buffer[UART_TX_BUFFER_SIZE];
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

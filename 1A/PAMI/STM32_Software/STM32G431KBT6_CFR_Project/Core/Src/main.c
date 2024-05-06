@@ -30,6 +30,8 @@
 #include "led.h"
 #include "encodeur.h"
 #include "button.h"
+#include "ydlidar_x4.h"
+#include "stepper.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -39,7 +41,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define UART_TX_BUFFER_SIZE 64
+#define ANGLE_MIN 120
+#define ANGLE_MAX 240
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -50,13 +53,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t tx_Buffer_Size;
-uint8_t vcp_Tx_Buffer[UART_TX_BUFFER_SIZE];
-uint8_t screenBuffer[12];
 SSD1306_COLOR screen_color = White;
-uint8_t it_button;
 uint8_t it_enc;
 uint8_t it_lidar;
+uint8_t it_time;
+uint32_t time_100ms = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -108,6 +110,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
 	tx_Buffer_Size = snprintf((char *)vcp_Tx_Buffer, UART_TX_BUFFER_SIZE, "ENSEA CFR PAMI v0.1\r\n");
 	HAL_UART_Transmit(&huart2, vcp_Tx_Buffer, tx_Buffer_Size, 10);
@@ -128,6 +131,25 @@ int main(void)
 		HAL_UART_Transmit(&huart2, vcp_Tx_Buffer, tx_Buffer_Size, 10);
 	}
 
+	// Init Encodeur
+	ENCODEUR_Init(&henc1, &htim1);
+	//Bug de l'encodeur, une des 2 pins de réagit pas comme il faudrait... à changer ?!
+
+	// Init Stepper
+	Stepper_Init(&hstepperLeft, &htim3, TIM_CHANNEL_1, DIR_MOTOR_L_GPIO_Port, DIR_MOTOR_L_Pin, SET);
+	Stepper_Init(&hstepperRight, &htim2, TIM_CHANNEL_1, DIR_MOTOR_R_GPIO_Port, DIR_MOTOR_R_Pin, RESET);
+
+	Stepper_Set_Speed(&hstepperLeft, 20, 0);
+	Stepper_Set_Speed(&hstepperRight, 5, 0);
+
+
+	// Init Lidar
+	YDLIDAR_X4_Init(&hlidar, &huart1);
+	// voir du fichier usart.c pour gestion de l'interruption
+
+	// Init Time
+	HAL_TIM_Base_Start_IT(&htim7);
+
 
 
 
@@ -137,22 +159,76 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 	while (1)
 	{
-		if(buttons.pushed){
-			tx_Buffer_Size = snprintf((char *)vcp_Tx_Buffer, UART_TX_BUFFER_SIZE, "Pushed\r\n");
-			HAL_UART_Transmit(&huart2, vcp_Tx_Buffer, tx_Buffer_Size, 10);
-			buttons.pushed = 0;
+		if(hlidar.newData){
+			YDLIDAR_X4_Compute_Payload(&hlidar);
+			float min_distance = 10000;
+			int idx_angle_min_distance;
+			for(int idx_angle=ANGLE_MIN; idx_angle<ANGLE_MAX; idx_angle++){
+				if((10 < hlidar.scan_response.distance[idx_angle]) &&
+						(hlidar.scan_response.distance[idx_angle] < min_distance)){
+					idx_angle_min_distance = idx_angle;
+					min_distance = hlidar.scan_response.distance[idx_angle];
+				}
+			}
+//			sprintf(hscreen1.textBuffer, "%3d | %4.2f", idx_angle_min_distance-180, min_distance);
+//			SCREEN_SSD1306_Fill_String(&hscreen1, hscreen1.textBuffer, Font_11x18, screen_color);
+			if(min_distance < 200){
+				LED_set_value(7);
+				Stepper_Stop(&hstepperLeft);
+				Stepper_Stop(&hstepperRight);
+			}
+			else{
+				LED_set_value(0);
+			}
+
+			hlidar.newData = 0;
 		}
-		else if(it_enc){
 
+		if(button.pushed){
+			switch(button.name){
+			case BTN_0:
+				SCREEN_SSD1306_Fill_String(&hscreen1, "Button 0", Font_11x18, screen_color);
+				// add code here
+				break;
+			case BTN_1:
+				SCREEN_SSD1306_Fill_String(&hscreen1, "Button 1", Font_11x18, screen_color);
+				// add code here
+				break;
+			case BTN_2:
+				SCREEN_SSD1306_Fill_String(&hscreen1, "Button 2", Font_11x18, screen_color);
+				// add code here
+				break;
+			case BTN_ENC:
+				SCREEN_SSD1306_Fill_String(&hscreen1, "Button Enc", Font_11x18, screen_color);
+				// add code here
+				break;
+			default:
 
-
-			it_enc = 0;
+			}
 		}
-		else if(it_lidar){
-
-
-			it_lidar = 0;
+		else if(henc1.it){
+//			sprintf(hscreen1.textBuffer,"%6d\r\n",henc1.value);
+//			SCREEN_SSD1306_Fill_String(&hscreen1, hscreen1.textBuffer, Font_11x18, screen_color);
+//			henc1.it = 0;
 		}
+		else if(it_time){
+			sprintf(hscreen1.textBuffer, "%3d.%d", time_100ms/10, time_100ms%10);
+			SCREEN_SSD1306_Fill_String(&hscreen1, hscreen1.textBuffer, Font_11x18, screen_color);
+			if(time_100ms > 200){
+				Stepper_Stop(&hstepperLeft);
+				Stepper_Stop(&hstepperRight);
+			}
+			else if(time_100ms > 100){
+				Stepper_Start(&hstepperLeft);
+				Stepper_Start(&hstepperRight);
+			}
+			it_time = 0;
+		}
+//		LED_set_value(led++);
+//		led %= 8;
+//		HAL_Delay(10);
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -227,7 +303,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     HAL_IncTick();
   }
   /* USER CODE BEGIN Callback 1 */
-
+  if (htim->Instance == TIM7) {
+	  time_100ms++;
+	  it_time = 1;
+  }
   /* USER CODE END Callback 1 */
 }
 

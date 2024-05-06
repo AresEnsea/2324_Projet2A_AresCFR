@@ -46,6 +46,7 @@ typedef struct __SCREEN_SSD1306_HandleTypeDef
     uint16_t CurrentY;
     uint8_t Initialized;
     uint8_t DisplayOn;
+    uint8_t textBuffer[32];
     uint8_t buffer[SSD1306_BUFFER_SIZE];
 } __SCREEN_SSD1306_HandleTypeDef;
 
@@ -62,5 +63,7 @@ char SCREEN_SSD1306_Write_Char(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Ha
 char SCREEN_SSD1306_Write_String(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, char* str, FontDef Font, SSD1306_COLOR color);
 HAL_StatusTypeDef SCREEN_SSD1306_Dislay_On(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle);
 HAL_StatusTypeDef SCREEN_SSD1306_Dislay_Off(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle);
+void SCREEN_SSD1306_Fill_String(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, char* str, FontDef Font, SSD1306_COLOR color);
+void SCREEN_SSD1306_Set_Position(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, uint8_t x, uint8_t y);
 HAL_StatusTypeDef SCREEN_SSD1306_State_Machine(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle);
 #endif /* INC_SSD1306_H_ */

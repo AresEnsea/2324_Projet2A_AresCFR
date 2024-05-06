@@ -21,10 +21,10 @@ typedef enum {
 typedef struct __Buttons_HandleTypeDef
 {
 	uint8_t pushed;
-	uint8_t	button;
+	uint8_t	name;
 } __Buttons_HandleTypeDef;
 
-extern __Buttons_HandleTypeDef buttons;
+extern __Buttons_HandleTypeDef button;
 
 //void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 void BTN_Pushed(uint16_t GPIO_Pin);
