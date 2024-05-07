@@ -71,13 +71,15 @@ HAL_StatusTypeDef SCREEN_SSD1306_Send_Cmd(__SCREEN_SSD1306_HandleTypeDef *SCREEN
 }
 
 HAL_StatusTypeDef SCREEN_SSD1306_Send_Data(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, uint8_t* data, size_t size){
-	if(HAL_I2C_Mem_Write(SCREEN_SSD1306_Handle->hi2c, SCREEN_SSD1306_Handle->i2c_addr, SSD1306_DATA, 1, data, size, 100)){
-
-		return HAL_OK;
-	}
-	else{
-		return HAL_ERROR;
-	}
+	//if(HAL_I2C_Mem_Write(SCREEN_SSD1306_Handle->hi2c, SCREEN_SSD1306_Handle->i2c_addr, SSD1306_DATA, 1, data, size, 100)){
+	HAL_I2C_Mem_Write(SCREEN_SSD1306_Handle->hi2c, SCREEN_SSD1306_Handle->i2c_addr, SSD1306_DATA, 1, data, size, 100);
+	//HAL_I2C_Mem_Write_DMA(SCREEN_SSD1306_Handle->hi2c, SCREEN_SSD1306_Handle->i2c_addr, SSD1306_DATA, 1, data, size);
+//	if(HAL_I2C_Mem_Write_DMA(SCREEN_SSD1306_Handle->hi2c, SCREEN_SSD1306_Handle->i2c_addr, SSD1306_DATA, 1, data, size)){
+//		return HAL_OK;
+//	}
+//	else{
+//		return HAL_ERROR;
+//	}
 
 //	HAL_I2C_Mem_Write_DMA(SCREEN_SSD1306_Handle->hi2c, SCREEN_SSD1306_Handle->i2c_addr, SSD1306_DATA, 1, data, size);
 }
@@ -171,7 +173,7 @@ char SCREEN_SSD1306_Write_String(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_
 void SCREEN_SSD1306_Fill_String(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, char* str, FontDef Font, SSD1306_COLOR color) {
 	SCREEN_SSD1306_Fill(&hscreen1, Black);
 	SCREEN_SSD1306_Set_Position(&hscreen1, 0, 0);
-	SCREEN_SSD1306_Write_String(&hscreen1, str, Font_11x18, color);
+	SCREEN_SSD1306_Write_String(&hscreen1, str, Font, color);
 	SCREEN_SSD1306_Update_Screen(&hscreen1);
 }
 
@@ -185,3 +187,37 @@ HAL_StatusTypeDef SCREEN_SSD1306_State_Machine(__SCREEN_SSD1306_HandleTypeDef *S
 
 	return HAL_OK;
 }
+
+void SCREEN_SSD1306_Print_Info(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle,
+		uint32_t time_1, uint32_t time_2, float v_battery,
+		int idx_angle_min_distance, float min_distance,
+		__STRATEGY_HandleTypeDef actual_strategy){
+	SCREEN_SSD1306_Fill(SCREEN_SSD1306_Handle, Black);
+
+	// Line 1
+	snprintf(SCREEN_SSD1306_Handle->textBuffer, 19, "%3d.%d %3d.%d  %1.2fV ", time_1/10, time_1%10, time_2/10, time_2%10, v_battery);
+	SCREEN_SSD1306_Set_Position(SCREEN_SSD1306_Handle, 0, 0);
+	SCREEN_SSD1306_Write_String(SCREEN_SSD1306_Handle, SCREEN_SSD1306_Handle->textBuffer, Font_7x10, White);
+
+	// Line 2
+	snprintf(SCREEN_SSD1306_Handle->textBuffer, 19, "%3d deg : %3.1f mm", idx_angle_min_distance-180, min_distance);
+	SCREEN_SSD1306_Set_Position(SCREEN_SSD1306_Handle, 0, 12);
+	SCREEN_SSD1306_Write_String(SCREEN_SSD1306_Handle, SCREEN_SSD1306_Handle->textBuffer, Font_7x10, White);
+
+	// Line 3
+//	snprintf(SCREEN_SSD1306_Handle->textBuffer, 19, "Speed {%3d,%3d}", actual_strategy.action[actual_strategy.action_id].speed_Motor_Left, actual_strategy.action[actual_strategy.action_id].speed_Motor_Right);
+//	SCREEN_SSD1306_Set_Position(SCREEN_SSD1306_Handle, 0, 24);
+//	SCREEN_SSD1306_Write_String(SCREEN_SSD1306_Handle, SCREEN_SSD1306_Handle->textBuffer, Font_7x10, White);
+
+	// Line 4
+	snprintf(SCREEN_SSD1306_Handle->textBuffer, 12, "S %s | A %2d", actual_strategy.name, actual_strategy.action_id);
+	SCREEN_SSD1306_Set_Position(SCREEN_SSD1306_Handle, 0, 36);
+	SCREEN_SSD1306_Write_String(SCREEN_SSD1306_Handle, SCREEN_SSD1306_Handle->textBuffer, Font_11x18, White);
+
+	SCREEN_SSD1306_Update_Screen(SCREEN_SSD1306_Handle);
+
+
+}
+
+
+

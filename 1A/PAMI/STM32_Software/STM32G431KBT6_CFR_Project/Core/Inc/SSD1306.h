@@ -14,6 +14,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "SSD1306_fonts.h"
+#include "strategy.h"
 
 #define I2C_ADDR 				0x78
 #define I2C_ADDR_ALT			0x7A
@@ -66,4 +67,6 @@ HAL_StatusTypeDef SCREEN_SSD1306_Dislay_Off(__SCREEN_SSD1306_HandleTypeDef *SCRE
 void SCREEN_SSD1306_Fill_String(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, char* str, FontDef Font, SSD1306_COLOR color);
 void SCREEN_SSD1306_Set_Position(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, uint8_t x, uint8_t y);
 HAL_StatusTypeDef SCREEN_SSD1306_State_Machine(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle);
+void SCREEN_SSD1306_Print_Info(__SCREEN_SSD1306_HandleTypeDef *SCREEN_SSD1306_Handle, uint32_t time_1, uint32_t time_2,	float v_battery, int idx_angle_min_distance, float min_distance, __STRATEGY_HandleTypeDef actual_strategy);
+
 #endif /* INC_SSD1306_H_ */

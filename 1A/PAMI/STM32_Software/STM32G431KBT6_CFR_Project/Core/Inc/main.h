@@ -99,6 +99,9 @@ void Error_Handler(void);
 #define VCP_TX_GPIO_Port GPIOB
 #define VCP_RX_Pin GPIO_PIN_4
 #define VCP_RX_GPIO_Port GPIOB
+#define START_Pin GPIO_PIN_5
+#define START_GPIO_Port GPIOB
+#define START_EXTI_IRQn EXTI9_5_IRQn
 #define LIDAR_TX_Pin GPIO_PIN_6
 #define LIDAR_TX_GPIO_Port GPIOB
 #define I2C_SDA_OLED_Pin GPIO_PIN_7

@@ -20,5 +20,6 @@ void BTN_Pushed(uint16_t GPIO_Pin){
 	if(GPIO_Pin == USR_BTN_0_Pin) button.name = BTN_0;
 	if(GPIO_Pin == USR_BTN_1_Pin) button.name = BTN_1;
 	if(GPIO_Pin == USR_BTN_2_Pin) button.name = BTN_2;
+	if(GPIO_Pin == START_Pin) button.name = START;
 }
 

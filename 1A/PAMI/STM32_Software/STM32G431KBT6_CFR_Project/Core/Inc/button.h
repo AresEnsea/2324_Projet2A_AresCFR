@@ -15,7 +15,8 @@ typedef enum {
 	BTN_ENC = 0x01,
     BTN_0 = 0x02,
     BTN_1 = 0x03,
-    BTN_2 = 0x04
+    BTN_2 = 0x04,
+	START = 0x05
 } BTN_Enum;
 
 typedef struct __Buttons_HandleTypeDef

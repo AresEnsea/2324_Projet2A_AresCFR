@@ -30,8 +30,11 @@ void Stepper_Stop(__Stepper_HandleTypeDef *hstepper){
 void Stepper_Set_Speed(__Stepper_HandleTypeDef *hstepper, uint32_t speed, uint8_t dir){
 	hstepper->speed = speed;
 	hstepper->direction = dir;
-	__HAL_TIM_SET_PRESCALER(hstepper->htim, 170/hstepper->speed);
-
+	if(hstepper == 0) Stepper_Stop(hstepper);
+	else {
+		Stepper_Start(hstepper);
+		__HAL_TIM_SET_PRESCALER(hstepper->htim, 170/hstepper->speed);
+	}
 	HAL_GPIO_WritePin(hstepper->gpioPort, hstepper->gpioPin,
 			(hstepper->invRotation == 0) ? hstepper->direction : (1 - hstepper->direction));
 }

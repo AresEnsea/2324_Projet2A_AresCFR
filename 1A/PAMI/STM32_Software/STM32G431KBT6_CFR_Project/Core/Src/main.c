@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "dma.h"
 #include "i2c.h"
 #include "usart.h"
 #include "tim.h"
@@ -32,6 +33,7 @@
 #include "button.h"
 #include "ydlidar_x4.h"
 #include "stepper.h"
+#include "strategy.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,6 +45,7 @@
 /* USER CODE BEGIN PD */
 #define ANGLE_MIN 120
 #define ANGLE_MAX 240
+#define DISTANCE_MIN 200
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -53,11 +56,22 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
+
+
 SSD1306_COLOR screen_color = White;
 uint8_t it_enc;
 uint8_t it_lidar;
 uint8_t it_time;
 uint32_t time_100ms = 0;
+uint32_t time_100ms_from_start = 0;
+uint8_t is_started = 0;
+uint8_t is_paused = 0;
+
+uint16_t v_battery_raw;
+float v_battery_float;
+
+uint8_t debug = 0;
 
 /* USER CODE END PV */
 
@@ -82,6 +96,9 @@ int main(void)
   /* USER CODE BEGIN 1 */
 	uint8_t led = 0;
 	uint32_t encValue;
+	float min_distance = 10000;
+	int idx_angle_min_distance;
+	uint8_t object_detected = 1;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -102,6 +119,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   MX_I2C1_Init();
   MX_LPUART1_UART_Init();
@@ -131,24 +149,23 @@ int main(void)
 		HAL_UART_Transmit(&huart2, vcp_Tx_Buffer, tx_Buffer_Size, 10);
 	}
 
+	// Init LIDAR
+	YDLIDAR_X4_Init(&hlidar, &huart1);
+
+
 	// Init Encodeur
-	ENCODEUR_Init(&henc1, &htim1);
+	//	ENCODEUR_Init(&henc1, &htim1);
 	//Bug de l'encodeur, une des 2 pins de réagit pas comme il faudrait... à changer ?!
 
 	// Init Stepper
 	Stepper_Init(&hstepperLeft, &htim3, TIM_CHANNEL_1, DIR_MOTOR_L_GPIO_Port, DIR_MOTOR_L_Pin, SET);
 	Stepper_Init(&hstepperRight, &htim2, TIM_CHANNEL_1, DIR_MOTOR_R_GPIO_Port, DIR_MOTOR_R_Pin, RESET);
 
-	Stepper_Set_Speed(&hstepperLeft, 20, 0);
-	Stepper_Set_Speed(&hstepperRight, 5, 0);
-
-
-	// Init Lidar
-	YDLIDAR_X4_Init(&hlidar, &huart1);
-	// voir du fichier usart.c pour gestion de l'interruption
-
 	// Init Time
 	HAL_TIM_Base_Start_IT(&htim7);
+
+	// Init Strategy
+	STRATEGY_Init();
 
 
 
@@ -161,8 +178,7 @@ int main(void)
 	{
 		if(hlidar.newData){
 			YDLIDAR_X4_Compute_Payload(&hlidar);
-			float min_distance = 10000;
-			int idx_angle_min_distance;
+			min_distance = 10000;
 			for(int idx_angle=ANGLE_MIN; idx_angle<ANGLE_MAX; idx_angle++){
 				if((10 < hlidar.scan_response.distance[idx_angle]) &&
 						(hlidar.scan_response.distance[idx_angle] < min_distance)){
@@ -170,14 +186,14 @@ int main(void)
 					min_distance = hlidar.scan_response.distance[idx_angle];
 				}
 			}
-//			sprintf(hscreen1.textBuffer, "%3d | %4.2f", idx_angle_min_distance-180, min_distance);
-//			SCREEN_SSD1306_Fill_String(&hscreen1, hscreen1.textBuffer, Font_11x18, screen_color);
-			if(min_distance < 200){
+			if(min_distance < DISTANCE_MIN){
 				LED_set_value(7);
-				Stepper_Stop(&hstepperLeft);
-				Stepper_Stop(&hstepperRight);
+				object_detected = 1;
+//				Stepper_Stop(&hstepperLeft);
+//				Stepper_Stop(&hstepperRight);
 			}
 			else{
+				object_detected = 0;
 				LED_set_value(0);
 			}
 
@@ -187,47 +203,50 @@ int main(void)
 		if(button.pushed){
 			switch(button.name){
 			case BTN_0:
-				SCREEN_SSD1306_Fill_String(&hscreen1, "Button 0", Font_11x18, screen_color);
+				STRATEGY_Update();
+				SCREEN_SSD1306_Print_Info(&hscreen1, time_100ms, time_100ms_from_start, v_battery_float, idx_angle_min_distance, min_distance, actual_strategy);
 				// add code here
 				break;
 			case BTN_1:
-				SCREEN_SSD1306_Fill_String(&hscreen1, "Button 1", Font_11x18, screen_color);
+				is_started = 1;
 				// add code here
 				break;
 			case BTN_2:
-				SCREEN_SSD1306_Fill_String(&hscreen1, "Button 2", Font_11x18, screen_color);
 				// add code here
+				SCREEN_SSD1306_Print_Info(&hscreen1, time_100ms, time_100ms_from_start, v_battery_float, idx_angle_min_distance, min_distance, actual_strategy);
 				break;
 			case BTN_ENC:
-				SCREEN_SSD1306_Fill_String(&hscreen1, "Button Enc", Font_11x18, screen_color);
+				// add code here
+				break;
+			case START: // Tirette
+				is_started = 1;
 				// add code here
 				break;
 			default:
 
 			}
+			button.pushed = 0;
 		}
-		else if(henc1.it){
-//			sprintf(hscreen1.textBuffer,"%6d\r\n",henc1.value);
-//			SCREEN_SSD1306_Fill_String(&hscreen1, hscreen1.textBuffer, Font_11x18, screen_color);
-//			henc1.it = 0;
-		}
-		else if(it_time){
-			sprintf(hscreen1.textBuffer, "%3d.%d", time_100ms/10, time_100ms%10);
-			SCREEN_SSD1306_Fill_String(&hscreen1, hscreen1.textBuffer, Font_11x18, screen_color);
-			if(time_100ms > 200){
-				Stepper_Stop(&hstepperLeft);
-				Stepper_Stop(&hstepperRight);
+		else if(it_time){ // each 100ms
+
+			if(is_started && !is_paused){
+				time_100ms_from_start++;
 			}
-			else if(time_100ms > 100){
-				Stepper_Start(&hstepperLeft);
-				Stepper_Start(&hstepperRight);
-			}
+
+			STRATEGY_Refresh(time_100ms_from_start, object_detected, is_started);
+
+			// Get Voltage
+			HAL_ADC_Start(&hadc1);
+			HAL_ADC_PollForConversion(&hadc1, 1);
+			v_battery_raw = HAL_ADC_GetValue(&hadc1);
+			v_battery_float = v_battery_raw*0.0021; // 3.3/4095*25/10
+
+//			if(time_100ms%10 == 0){
+//				SCREEN_SSD1306_Print_Info(&hscreen1, time_100ms, time_100ms_from_start, v_battery_float, idx_angle_min_distance, min_distance, actual_strategy);
+//			}
+
 			it_time = 0;
 		}
-//		LED_set_value(led++);
-//		led %= 8;
-//		HAL_Delay(10);
-
 
     /* USER CODE END WHILE */
 
@@ -303,10 +322,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     HAL_IncTick();
   }
   /* USER CODE BEGIN Callback 1 */
-  if (htim->Instance == TIM7) {
-	  time_100ms++;
-	  it_time = 1;
-  }
+	if (htim->Instance == TIM7) {
+		time_100ms++;
+		it_time = 1;
+	}
   /* USER CODE END Callback 1 */
 }
 
@@ -317,6 +336,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
+	HAL_UART_Transmit(&huart2, "Error_Handler\r\n", 15, 100);
 	/* User can add his own implementation to report the HAL error return state */
 	__disable_irq();
 	while (1)
