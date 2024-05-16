@@ -51,6 +51,8 @@ Après Coupe
 # Livrables
 ## PCB
 > Présentation du schéma (grandes lignes) + PCB
+![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/359529a3-b0eb-448c-b854-ca4c4fa7e357)
+
 
 ## Code
 > Architecture de votre code
