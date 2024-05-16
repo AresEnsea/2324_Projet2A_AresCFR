@@ -5,7 +5,7 @@
 > L'équipe PAMI est composé de 4 élèves de 1ère année 
 
 # Journal de bord
-> Déroulé séance par séance
+>-Déroulé séance par séance
 
 ## Séance 1
 >- installation machine virtuelle Ubuntu + début configuration Pi4
@@ -52,7 +52,8 @@ Après Coupe
 ## PCB
 > Présentation du schéma (grandes lignes) + PCB
 ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/359529a3-b0eb-448c-b854-ca4c4fa7e357)
-
+![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/d61f68f4-0344-420d-ba32-260c9ede2a29)
+![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/abc0d829-87a8-469a-97dd-57d0378966b5)
 
 ## Code
 > Architecture de votre code
@@ -62,3 +63,7 @@ Après Coupe
 
 ## Rendu final
 > Video ici de votre projet
+https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/23594f17-0ef2-46ef-a65a-15afedc95028
+https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/61659872-7cb5-43fb-a910-f1500b88333c
+
+
