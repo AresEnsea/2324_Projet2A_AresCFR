@@ -8,21 +8,21 @@
 >-Déroulé séance par séance
 
 ## Séance 1
->- installation machine virtuelle Ubuntu + début configuration Pi4
+>-installation machine virtuelle Ubuntu + début configuration Pi4
 >-dessin du PAMI
 >-verification fonctionnement lidar
 >-utilisation github (push/pull/clone)
 
 ## Séance 2
 >-creation organigramme
--suite configuration machine virtuelle (configuration réseau à continuer en dehors de la séance)
--code écran (vérification)
--recherche modules récepteur émeteur 433mHz
+>-suite configuration machine virtuelle (configuration réseau à continuer en dehors de la séance)
+>-code écran (vérification)
+>-recherche modules récepteur émeteur 433mHz
 
 ## Séance 3
 >-changements schématique
 >-vérification moteur : fonctionnement partiel
->
+
 ## Séance 4
 >-1ère version routage
 >-vérification moteur : incomplet
@@ -62,7 +62,7 @@ Après Coupe
 > Ici le manuel d'utilisation simple et pratique !
 
 ## Rendu final
-> Video ici de votre projet
+>Video ici de votre projet
 >https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/23594f17-0ef2-46ef-a65a-15afedc95028
 >https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/61659872-7cb5-43fb-a910-f1500b88333c
 
