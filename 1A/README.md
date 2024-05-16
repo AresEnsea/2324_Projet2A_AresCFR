@@ -63,7 +63,7 @@ Après Coupe
 
 ## Rendu final
 > Video ici de votre projet
-https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/23594f17-0ef2-46ef-a65a-15afedc95028
-https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/61659872-7cb5-43fb-a910-f1500b88333c
+>https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/23594f17-0ef2-46ef-a65a-15afedc95028
+>https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/61659872-7cb5-43fb-a910-f1500b88333c
 
 
