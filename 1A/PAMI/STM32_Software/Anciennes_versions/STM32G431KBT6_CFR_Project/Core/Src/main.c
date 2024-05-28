@@ -43,8 +43,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define ANGLE_MIN 120
-#define ANGLE_MAX 240
+#define ANGLE_MIN 140
+#define ANGLE_MAX 220
 #define DISTANCE_MIN 200
 /* USER CODE END PD */
 
