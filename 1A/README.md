@@ -55,10 +55,13 @@ Après Coupe
 ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/d61f68f4-0344-420d-ba32-260c9ede2a29)
 
 ## Code
-> Architecture de votre code
+> Architecture du code
+> ![image](https://github.com/AresEnsea/2324_Projet2A_AresCFR/assets/88663397/58c2daaa-fe78-4746-8fa8-1725627ea0fe)
 
 ## Getting Started Guide
 > Ici le manuel d'utilisation simple et pratique !
+> Le pami fonctionne de la manière suivante : après démarrage avec le switch (allume les leds rouges),
+vérifier qu'une tirette (ou un pont) est bien positionnée sur les deux pins du connecteur J102,  appuyer sur le SW NRST pour initialiser l'écran, une fois fait, le BTN2 permet de changer de stratégie parmi celles définies dans "strategy.c" dans le projet STM32CubeIDE, enfin pour démarrer le pami simplement enlever la tirette (ce qui aura pour effet de démarrer le robot après un délai de 90s ou bien appuyer sur le bouton du millieu (BTN1) pour le démarrer immédiatement.
 
 ## Rendu final
 >Video ici de votre projet :
