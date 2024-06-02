@@ -2,7 +2,11 @@
 > A l'occasion de la Coupe de France de Robotique 2024 : "Farming Mars", nous avons décidé de créer plusieurs PAMI (Petits Automatates Motorisés indépedants) qui devront réaliser des actions simples afin de rapporter des points à l'équipe de l'ENSEA  en assistant le robot principal. Ces PAMI doivent pouvoir se déplacer sur le plateau de la Coupe et être en mesure de détécter les robots adverses pour être homologués 
 
 # Equipe
-> L'équipe PAMI est composé de 4 élèves de 1ère année 
+> L'équipe PAMI est composé de 4 élèves de 1ère année :
+> -Antoine Lemarignier
+> -Ewan Zarha Thenault
+> -Nathan Bainard
+> -Mateo Gomes
 
 # Journal de bord
 >-Déroulé séance par séance
@@ -44,9 +48,11 @@
 
 ## Séance 9
 Après Coupe
->-Vision
+>-Vision : essai concluant avec tag aruco
+>-Complément Githhub
 
 ## Séance 10
+>-Derniers essais avant démonstration 
 
 # Livrables
 ## PCB
