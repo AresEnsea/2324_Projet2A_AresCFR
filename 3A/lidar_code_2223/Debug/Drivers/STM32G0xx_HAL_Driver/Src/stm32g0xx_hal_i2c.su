@@ -72,7 +72,7 @@
 ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c:6399:26:I2C_WaitOnTXISFlagUntilTimeout	24	static
 ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c:6437:26:I2C_WaitOnSTOPFlagUntilTimeout	24	static
 ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c:6472:26:I2C_WaitOnRXNEFlagUntilTimeout	24	static
-../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c:6545:26:I2C_IsErrorOccurred	56	static
+../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c:6545:26:I2C_IsErrorOccurred	48	static
 ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c:6689:13:I2C_TransferConfig	40	static
 ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c:6716:13:I2C_Enable_IRQ	24	static
 ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_i2c.c:6787:13:I2C_Disable_IRQ	24	static

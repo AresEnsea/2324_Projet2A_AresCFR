@@ -45,22 +45,22 @@ void UART_Send_Mesures(uint16_t * mesuredDistances , uint8_t Zone,  uint32_t Tot
 	 A = mesures[2];*/
 
 	// 0xFF		0xFF					0xFF
-	HAL_UART_Transmit(&SERIAL_UART, openCloseBuf, 3, 100);
+	HAL_UART_Transmit(&SERIAL_UART, openCloseBuf, 3, HAL_MAX_DELAY);
 	//HAL_Delay(5);
 
 	// Ncapteurs	Nbre de zones utilisees	Distance min
-	HAL_UART_Transmit(&SERIAL_UART, batchStats, 3, 100);
+	HAL_UART_Transmit(&SERIAL_UART, batchStats, 3, HAL_MAX_DELAY);
 	//HAL_Delay(5);
 
 	// Capteur Zone i	Distance i (part1)	Distance i (part2)
 	for(int j=0;j<NbreMesures;j++){
-	HAL_UART_Transmit(&SERIAL_UART,  &listOfMesures[3*j+1], 3, 100);
+	HAL_UART_Transmit(&SERIAL_UART,  &listOfMesures[3*j+1], 3, HAL_MAX_DELAY);
 	mesures+=3;
 	//HAL_Delay(5);
 	}
 
 	// 0xFF		0xFF					0xFF
-	HAL_UART_Transmit(&SERIAL_UART, openCloseBuf, 3, 100);
+	HAL_UART_Transmit(&SERIAL_UART, openCloseBuf, 3, HAL_MAX_DELAY);
 	//HAL_Delay(5);
 
 }
