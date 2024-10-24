@@ -57,6 +57,9 @@ void draw()
     float x_B = cos(angle_btwn_line*i)*(abs(lidar_value[i][1]/2))+ x_A;
     float y_B = sin(angle_btwn_line*i)*(abs(lidar_value[i][1]/2))+ y_A;
     line(origine_x + x_A, origine_y + y_A, origine_x + x_B, origine_y + y_B);
+    String DisplayedVal = Integer.toString(abs(lidar_value[i][1]));
+    fill(0);
+    text(DisplayedVal, origine_x + x_B, origine_y + y_B);
   }
 }
 
@@ -113,28 +116,3 @@ void serialEvent(Serial myPort){
     }
   }
 }
-
-
-
-/*
-
-// Wiring / Arduino Code
-// Code for sensing a switch status and writing the value to the serial port.
-
-int switchPin = 4;                       // Switch connected to pin 4
-
-void setup() {
-  pinMode(switchPin, INPUT);             // Set pin 0 as an input
-  Serial.begin(9600);                    // Start serial communication at 9600 bps
-}
-
-void loop() {
-  if (digitalRead(switchPin) == HIGH) {  // If switch is ON,
-    Serial.write(1);               // send 1 to Processing
-  } else {                               // If the switch is not ON,
-    Serial.write(0);               // send 0 to Processing
-  }
-  delay(100);                            // Wait 100 milliseconds
-}
-
-*/
